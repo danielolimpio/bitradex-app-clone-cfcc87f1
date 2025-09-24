@@ -17,7 +17,7 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8 flex flex-col justify-center pt-4 lg:pt-8 pb-0 relative z-20 px-4 lg:px-8">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 <span className="text-foreground">Champions Endorse</span>
                 <br />
                 <span className="text-foreground">Intelligence Leads</span>
@@ -81,7 +81,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="absolute top-0 right-0 bottom-0 left-1/2 lg:left-1/3 z-10">
+          <div className="absolute top-0 right-0 bottom-0 left-[60%] lg:left-[42%] z-10">
             <img 
               src={heroImage} 
               alt="Olivier Giroud - BitradX Global Brand Ambassador" 
