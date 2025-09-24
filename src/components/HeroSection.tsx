@@ -4,7 +4,7 @@ import heroImage from "@/assets/olivier-giroud-hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero flex items-start overflow-hidden">
+    <section className="relative bg-gradient-hero flex items-start overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
@@ -12,8 +12,8 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/30 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-stretch min-h-[calc(100vh-4rem)]">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-0">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Left Content */}
           <div className="space-y-8 flex flex-col justify-center py-8">
             <div className="space-y-6">
@@ -81,12 +81,12 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative flex items-stretch justify-end h-full">
+          <div className="relative flex items-end justify-end h-full overflow-visible">
             <div className="relative z-10 h-full">
               <img 
                 src={heroImage} 
                 alt="Olivier Giroud - BitradX Global Brand Ambassador" 
-                className="h-full w-auto max-w-full object-contain"
+                className="h-full w-auto object-contain block"
               />
               
             </div>
