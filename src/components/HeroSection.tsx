@@ -13,9 +13,9 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-0">
-        <div className="grid lg:grid-cols-6 gap-12 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-0 items-stretch relative">
           {/* Left Content */}
-          <div className="space-y-8 flex flex-col justify-center pt-4 lg:pt-8 pb-0 lg:col-span-1">
+          <div className="space-y-8 flex flex-col justify-center pt-4 lg:pt-8 pb-0 relative z-20 px-4 lg:px-8">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="text-foreground">Champions Endorse</span>
@@ -81,16 +81,13 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative flex items-end justify-end h-full overflow-visible lg:col-span-5">
-            <div className="relative z-10 h-full">
-              <img 
-                src={heroImage} 
-                alt="Olivier Giroud - BitradX Global Brand Ambassador" 
-                className="h-full w-auto object-contain block"
-              />
-              
-            </div>
-
+          <div className="absolute top-0 right-0 bottom-0 left-1/2 lg:left-1/3 z-10">
+            <img 
+              src={heroImage} 
+              alt="Olivier Giroud - BitradX Global Brand Ambassador" 
+              className="h-full w-full object-cover object-right"
+            />
+            
             {/* Background Glow */}
             <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl -z-10"></div>
           </div>
