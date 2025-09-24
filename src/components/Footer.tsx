@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, MapPin, Phone, Twitter, Facebook, Instagram, Linkedin, Globe } from "lucide-react";
+import logo from "@/assets/bitradex-logo.png";
 
 const Footer = () => {
   const footerSections = [
@@ -71,10 +72,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">B</span>
-              </div>
-              <span className="text-2xl font-bold text-foreground">BitradX</span>
+              <img src={logo} alt="BitradX" className="h-8 w-auto" />
             </div>
             
             <p className="text-muted-foreground leading-relaxed max-w-md">

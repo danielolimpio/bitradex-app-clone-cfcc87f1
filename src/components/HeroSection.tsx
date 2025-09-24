@@ -81,12 +81,12 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative">
-            <div className="relative z-10">
+          <div className="relative h-full">
+            <div className="relative z-10 h-full">
               <img 
                 src={heroImage} 
                 alt="Olivier Giroud - BitradX Global Brand Ambassador" 
-                className="w-full h-auto max-w-none"
+                className="w-full h-full object-cover object-top max-w-none min-h-[600px] lg:min-h-[700px]"
               />
               
               {/* Floating Cards */}
