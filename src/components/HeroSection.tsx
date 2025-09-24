@@ -13,7 +13,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-end min-h-[calc(100vh-4rem)]">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch min-h-[calc(100vh-4rem)]">
           {/* Left Content */}
           <div className="space-y-8 flex flex-col justify-center py-8">
             <div className="space-y-6">
@@ -81,50 +81,14 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative flex items-end justify-end">
-            <div className="relative z-10 w-full">
+          <div className="relative flex items-stretch justify-end h-full">
+            <div className="relative z-10 h-full">
               <img 
                 src={heroImage} 
                 alt="Olivier Giroud - BitradX Global Brand Ambassador" 
-                className="w-full h-auto object-contain"
+                className="h-full w-auto max-w-full object-contain"
               />
               
-              {/* Floating Cards */}
-              <div className="absolute -top-4 -left-4 bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-card">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5 text-green-400" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">+24.5%</div>
-                    <div className="text-xs text-muted-foreground">Today's Profit</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-4 -right-4 bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-card">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">Secure</div>
-                    <div className="text-xs text-muted-foreground">AI Protected</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-1/2 -left-8 bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-card">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-yellow-400" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">Lightning</div>
-                    <div className="text-xs text-muted-foreground">Fast Execution</div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Background Glow */}
