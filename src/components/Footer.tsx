@@ -6,7 +6,7 @@ import logo from "@/assets/bitradex-logo.png";
 const Footer = () => {
   const footerSections = [
     {
-      title: "About BitradX",
+      title: "About Bitradex",
       links: [
         "About Us",
         "Our Team", 
@@ -72,7 +72,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="BitradX" className="h-8 w-auto" />
+              <img src={logo} alt="Bitradex" className="h-8 w-auto" />
             </div>
             
             <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -105,7 +105,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>contact@bitradx.app</span>
+                <span>contact@bitradex.app</span>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-sm text-muted-foreground">
-              © 2024 BitradX. All rights reserved.
+              © 2024 Bitradex. All rights reserved.
             </div>
 
             {/* Social Links */}

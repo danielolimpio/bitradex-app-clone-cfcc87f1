@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src={logo} alt="BitradX" className="h-8 w-auto" />
+            <img src={logo} alt="Bitradex" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

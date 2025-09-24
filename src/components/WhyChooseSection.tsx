@@ -5,22 +5,22 @@ const WhyChooseSection = () => {
     {
       icon: Brain,
       title: "AI Intelligent",
-      description: "Advanced artificial intelligence algorithms analyze market trends and execute trades with precision and speed beyond human capabilities."
+      description: "Powered by the ARK Trading Model, our AI technology analyzes markets with trillion-parameter models for optimal trading strategies."
     },
     {
       icon: Shield,
       title: "Maximum Security",
-      description: "Bank-level security protocols and multi-layer encryption ensure your digital assets are protected with the highest industry standards."
+      description: "UK-registered with multi-layer security protocols, asset segregation, and continuous security audits to protect your investments."
     },
     {
       icon: Globe,
       title: "Global Access",
-      description: "Trade digital assets from anywhere in the world with 24/7 market access and support for multiple fiat currencies and cryptocurrencies."
+      description: "Access our platform from anywhere in the world with multi-language support and localized customer service."
     },
     {
       icon: Zap,
       title: "Lightning Fast",
-      description: "Ultra-low latency trading infrastructure ensures your orders are executed instantly, giving you the competitive edge in volatile markets."
+      description: "Execute trades in milliseconds with our high-performance matching engine and low-latency infrastructure."
     }
   ];
 
@@ -30,10 +30,10 @@ const WhyChooseSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Why Choose BitradX
+            Why Choose Bitradex
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover why elite traders and institutions choose our platform for digital asset trading with advanced technology and exceptional performance.
+            Discover the advantages that make us the preferred platform for traders worldwide
           </p>
         </div>
 

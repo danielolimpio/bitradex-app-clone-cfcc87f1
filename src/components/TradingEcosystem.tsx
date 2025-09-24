@@ -6,26 +6,26 @@ const TradingEcosystem = () => {
     {
       icon: Smartphone,
       title: "Spot Trading",
-      description: "Trade cryptocurrencies instantly with real-time market prices and deep liquidity across 200+ trading pairs.",
+      description: "Buy and sell cryptocurrencies directly with competitive fees.",
       link: "Trade Now"
     },
     {
       icon: TrendingUp,
       title: "Futures Trading",
-      description: "Advanced derivatives trading with up to 125x leverage, sophisticated risk management, and institutional-grade tools.",
+      description: "Trade with leverage and go long or short on the market.",
       link: "Trade Now"
     },
     {
       icon: BarChart3,
       title: "AI Bot",
-      description: "Automated trading strategies powered by artificial intelligence with proven track record of consistent profits.",
+      description: "One-click activation of AI Bot, intelligent quantitative strategies for automatic trading, easily seize market opportunities.",
       link: "Learn More"
     },
     {
       icon: Wallet,
-      title: "Web3 Wallet",
-      description: "Secure, non-custodial wallet integration with DeFi protocols, NFT trading, and cross-chain asset management.",
-      link: "Connect Now"
+      title: "BTX Card",
+      description: "Issued in partnership with Visa, supporting Apple Pay, Google Pay, Alipay, WeChat Pay and other payment methods, globally accepted, transparent fees, only 0.7% handling fee",
+      link: "Learn More"
     }
   ];
 
@@ -38,7 +38,7 @@ const TradingEcosystem = () => {
             Complete Trading Ecosystem
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Everything you need for professional digital asset trading - from spot and futures trading to AI-powered automation and Web3 integration.
+            Explore our comprehensive suite of products and services designed for all types of traders
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const TradingEcosystem = () => {
               Ready to Start Trading?
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join over 500,000 traders who trust BitradX for their digital asset trading needs. Get started in minutes with our intuitive platform.
+              Join over 500,000 traders who trust Bitradex for their digital asset trading needs. Get started in minutes with our intuitive platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 

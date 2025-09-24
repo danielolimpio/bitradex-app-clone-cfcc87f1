@@ -7,22 +7,22 @@ const AIBotSection = () => {
     {
       icon: Target,
       title: "One-Click Subscribe",
-      description: "Start automated trading with just one click. Our AI handles everything from market analysis to trade execution."
+      description: "Start trading with AI in seconds. No complex setup or prior experience needed."
     },
     {
       icon: BarChart3,
-      title: "AI Course Strategy",
-      description: "Advanced machine learning algorithms create personalized trading strategies based on your risk profile and market conditions."
+      title: "AI-Driven Strategy",
+      description: "Leverages trillion-parameter financial models to identify optimal trading opportunities."
     },
     {
       icon: Clock,
       title: "Fully Transparent Trading",
-      description: "Every trade, decision, and profit is transparent. Track your AI bot's performance in real-time with detailed analytics."
+      description: "Real-time tracking of all trades and performance metrics with easy-to-understand dashboards."
     },
     {
       icon: Trophy,
       title: "Real-Time Risk Control",
-      description: "Sophisticated risk management systems protect your investments with automated stop-losses and position sizing."
+      description: "Advanced risk management algorithms protect your capital in volatile market conditions."
     }
   ];
 
@@ -37,13 +37,13 @@ const AIBotSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block bg-gradient-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-semibold mb-6">
-            Launching our cutting edge
+            Powered by ARK Trading Model
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            BitradX AI Bot: The Future of Trading
+            Bitradex AI Bot: The Future of Trading
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our champions are exceptional because they are backed by intelligent automation technology that operates and profits even during your downtime.
+            Say goodbye to constant market monitoring. Let our advanced AI do the trading for you with institutional-grade strategies.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const AIBotSection = () => {
             <div className="relative z-10">
               <img 
                 src={mobileApp} 
-                alt="BitradX AI Bot Mobile App" 
+                alt="Bitradex AI Bot Mobile App" 
                 className="w-full max-w-md mx-auto h-auto"
               />
             </div>
@@ -101,33 +101,37 @@ const AIBotSection = () => {
 
             {/* Performance Stats */}
             <div className="bg-gradient-card border border-border rounded-2xl p-8 space-y-6">
-              <h4 className="text-2xl font-bold text-foreground">Superior Performance</h4>
+              <h4 className="text-2xl font-bold text-foreground">Example Performance</h4>
               
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Win Rate</span>
+                  <span className="text-muted-foreground">Win Rate*</span>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="font-bold text-green-400">89%</span>
+                    <span className="font-bold text-green-400">65%</span>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Avg. Return</span>
+                  <span className="text-muted-foreground">Annual Return*</span>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-green-400" />
-                    <span className="font-bold text-green-400">24.7%</span>
+                    <span className="font-bold text-green-400">+178%</span>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Active Traders</span>
+                  <span className="text-muted-foreground">Availability</span>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="font-bold text-primary">50K+</span>
+                    <span className="font-bold text-primary">24/7</span>
                   </div>
                 </div>
               </div>
+              
+              <p className="text-xs text-muted-foreground mt-4">
+                *Example performance only. Past performance does not guarantee future results.
+              </p>
             </div>
 
             {/* CTA Button */}

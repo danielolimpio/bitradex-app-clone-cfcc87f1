@@ -23,7 +23,7 @@ const TrustedBySection = () => {
             Trusted by Industry Leaders
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join the world's leading exchanges and financial institutions who trust BitradX for their trading infrastructure.
+            Backed by top investors and compliant with global regulatory standards
           </p>
         </div>
 

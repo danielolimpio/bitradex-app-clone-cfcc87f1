@@ -26,26 +26,24 @@ const AppDownloadSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="inline-block bg-gradient-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-semibold">
-                Start to Download
+                Trade Anytime, Anywhere with the Bitradex App
               </div>
               
               <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-                iOS & Android
+                Scan To Download
               </h2>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Experience the power of BitradX on the go. Download our mobile app and trade cryptocurrencies anytime, anywhere with professional-grade tools and AI automation.
+                Experience the full power of Bitradex in your pocket. Our mobile app provides seamless access to all features, including AI Bot, real-time market data, and secure trading.
               </p>
             </div>
 
-            {/* App Features */}
-            <div className="grid grid-cols-2 gap-4">
-              {appFeatures.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-sm text-muted-foreground">{feature}</span>
-                </div>
-              ))}
+            {/* QR Code Notice */}
+            <div className="bg-gradient-card border border-border rounded-xl p-6">
+              <h4 className="text-lg font-semibold text-foreground mb-2">iOS & Android</h4>
+              <p className="text-sm text-muted-foreground">
+                Use your phone's camera to scan the QR code for direct download.
+              </p>
             </div>
 
             {/* App Store Buttons */}
@@ -96,7 +94,7 @@ const AppDownloadSection = () => {
           <div className="relative">
             <img 
               src={appDownload} 
-              alt="BitradX Mobile App Download" 
+              alt="Bitradex Mobile App Download" 
               className="w-full h-auto"
             />
             

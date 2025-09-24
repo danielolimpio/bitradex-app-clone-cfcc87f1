@@ -4,7 +4,7 @@ import heroImage from "@/assets/olivier-giroud-hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-hero flex items-start overflow-hidden">
+    <section className="relative bg-gradient-hero flex items-start overflow-hidden min-h-[90vh]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
@@ -24,13 +24,13 @@ const HeroSection = () => {
               </h1>
               
               <div className="flex items-center space-x-4 text-primary">
-                <span className="text-xl font-semibold">BitradX</span>
+                <span className="text-xl font-semibold">Bitradex</span>
                 <span className="text-lg">×</span>
                 <span className="text-xl font-semibold">Olivier Giroud</span>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-                Next Our Champions, Our Digital Intelligence gains based on Open Mind Technology.
+                World Cup champion star Olivier Giroud officially joins Bitradex as Global Brand Ambassador
               </p>
             </div>
 
@@ -81,10 +81,10 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="absolute top-0 right-0 bottom-0 left-[60%] lg:left-[42%] z-10">
+          <div className="absolute top-0 right-0 bottom-0 left-[65%] lg:left-[45%] z-10">
             <img 
               src={heroImage} 
-              alt="Olivier Giroud - BitradX Global Brand Ambassador" 
+              alt="Olivier Giroud - Bitradex Global Brand Ambassador" 
               className="h-full w-full object-cover object-right"
             />
             

@@ -59,7 +59,7 @@ const MarketOverview = () => {
             Market Overview
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay updated with real-time cryptocurrency prices and market trends from the world's leading digital assets.
+            Stay updated with real-time cryptocurrency prices and market trends
           </p>
         </div>
 
