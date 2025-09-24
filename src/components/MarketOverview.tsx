@@ -1,0 +1,146 @@
+import { TrendingUp, TrendingDown } from "lucide-react";
+
+const MarketOverview = () => {
+  const marketData = [
+    {
+      id: 1,
+      name: "BTC",
+      fullName: "Bitcoin",
+      price: "$70,291.97",
+      change: "+2.45%",
+      volume: "$2.1B",
+      marketCap: "$1.38T",
+      isPositive: true,
+      icon: "₿"
+    },
+    {
+      id: 2,
+      name: "ETH",
+      fullName: "Ethereum",
+      price: "$3,291",
+      change: "-1.2%",
+      volume: "$892M",
+      marketCap: "$396B",
+      isPositive: false,
+      icon: "Ξ"
+    },
+    {
+      id: 3,
+      name: "BNB",
+      fullName: "Binance Coin",
+      price: "$619",
+      change: "+0.85%",
+      volume: "$456M",
+      marketCap: "$92B",
+      isPositive: true,
+      icon: "◆"
+    },
+    {
+      id: 4,
+      name: "SOL",
+      fullName: "Solana",
+      price: "$148.95",
+      change: "-3.2%",
+      volume: "$784M",
+      marketCap: "$69B",
+      isPositive: false,
+      icon: "◉"
+    }
+  ];
+
+  const tableHeaders = ["Rank", "Name", "Last Price", "24h Change", "24h Volume", "Market Cap"];
+
+  return (
+    <section id="market" className="py-24 bg-bitradx-card">
+      <div className="container mx-auto px-4 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Market Overview
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Stay updated with real-time cryptocurrency prices and market trends from the world's leading digital assets.
+          </p>
+        </div>
+
+        {/* Market Table */}
+        <div className="bg-background/50 backdrop-blur-sm rounded-2xl border border-border overflow-hidden shadow-card">
+          {/* Table Header */}
+          <div className="bg-gradient-card border-b border-border">
+            <div className="grid grid-cols-6 gap-4 p-6 text-sm font-semibold text-muted-foreground">
+              {tableHeaders.map((header) => (
+                <div key={header} className="text-left">
+                  {header}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Table Body */}
+          <div className="divide-y divide-border">
+            {marketData.map((coin, index) => (
+              <div 
+                key={coin.id}
+                className="grid grid-cols-6 gap-4 p-6 hover:bg-primary/5 transition-colors duration-200 group"
+              >
+                {/* Rank */}
+                <div className="flex items-center">
+                  <span className="text-muted-foreground font-medium">#{index + 1}</span>
+                </div>
+
+                {/* Name */}
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                    {coin.icon}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-foreground">{coin.name}</div>
+                    <div className="text-sm text-muted-foreground">{coin.fullName}</div>
+                  </div>
+                </div>
+
+                {/* Price */}
+                <div className="flex items-center">
+                  <span className="font-bold text-foreground text-lg">{coin.price}</span>
+                </div>
+
+                {/* 24h Change */}
+                <div className="flex items-center space-x-1">
+                  {coin.isPositive ? (
+                    <TrendingUp className="w-4 h-4 text-green-400" />
+                  ) : (
+                    <TrendingDown className="w-4 h-4 text-red-400" />
+                  )}
+                  <span className={`font-semibold ${coin.isPositive ? 'text-green-400' : 'text-red-400'}`}>
+                    {coin.change}
+                  </span>
+                </div>
+
+                {/* Volume */}
+                <div className="flex items-center">
+                  <span className="text-muted-foreground">{coin.volume}</span>
+                </div>
+
+                {/* Market Cap */}
+                <div className="flex items-center">
+                  <span className="text-muted-foreground">{coin.marketCap}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Table Footer */}
+          <div className="bg-gradient-card border-t border-border p-6">
+            <div className="text-center">
+              <button className="text-primary hover:text-primary-foreground hover:bg-primary px-6 py-2 rounded-lg transition-all duration-300">
+                View More Markets →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MarketOverview;

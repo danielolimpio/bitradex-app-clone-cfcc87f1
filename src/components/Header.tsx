@@ -1,0 +1,95 @@
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { label: "Início", href: "#" },
+    { label: "Mercado", href: "#market" },
+    { label: "Futures", href: "#futures" },
+    { label: "Spot", href: "#spot" },
+    { label: "Institucional", href: "#institutional" },
+    { label: "Sobre nós", href: "#about" },
+  ];
+
+  return (
+    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">B</span>
+            </div>
+            <span className="text-2xl font-bold text-foreground">BitradX</span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-muted-foreground hover:text-primary transition-colors duration-200"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Auth Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <select className="bg-transparent text-muted-foreground text-sm border-0 focus:outline-none">
+              <option value="pt">🇧🇷 PT</option>
+              <option value="en">🇺🇸 EN</option>
+            </select>
+            <Button variant="ghost" className="text-muted-foreground hover:text-primary">
+              Log In
+            </Button>
+            <Button className="bg-gradient-primary hover:shadow-button transition-all duration-300">
+              Sign Up
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-foreground"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <nav className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="flex flex-col space-y-2 pt-4">
+                <Button variant="ghost" className="justify-start">
+                  Log In
+                </Button>
+                <Button className="bg-gradient-primary justify-start">
+                  Sign Up
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
