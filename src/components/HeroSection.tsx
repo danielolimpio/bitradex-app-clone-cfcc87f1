@@ -13,7 +13,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-0">
-        <div className="grid lg:grid-cols-5 gap-12 items-stretch">
+        <div className="grid lg:grid-cols-7 gap-12 items-stretch">
           {/* Left Content */}
           <div className="space-y-8 flex flex-col justify-center pt-4 lg:pt-8 pb-0 lg:col-span-2">
             <div className="space-y-6">
@@ -81,7 +81,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative flex items-end justify-end h-full overflow-visible lg:col-span-3">
+          <div className="relative flex items-end justify-end h-full overflow-visible lg:col-span-5">
             <div className="relative z-10 h-full">
               <img 
                 src={heroImage} 
