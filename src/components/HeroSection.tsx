@@ -4,7 +4,7 @@ import heroImage from "@/assets/olivier-giroud-hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero flex items-start overflow-hidden pt-0">
+    <section className="relative min-h-screen bg-gradient-hero flex items-start overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
@@ -12,10 +12,10 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/30 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-end min-h-[calc(100vh-4rem)]">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col justify-center py-8">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="text-foreground">Champions Endorse</span>
@@ -81,12 +81,12 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative h-full">
-            <div className="relative z-10 h-full">
+          <div className="relative flex items-end justify-end">
+            <div className="relative z-10 w-full">
               <img 
                 src={heroImage} 
                 alt="Olivier Giroud - BitradX Global Brand Ambassador" 
-                className="w-full h-full object-cover object-top max-w-none min-h-[600px] lg:min-h-[700px]"
+                className="w-full h-auto object-contain"
               />
               
               {/* Floating Cards */}
