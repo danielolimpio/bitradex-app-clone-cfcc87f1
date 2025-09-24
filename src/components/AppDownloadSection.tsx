@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone, Download, Star, Shield } from "lucide-react";
-import appDownload from "@/assets/app-download.png";
+import videoAppSrc from "@/assets/video_app.mp4";
 
 const AppDownloadSection = () => {
   const appFeatures = [
@@ -92,10 +92,13 @@ const AppDownloadSection = () => {
 
           {/* Right Image */}
           <div className="relative">
-            <img 
-              src={appDownload} 
-              alt="Bitradex Mobile App Download" 
-              className="w-full h-auto"
+            <video 
+              src={videoAppSrc}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto rounded-2xl"
             />
             
             {/* Background Glow */}

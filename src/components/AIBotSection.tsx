@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight, BarChart3, Target, Clock, Trophy } from "lucide-react";
-import mobileApp from "@/assets/mobile-app.png";
+import videoBotSrc from "@/assets/video_aibot.mp4";
 
 const AIBotSection = () => {
   const features = [
@@ -51,10 +51,13 @@ const AIBotSection = () => {
           {/* Left - Mobile App Image */}
           <div className="relative">
             <div className="relative z-10">
-              <img 
-                src={mobileApp} 
-                alt="Bitradex AI Bot Mobile App" 
-                className="w-full max-w-md mx-auto h-auto"
+              <video 
+                src={videoBotSrc}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full max-w-md mx-auto h-auto rounded-2xl"
               />
             </div>
             

@@ -4,7 +4,7 @@ import heroImage from "@/assets/olivier-giroud-hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-hero flex items-start overflow-hidden min-h-[90vh]">
+    <section className="relative bg-gradient-hero flex items-start overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
