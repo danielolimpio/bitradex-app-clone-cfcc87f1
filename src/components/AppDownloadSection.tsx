@@ -51,6 +51,7 @@ const AppDownloadSection = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-primary hover:shadow-button transition-all duration-300 flex items-center space-x-3"
+                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
               >
                 <Smartphone className="w-5 h-5" />
                 <div className="text-left">
@@ -63,6 +64,7 @@ const AppDownloadSection = () => {
                 size="lg" 
                 variant="outline"
                 className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center space-x-3"
+                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
               >
                 <Download className="w-5 h-5" />
                 <div className="text-left">
@@ -101,8 +103,6 @@ const AppDownloadSection = () => {
               className="w-full h-auto rounded-2xl"
             />
             
-            {/* Background Glow */}
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl -z-10"></div>
           </div>
         </div>
       </div>

@@ -65,68 +65,114 @@ const MarketOverview = () => {
 
         {/* Market Table */}
         <div className="bg-background/50 backdrop-blur-sm rounded-2xl border border-border overflow-hidden shadow-card">
-          {/* Table Header */}
-          <div className="bg-gradient-card border-b border-border">
-            <div className="grid grid-cols-6 gap-4 p-6 text-sm font-semibold text-muted-foreground">
-              {tableHeaders.map((header) => (
-                <div key={header} className="text-left">
-                  {header}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Table Body */}
-          <div className="divide-y divide-border">
+          {/* Mobile View */}
+          <div className="md:hidden space-y-4 p-4">
             {marketData.map((coin, index) => (
-              <div 
-                key={coin.id}
-                className="grid grid-cols-6 gap-4 p-6 hover:bg-primary/5 transition-colors duration-200 group"
-              >
-                {/* Rank */}
-                <div className="flex items-center">
-                  <span className="text-muted-foreground font-medium">#{index + 1}</span>
+              <div key={coin.id} className="bg-card/50 rounded-xl p-4 border border-border">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center space-x-3">
+                    <span className="text-muted-foreground text-sm">#{index + 1}</span>
+                    <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">
+                      {coin.icon}
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">{coin.name}</div>
+                      <div className="text-xs text-muted-foreground">{coin.fullName}</div>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="font-bold text-foreground">{coin.price}</div>
+                    <div className="flex items-center space-x-1">
+                      {coin.isPositive ? (
+                        <TrendingUp className="w-3 h-3 text-green-400" />
+                      ) : (
+                        <TrendingDown className="w-3 h-3 text-red-400" />
+                      )}
+                      <span className={`text-sm ${coin.isPositive ? 'text-green-400' : 'text-red-400'}`}>
+                        {coin.change}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Name */}
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
-                    {coin.icon}
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>
+                    <div className="text-muted-foreground text-xs">Volume</div>
+                    <div className="text-foreground">{coin.volume}</div>
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">{coin.name}</div>
-                    <div className="text-sm text-muted-foreground">{coin.fullName}</div>
+                    <div className="text-muted-foreground text-xs">Market Cap</div>
+                    <div className="text-foreground">{coin.marketCap}</div>
                   </div>
-                </div>
-
-                {/* Price */}
-                <div className="flex items-center">
-                  <span className="font-bold text-foreground text-lg">{coin.price}</span>
-                </div>
-
-                {/* 24h Change */}
-                <div className="flex items-center space-x-1">
-                  {coin.isPositive ? (
-                    <TrendingUp className="w-4 h-4 text-green-400" />
-                  ) : (
-                    <TrendingDown className="w-4 h-4 text-red-400" />
-                  )}
-                  <span className={`font-semibold ${coin.isPositive ? 'text-green-400' : 'text-red-400'}`}>
-                    {coin.change}
-                  </span>
-                </div>
-
-                {/* Volume */}
-                <div className="flex items-center">
-                  <span className="text-muted-foreground">{coin.volume}</span>
-                </div>
-
-                {/* Market Cap */}
-                <div className="flex items-center">
-                  <span className="text-muted-foreground">{coin.marketCap}</span>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Desktop View */}
+          <div className="hidden md:block">
+            {/* Table Header */}
+            <div className="bg-gradient-card border-b border-border">
+              <div className="grid grid-cols-6 gap-4 p-6 text-sm font-semibold text-muted-foreground">
+                {tableHeaders.map((header) => (
+                  <div key={header} className="text-left">
+                    {header}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Table Body */}
+            <div className="divide-y divide-border">
+              {marketData.map((coin, index) => (
+                <div 
+                  key={coin.id}
+                  className="grid grid-cols-6 gap-4 p-6 hover:bg-primary/5 transition-colors duration-200 group"
+                >
+                  {/* Rank */}
+                  <div className="flex items-center">
+                    <span className="text-muted-foreground font-medium">#{index + 1}</span>
+                  </div>
+
+                  {/* Name */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
+                      {coin.icon}
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">{coin.name}</div>
+                      <div className="text-sm text-muted-foreground">{coin.fullName}</div>
+                    </div>
+                  </div>
+
+                  {/* Price */}
+                  <div className="flex items-center">
+                    <span className="font-bold text-foreground text-lg">{coin.price}</span>
+                  </div>
+
+                  {/* 24h Change */}
+                  <div className="flex items-center space-x-1">
+                    {coin.isPositive ? (
+                      <TrendingUp className="w-4 h-4 text-green-400" />
+                    ) : (
+                      <TrendingDown className="w-4 h-4 text-red-400" />
+                    )}
+                    <span className={`font-semibold ${coin.isPositive ? 'text-green-400' : 'text-red-400'}`}>
+                      {coin.change}
+                    </span>
+                  </div>
+
+                  {/* Volume */}
+                  <div className="flex items-center">
+                    <span className="text-muted-foreground">{coin.volume}</span>
+                  </div>
+
+                  {/* Market Cap */}
+                  <div className="flex items-center">
+                    <span className="text-muted-foreground">{coin.marketCap}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Table Footer */}

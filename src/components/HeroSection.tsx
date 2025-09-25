@@ -39,6 +39,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6"
+                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
               >
                 Register Now
               </Button>
@@ -54,7 +55,7 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex items-center space-x-8 pt-8">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 pt-8">
               <div className="flex items-center space-x-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-current" />
                 <Star className="w-5 h-5 text-yellow-400 fill-current" />
@@ -63,25 +64,25 @@ const HeroSection = () => {
                 <Star className="w-5 h-5 text-yellow-400 fill-current" />
               </div>
               
-              <div className="grid grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center">
                 <div>
-                  <div className="text-2xl font-bold text-primary">500K+</div>
-                  <div className="text-sm text-muted-foreground">Active Users</div>
+                  <div className="text-lg sm:text-2xl font-bold text-primary">500K+</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Active Users</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-primary">$2.5B</div>
-                  <div className="text-sm text-muted-foreground">Volume Traded</div>
+                  <div className="text-lg sm:text-2xl font-bold text-primary">$2.5B</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Volume Traded</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-primary">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime</div>
+                  <div className="text-lg sm:text-2xl font-bold text-primary">99.9%</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Uptime</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="absolute top-0 right-0 bottom-0 left-[65%] lg:left-[45%] z-10">
+          <div className="hidden lg:block absolute top-0 right-0 bottom-0 left-[45%] z-10">
             <img 
               src={heroImage} 
               alt="Olivier Giroud - Bitradex Global Brand Ambassador" 

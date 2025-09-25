@@ -61,25 +61,6 @@ const AIBotSection = () => {
               />
             </div>
             
-            {/* Background Effects */}
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl rounded-full"></div>
-            
-            {/* Floating Stats */}
-            <div className="absolute top-10 -right-10 bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-card">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{stats[0].value}</div>
-                <div className="text-sm text-muted-foreground">{stats[0].label}</div>
-                <div className="text-xs text-primary">{stats[0].subtext}</div>
-              </div>
-            </div>
-
-            <div className="absolute bottom-10 -left-10 bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-card">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-green-400">{stats[1].value}</div>
-                <div className="text-sm text-muted-foreground">{stats[1].label}</div>
-                <div className="text-xs text-green-400">{stats[1].subtext}</div>
-              </div>
-            </div>
           </div>
 
           {/* Right - Features */}
@@ -141,6 +122,7 @@ const AIBotSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg py-6"
+              onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
             >
               Try AI Bot Now
               <ArrowRight className="w-5 h-5 ml-2" />

@@ -43,10 +43,17 @@ const Header = () => {
               <option value="pt">🇧🇷 PT</option>
               <option value="en">🇺🇸 EN</option>
             </select>
-            <Button variant="ghost" className="text-muted-foreground hover:text-primary">
+            <Button 
+              variant="ghost" 
+              className="text-muted-foreground hover:text-primary"
+              onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+            >
               Log In
             </Button>
-            <Button className="bg-gradient-primary hover:shadow-button transition-all duration-300">
+            <Button 
+              className="bg-gradient-primary hover:shadow-button transition-all duration-300"
+              onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+            >
               Sign Up
             </Button>
           </div>
@@ -75,10 +82,17 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="justify-start">
+                <Button 
+                  variant="ghost" 
+                  className="justify-start"
+                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                >
                   Log In
                 </Button>
-                <Button className="bg-gradient-primary justify-start">
+                <Button 
+                  className="bg-gradient-primary justify-start"
+                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                >
                   Sign Up
                 </Button>
               </div>
