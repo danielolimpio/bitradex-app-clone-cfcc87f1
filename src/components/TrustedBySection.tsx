@@ -8,6 +8,8 @@ import tracxnLogo from "@/assets/partners/tracxn.png";
 import odailyLogo from "@/assets/partners/odaily.png";
 import chainalysisLogo from "@/assets/partners/chainalysis.png";
 import certikLogo from "@/assets/partners/certik.png";
+import chaincatcherLogo from "@/assets/partners/chaincatcher.png";
+import rootdataLogo from "@/assets/partners/rootdata.png";
 
 const TrustedBySection = () => {
   const partners = [
@@ -20,7 +22,9 @@ const TrustedBySection = () => {
     { name: "Tracxn", logo: tracxnLogo },
     { name: "ODaily", logo: odailyLogo },
     { name: "Chainalysis", logo: chainalysisLogo },
-    { name: "CertiK", logo: certikLogo }
+    { name: "CertiK", logo: certikLogo },
+    { name: "ChainCatcher", logo: chaincatcherLogo },
+    { name: "RootData", logo: rootdataLogo }
   ];
 
   return (
@@ -37,19 +41,17 @@ const TrustedBySection = () => {
         </div>
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12">
           {partners.map((partner, index) => (
             <div 
               key={index}
-              className="group flex items-center justify-center p-6 bg-gradient-card border border-border rounded-xl hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+              className="flex items-center justify-center group"
             >
-              <div className="flex items-center justify-center w-full h-16">
-                <img 
-                  src={partner.logo} 
-                  alt={partner.name}
-                  className="max-h-12 max-w-full object-contain filter brightness-75 group-hover:brightness-100 transition-all duration-300"
-                />
-              </div>
+              <img 
+                src={partner.logo} 
+                alt={partner.name}
+                className="max-h-16 md:max-h-20 w-auto object-contain filter brightness-75 opacity-70 group-hover:brightness-100 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
+              />
             </div>
           ))}
         </div>
