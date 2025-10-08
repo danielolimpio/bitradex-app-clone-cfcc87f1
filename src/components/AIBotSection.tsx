@@ -32,7 +32,7 @@ const AIBotSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#1a1d29]">
+    <section className="py-24 bg-[#0f1117]">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
