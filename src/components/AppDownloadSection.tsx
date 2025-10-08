@@ -13,7 +13,7 @@ const AppDownloadSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-bitradx-card relative overflow-hidden">
+    <section className="py-24 bg-[#1a1d29] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 border border-primary rounded-full"></div>
