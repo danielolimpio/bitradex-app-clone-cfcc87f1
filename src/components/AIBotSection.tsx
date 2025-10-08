@@ -57,7 +57,7 @@ const AIBotSection = () => {
                 muted
                 loop
                 playsInline
-                className="w-full max-w-md mx-auto h-auto rounded-2xl"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
             
