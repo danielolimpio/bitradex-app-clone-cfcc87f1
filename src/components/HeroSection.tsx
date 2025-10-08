@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Play, Star, TrendingUp, Shield, Zap } from "lucide-react";
 import heroImage from "@/assets/olivier-giroud-hero.png";
-
 const HeroSection = () => {
-  return (
-    <section className="relative bg-gradient-hero flex items-start overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]">
+  return <section className="relative bg-gradient-hero flex items-start overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
@@ -18,9 +16,9 @@ const HeroSection = () => {
           <div className="space-y-8 flex flex-col justify-center pt-4 lg:pt-8 pb-0 relative z-20 px-4 lg:px-8">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                <span className="text-foreground">Champions Endorse</span>
+                <span className="text-foreground text-6xl">Champions Endorse</span>
                 <br />
-                <span className="text-foreground">Intelligence Leads</span>
+                <span className="text-foreground text-6xl">Intelligence Leads</span>
               </h1>
               
               <div className="flex items-center space-x-4 text-primary">
@@ -36,19 +34,11 @@ const HeroSection = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6"
-                onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
-              >
+              <Button size="lg" className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6" onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}>
                 Register Now
               </Button>
               
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300 text-lg px-8 py-6"
-              >
+              <Button size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300 text-lg px-8 py-6">
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
               </Button>
@@ -83,19 +73,13 @@ const HeroSection = () => {
 
           {/* Right Content - Hero Image */}
           <div className="hidden lg:block absolute top-0 right-0 bottom-0 left-[45%] z-10">
-            <img 
-              src={heroImage} 
-              alt="Olivier Giroud - Bitradex Global Brand Ambassador" 
-              className="h-full w-full object-cover object-right"
-            />
+            <img src={heroImage} alt="Olivier Giroud - Bitradex Global Brand Ambassador" className="h-full w-full object-cover object-right" />
             
             {/* Background Glow */}
             <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl -z-10"></div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
