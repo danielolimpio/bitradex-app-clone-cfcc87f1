@@ -39,7 +39,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6"
-                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
               >
                 Register Now
               </Button>

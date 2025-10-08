@@ -8,6 +8,7 @@ import TrustedBySection from "@/components/TrustedBySection";
 import AppDownloadSection from "@/components/AppDownloadSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       </main>
       <Footer />
       <ScrollToTop />
+      <WhatsAppFloatingButton />
     </div>
   );
 };

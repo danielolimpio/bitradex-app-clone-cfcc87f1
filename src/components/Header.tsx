@@ -52,7 +52,7 @@ const Header = () => {
             </Button>
             <Button 
               className="bg-gradient-primary hover:shadow-button transition-all duration-300"
-              onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+              onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
             >
               Sign Up
             </Button>
@@ -91,7 +91,7 @@ const Header = () => {
                 </Button>
                 <Button 
                   className="bg-gradient-primary justify-start"
-                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                  onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
                 >
                   Sign Up
                 </Button>
