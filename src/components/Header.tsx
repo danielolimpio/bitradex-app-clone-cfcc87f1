@@ -7,12 +7,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Início", href: "#" },
-    { label: "Mercado", href: "#market" },
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/about-us" },
+    { label: "Market", href: "#market" },
     { label: "Futures", href: "#futures" },
     { label: "Spot", href: "#spot" },
-    { label: "Institucional", href: "#institutional" },
-    { label: "Sobre nós", href: "#about" },
+    { label: "Institutional", href: "#institutional" },
   ];
 
   return (
