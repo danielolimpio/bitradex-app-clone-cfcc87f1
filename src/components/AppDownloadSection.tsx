@@ -47,31 +47,34 @@ const AppDownloadSection = () => {
             </div>
 
             {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-primary hover:shadow-button transition-all duration-300 flex items-center space-x-3"
-                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-              >
-                <Smartphone className="w-5 h-5" />
-                <div className="text-left">
-                  <div className="text-xs">Download on the</div>
-                  <div className="text-sm font-bold">App Store</div>
-                </div>
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center space-x-3"
-                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-              >
-                <Download className="w-5 h-5" />
-                <div className="text-left">
-                  <div className="text-xs">Get it on</div>
-                  <div className="text-sm font-bold">Google Play</div>
-                </div>
-              </Button>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-primary hover:shadow-button transition-all duration-300 flex items-center space-x-3"
+                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                >
+                  <Smartphone className="w-5 h-5" />
+                  <div className="text-left">
+                    <div className="text-xs">Download on the</div>
+                    <div className="text-sm font-bold">App Store</div>
+                  </div>
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center space-x-3"
+                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                >
+                  <Download className="w-5 h-5" />
+                  <div className="text-left">
+                    <div className="text-xs">Get it on</div>
+                    <div className="text-sm font-bold">Google Play</div>
+                  </div>
+                </Button>
+              </div>
+              <p className="text-xs text-muted-foreground">Sign up on mobile</p>
             </div>
 
             {/* App Stats */}

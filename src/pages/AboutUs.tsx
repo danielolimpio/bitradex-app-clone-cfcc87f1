@@ -212,12 +212,15 @@ const AboutUs = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
             Our AI-powered trading system combines cutting-edge machine learning algorithms with real-time market analysis to deliver unprecedented trading performance. With over 50,000 intelligent decision points and millisecond-level execution, AiBot represents the future of automated trading.
           </p>
-          <Button 
-            size="lg"
-            onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
-          >
-            Get Started Today
-          </Button>
+          <div className="flex flex-col items-center">
+            <Button 
+              size="lg"
+              onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+            >
+              Get Started Today
+            </Button>
+            <p className="text-xs text-muted-foreground mt-2">Sign up on mobile</p>
+          </div>
         </div>
       </section>
 

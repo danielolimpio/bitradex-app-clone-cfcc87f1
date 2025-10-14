@@ -91,13 +91,16 @@ const TradingEcosystem = () => {
               Join over 500,000 traders who trust Bitradex for their digital asset trading needs. Get started in minutes with our intuitive platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6"
-                onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
-              >
-                Create Account
-              </Button>
+              <div className="flex flex-col items-center">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6"
+                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
+                >
+                  Create Account
+                </Button>
+                <p className="text-xs text-muted-foreground mt-1">Sign up on mobile</p>
+              </div>
               <Button 
                 size="lg" 
                 variant="outline" 
