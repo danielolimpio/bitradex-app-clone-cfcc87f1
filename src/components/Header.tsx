@@ -9,8 +9,8 @@ const Header = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
-    { label: "Market", href: "#market" },
-    { label: "Futures", href: "#futures" },
+    { label: "Market", href: "/markets" },
+    { label: "Futures", href: "/futures" },
     { label: "Spot", href: "#spot" },
     { label: "Institutional", href: "#institutional" },
   ];

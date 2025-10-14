@@ -10,6 +10,8 @@ import Disclaimer from "./pages/Disclaimer";
 import UserAgreement from "./pages/UserAgreement";
 import TermsOfService from "./pages/TermsOfService";
 import AboutUs from "./pages/AboutUs";
+import Markets from "./pages/Markets";
+import Futures from "./pages/Futures";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/markets" element={<Markets />} />
+          <Route path="/futures" element={<Futures />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/user-agreement" element={<UserAgreement />} />
