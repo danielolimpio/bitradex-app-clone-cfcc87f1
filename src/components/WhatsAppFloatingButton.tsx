@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.svg";
 
 const WhatsAppFloatingButton = () => {
   const handleWhatsAppClick = () => {
@@ -8,10 +8,15 @@ const WhatsAppFloatingButton = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center animate-pulse hover:animate-none group"
+      className="fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] transition-all duration-300 flex items-center justify-center group hover:scale-110"
       aria-label="Contact us on WhatsApp"
+      title="Contact us on WhatsApp"
     >
-      <MessageCircle className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
+      <img 
+        src={whatsappLogo} 
+        alt="WhatsApp" 
+        className="w-9 h-9 filter brightness-0 invert"
+      />
     </button>
   );
 };

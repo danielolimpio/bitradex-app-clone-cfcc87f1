@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 
 const Markets = () => {
@@ -184,6 +186,8 @@ const Markets = () => {
       </main>
 
       <Footer />
+      <ScrollToTop />
+      <WhatsAppFloatingButton />
     </div>
   );
 };

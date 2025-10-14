@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 
 const Futures = () => {
   const chartContainerRef = useRef<HTMLDivElement>(null);
@@ -241,6 +243,8 @@ const Futures = () => {
       </main>
 
       <Footer />
+      <ScrollToTop />
+      <WhatsAppFloatingButton />
     </div>
   );
 };

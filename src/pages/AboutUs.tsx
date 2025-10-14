@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Users, DollarSign, Zap } from "lucide-react";
@@ -226,6 +227,7 @@ const AboutUs = () => {
 
       <Footer />
       <ScrollToTop />
+      <WhatsAppFloatingButton />
     </div>
   );
 };
