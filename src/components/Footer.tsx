@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, MapPin, Phone, Twitter, Facebook, Instagram, Linkedin, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/bitradex-logo.png";
 
 const Footer = () => {
@@ -8,51 +9,51 @@ const Footer = () => {
     {
       title: "About Bitradex",
       links: [
-        "About Us",
-        "Our Team", 
-        "Careers",
-        "Press & Media",
-        "Contact Us"
+        { text: "About Us", href: "/about-us" },
+        { text: "Our Team", href: "#" }, 
+        { text: "Careers", href: "#" },
+        { text: "Press & Media", href: "#" },
+        { text: "Contact Us", href: "#contact" }
       ]
     },
     {
       title: "Products",
       links: [
-        "Spot Trading",
-        "Futures Trading", 
-        "AI Trading Bot",
-        "API Documentation",
-        "Mobile App"
+        { text: "Spot Trading", href: "#" },
+        { text: "Futures Trading", href: "/futures" }, 
+        { text: "AI Trading Bot", href: "#" },
+        { text: "API Documentation", href: "#" },
+        { text: "Mobile App", href: "#" }
       ]
     },
     {
       title: "Services",
       links: [
-        "Institutional",
-        "VIP Program",
-        "Referral Program",
-        "Security",
-        "Support Center"
+        { text: "Institutional", href: "#" },
+        { text: "VIP Program", href: "#" },
+        { text: "Referral Program", href: "#" },
+        { text: "Security", href: "#" },
+        { text: "Support Center", href: "#" }
       ]
     },
     {
       title: "Support",
       links: [
-        "Help Center",
-        "Trading Guide",
-        "API Documentation",
-        "System Status",
-        "Bug Report"
+        { text: "Help Center", href: "#" },
+        { text: "Trading Guide", href: "#" },
+        { text: "API Documentation", href: "#" },
+        { text: "System Status", href: "#" },
+        { text: "Bug Report", href: "#" }
       ]
     },
     {
       title: "Legal",
       links: [
-        "Terms of Service",
-        "Privacy Policy",
-        "Risk Disclosure",
-        "AML Policy",
-        "Compliance"
+        { text: "Terms of Service", href: "/terms-of-service" },
+        { text: "Privacy Policy", href: "/privacy-policy" },
+        { text: "Risk Disclosure", href: "/risk-disclosure" },
+        { text: "AML Policy", href: "/aml-policy" },
+        { text: "Compliance", href: "/compliance" }
       ]
     }
   ];
@@ -117,12 +118,21 @@ const Footer = () => {
               <ul className="space-y-3">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a 
-                      href="#" 
-                      className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
-                    >
-                      {link}
-                    </a>
+                    {link.href.startsWith('/') ? (
+                      <Link 
+                        to={link.href}
+                        className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
+                      >
+                        {link.text}
+                      </Link>
+                    ) : (
+                      <a 
+                        href={link.href}
+                        className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
+                      >
+                        {link.text}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -135,7 +145,15 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-sm text-muted-foreground">
-              © 2024 Bitradex. All rights reserved.
+              © 2025 Bitradex | All rights reserved | Developed by{" "}
+              <a 
+                href="https://danielolimpio.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                DanielOlimpio
+              </a>
             </div>
 
             {/* Social Links */}

@@ -1,4 +1,9 @@
 import { TrendingUp, TrendingDown } from "lucide-react";
+import { Link } from "react-router-dom";
+import bitcoinLogo from "@/assets/crypto/bitcoin.png";
+import ethereumLogo from "@/assets/crypto/ethereum.png";
+import bnbLogo from "@/assets/crypto/bnb.png";
+import solanaLogo from "@/assets/crypto/solana.png";
 
 const MarketOverview = () => {
   const marketData = [
@@ -11,7 +16,7 @@ const MarketOverview = () => {
       volume: "$2.1B",
       marketCap: "$1.38T",
       isPositive: true,
-      icon: "₿"
+      logo: bitcoinLogo
     },
     {
       id: 2,
@@ -22,7 +27,7 @@ const MarketOverview = () => {
       volume: "$892M",
       marketCap: "$396B",
       isPositive: false,
-      icon: "Ξ"
+      logo: ethereumLogo
     },
     {
       id: 3,
@@ -33,7 +38,7 @@ const MarketOverview = () => {
       volume: "$456M",
       marketCap: "$92B",
       isPositive: true,
-      icon: "◆"
+      logo: bnbLogo
     },
     {
       id: 4,
@@ -44,7 +49,7 @@ const MarketOverview = () => {
       volume: "$784M",
       marketCap: "$69B",
       isPositive: false,
-      icon: "◉"
+      logo: solanaLogo
     }
   ];
 
@@ -72,9 +77,7 @@ const MarketOverview = () => {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center space-x-3">
                     <span className="text-muted-foreground text-sm">#{index + 1}</span>
-                    <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">
-                      {coin.icon}
-                    </div>
+                    <img src={coin.logo} alt={coin.name} className="w-8 h-8 rounded-full" />
                     <div>
                       <div className="font-semibold text-foreground">{coin.name}</div>
                       <div className="text-xs text-muted-foreground">{coin.fullName}</div>
@@ -135,9 +138,7 @@ const MarketOverview = () => {
 
                   {/* Name */}
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
-                      {coin.icon}
-                    </div>
+                    <img src={coin.logo} alt={coin.name} className="w-10 h-10 rounded-full" />
                     <div>
                       <div className="font-semibold text-foreground">{coin.name}</div>
                       <div className="text-sm text-muted-foreground">{coin.fullName}</div>
@@ -178,9 +179,9 @@ const MarketOverview = () => {
           {/* Table Footer */}
           <div className="bg-gradient-card border-t border-border p-6">
             <div className="text-center">
-              <button className="text-primary hover:text-primary-foreground hover:bg-primary px-6 py-2 rounded-lg transition-all duration-300">
+              <Link to="/markets" className="text-primary hover:text-primary-foreground hover:bg-primary px-6 py-2 rounded-lg transition-all duration-300 inline-block">
                 View More Markets →
-              </button>
+              </Link>
             </div>
           </div>
         </div>
