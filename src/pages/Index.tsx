@@ -9,6 +9,7 @@ import AppDownloadSection from "@/components/AppDownloadSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <Footer />
       <ScrollToTop />
       <WhatsAppFloatingButton />
+      <CookieConsent />
     </div>
   );
 };

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Início",
+    "aboutUs": "Sobre Nós",
+    "market": "Mercado",
+    "futures": "Futuros",
+    "spot": "Spot",
+    "institutional": "Institucional",
+    "contactUs": "Contato",
+    "login": "Entrar",
+    "signup": "Cadastrar",
+    "signupMobile": "Cadastre-se no celular"
+  },
+  "hero": {
+    "title": "Negocie Cripto com Confiança",
+    "subtitle": "Junte-se a milhões de traders em todo o mundo na plataforma de exchange de criptomoedas mais confiável",
+    "getStarted": "Começar",
+    "learnMore": "Saiba Mais"
+  },
+  "cookies": {
+    "title": "Consentimento de Cookies",
+    "description": "Usamos cookies para melhorar sua experiência. Ao continuar usando nosso site, você aceita nossa política de cookies.",
+    "accept": "Aceitar",
+    "decline": "Recusar",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "cookiePolicy": "Política de Cookies"
+  },
+  "footer": {
+    "allRights": "Todos os direitos reservados",
+    "developedBy": "Desenvolvido por",
+    "about": "Sobre",
+    "aboutUs": "Sobre Nós",
+    "careers": "Carreiras",
+    "blog": "Blog",
+    "products": "Produtos",
+    "spot": "Trading Spot",
+    "futures": "Futuros",
+    "market": "Mercado",
+    "support": "Suporte",
+    "helpCenter": "Central de Ajuda",
+    "contactUs": "Contato",
+    "legal": "Legal",
+    "termsOfService": "Termos de Serviço",
+    "privacyPolicy": "Política de Privacidade",
+    "riskDisclosure": "Divulgação de Riscos",
+    "amlPolicy": "Política AML",
+    "compliance": "Compliance"
+  }
+}

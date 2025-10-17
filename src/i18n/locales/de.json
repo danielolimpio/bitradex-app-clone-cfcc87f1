@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "aboutUs": "Über Uns",
+    "market": "Markt",
+    "futures": "Futures",
+    "spot": "Spot",
+    "institutional": "Institutionell",
+    "contactUs": "Kontakt",
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "signupMobile": "Auf dem Handy anmelden"
+  },
+  "hero": {
+    "title": "Handeln Sie Krypto mit Vertrauen",
+    "subtitle": "Schließen Sie sich Millionen von Händlern weltweit auf der vertrauenswürdigsten Kryptowährungs-Handelsplattform an",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr Erfahren"
+  },
+  "cookies": {
+    "title": "Cookie-Zustimmung",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die weitere Nutzung unserer Website akzeptieren Sie unsere Cookie-Richtlinie.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookiePolicy": "Cookie-Richtlinie"
+  },
+  "footer": {
+    "allRights": "Alle Rechte vorbehalten",
+    "developedBy": "Entwickelt von",
+    "about": "Über",
+    "aboutUs": "Über Uns",
+    "careers": "Karriere",
+    "blog": "Blog",
+    "products": "Produkte",
+    "spot": "Spot-Handel",
+    "futures": "Futures",
+    "market": "Markt",
+    "support": "Support",
+    "helpCenter": "Hilfezentrum",
+    "contactUs": "Kontakt",
+    "legal": "Rechtliches",
+    "termsOfService": "Nutzungsbedingungen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "riskDisclosure": "Risikohinweis",
+    "amlPolicy": "AML-Richtlinie",
+    "compliance": "Compliance"
+  }
+}

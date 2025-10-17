@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "aboutUs": "Tentang Kami",
+    "market": "Pasar",
+    "futures": "Futures",
+    "spot": "Spot",
+    "institutional": "Institusional",
+    "contactUs": "Hubungi Kami",
+    "login": "Masuk",
+    "signup": "Daftar",
+    "signupMobile": "Daftar di ponsel"
+  },
+  "hero": {
+    "title": "Perdagangan Kripto dengan Percaya Diri",
+    "subtitle": "Bergabunglah dengan jutaan trader di seluruh dunia di platform pertukaran cryptocurrency paling terpercaya",
+    "getStarted": "Mulai",
+    "learnMore": "Pelajari Lebih Lanjut"
+  },
+  "cookies": {
+    "title": "Persetujuan Cookie",
+    "description": "Kami menggunakan cookie untuk meningkatkan pengalaman Anda. Dengan melanjutkan menggunakan situs kami, Anda menerima kebijakan cookie kami.",
+    "accept": "Terima",
+    "decline": "Tolak",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Ketentuan Layanan",
+    "cookiePolicy": "Kebijakan Cookie"
+  },
+  "footer": {
+    "allRights": "Semua hak dilindungi",
+    "developedBy": "Dikembangkan oleh",
+    "about": "Tentang",
+    "aboutUs": "Tentang Kami",
+    "careers": "Karir",
+    "blog": "Blog",
+    "products": "Produk",
+    "spot": "Trading Spot",
+    "futures": "Futures",
+    "market": "Pasar",
+    "support": "Dukungan",
+    "helpCenter": "Pusat Bantuan",
+    "contactUs": "Hubungi Kami",
+    "legal": "Hukum",
+    "termsOfService": "Ketentuan Layanan",
+    "privacyPolicy": "Kebijakan Privasi",
+    "riskDisclosure": "Pengungkapan Risiko",
+    "amlPolicy": "Kebijakan AML",
+    "compliance": "Kepatuhan"
+  }
+}

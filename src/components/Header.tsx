@@ -1,19 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logo from "@/assets/bitradex-logo.png";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "About Us", href: "/about-us" },
-    { label: "Market", href: "/markets" },
-    { label: "Futures", href: "/futures" },
-    { label: "Spot", href: "#spot" },
-    { label: "Institutional", href: "#institutional" },
-    { label: "Contact Us", href: "#contact" },
+    { label: t("nav.home"), href: "/" },
+    { label: t("nav.aboutUs"), href: "/about-us" },
+    { label: t("nav.market"), href: "/markets" },
+    { label: t("nav.futures"), href: "/futures" },
+    { label: t("nav.spot"), href: "#spot" },
+    { label: t("nav.institutional"), href: "#institutional" },
+    { label: t("nav.contactUs"), href: "#contact" },
   ];
 
   return (
@@ -40,25 +43,22 @@ const Header = () => {
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <select className="bg-transparent text-muted-foreground text-sm border-0 focus:outline-none">
-              <option value="pt">🇧🇷 PT</option>
-              <option value="en">🇺🇸 EN</option>
-            </select>
+            <LanguageSelector />
             <Button 
               variant="ghost" 
               className="text-muted-foreground hover:text-primary"
               onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
             >
-              Log In
+              {t("nav.login")}
             </Button>
             <div className="flex flex-col items-center">
               <Button 
                 className="bg-gradient-primary hover:shadow-button transition-all duration-300"
                 onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
               >
-                Sign Up
+                {t("nav.signup")}
               </Button>
-              <p className="text-xs text-muted-foreground mt-1">Sign up on mobile</p>
+              <p className="text-xs text-muted-foreground mt-1">{t("nav.signupMobile")}</p>
             </div>
           </div>
 
@@ -86,21 +86,22 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
+                <LanguageSelector />
                 <Button 
                   variant="ghost" 
                   className="justify-start"
                   onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
                 >
-                  Log In
+                  {t("nav.login")}
                 </Button>
                 <div>
                   <Button 
                     className="bg-gradient-primary justify-start w-full"
                     onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
                   >
-                    Sign Up
+                    {t("nav.signup")}
                   </Button>
-                  <p className="text-xs text-muted-foreground mt-1">Sign up on mobile</p>
+                  <p className="text-xs text-muted-foreground mt-1">{t("nav.signupMobile")}</p>
                 </div>
               </div>
             </nav>

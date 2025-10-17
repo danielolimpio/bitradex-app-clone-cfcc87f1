@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "aboutUs": "Sobre Nosotros",
+    "market": "Mercado",
+    "futures": "Futuros",
+    "spot": "Spot",
+    "institutional": "Institucional",
+    "contactUs": "Contacto",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "signupMobile": "Regístrate en móvil"
+  },
+  "hero": {
+    "title": "Opera Cripto con Confianza",
+    "subtitle": "Únete a millones de traders en todo el mundo en la plataforma de intercambio de criptomonedas más confiable",
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Más"
+  },
+  "cookies": {
+    "title": "Consentimiento de Cookies",
+    "description": "Usamos cookies para mejorar su experiencia. Al continuar usando nuestro sitio, acepta nuestra política de cookies.",
+    "accept": "Aceptar",
+    "decline": "Rechazar",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "cookiePolicy": "Política de Cookies"
+  },
+  "footer": {
+    "allRights": "Todos los derechos reservados",
+    "developedBy": "Desarrollado por",
+    "about": "Acerca de",
+    "aboutUs": "Sobre Nosotros",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "products": "Productos",
+    "spot": "Trading Spot",
+    "futures": "Futuros",
+    "market": "Mercado",
+    "support": "Soporte",
+    "helpCenter": "Centro de Ayuda",
+    "contactUs": "Contacto",
+    "legal": "Legal",
+    "termsOfService": "Términos de Servicio",
+    "privacyPolicy": "Política de Privacidad",
+    "riskDisclosure": "Divulgación de Riesgos",
+    "amlPolicy": "Política AML",
+    "compliance": "Cumplimiento"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "홈",
+    "aboutUs": "회사 소개",
+    "market": "마켓",
+    "futures": "선물",
+    "spot": "현물",
+    "institutional": "기관",
+    "contactUs": "문의하기",
+    "login": "로그인",
+    "signup": "회원가입",
+    "signupMobile": "모바일에서 가입"
+  },
+  "hero": {
+    "title": "자신감 있게 암호화폐 거래",
+    "subtitle": "가장 신뢰할 수 있는 암호화폐 거래소 플랫폼에서 전 세계 수백만 명의 트레이더와 함께하세요",
+    "getStarted": "시작하기",
+    "learnMore": "더 알아보기"
+  },
+  "cookies": {
+    "title": "쿠키 동의",
+    "description": "저희는 귀하의 경험을 개선하기 위해 쿠키를 사용합니다. 사이트를 계속 사용하시면 쿠키 정책에 동의하는 것으로 간주됩니다.",
+    "accept": "수락",
+    "decline": "거부",
+    "privacyPolicy": "개인정보 보호정책",
+    "termsOfService": "서비스 약관",
+    "cookiePolicy": "쿠키 정책"
+  },
+  "footer": {
+    "allRights": "모든 권리 보유",
+    "developedBy": "개발:",
+    "about": "소개",
+    "aboutUs": "회사 소개",
+    "careers": "채용",
+    "blog": "블로그",
+    "products": "제품",
+    "spot": "현물 거래",
+    "futures": "선물",
+    "market": "마켓",
+    "support": "지원",
+    "helpCenter": "고객센터",
+    "contactUs": "문의하기",
+    "legal": "법률",
+    "termsOfService": "서비스 약관",
+    "privacyPolicy": "개인정보 보호정책",
+    "riskDisclosure": "위험 공시",
+    "amlPolicy": "AML 정책",
+    "compliance": "컴플라이언스"
+  }
+}
