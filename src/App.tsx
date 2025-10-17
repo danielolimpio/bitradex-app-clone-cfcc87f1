@@ -12,6 +12,8 @@ import TermsOfService from "./pages/TermsOfService";
 import AboutUs from "./pages/AboutUs";
 import Markets from "./pages/Markets";
 import Futures from "./pages/Futures";
+import Spot from "./pages/Spot";
+import Institutional from "./pages/Institutional";
 import RiskDisclosure from "./pages/RiskDisclosure";
 import AMLPolicy from "./pages/AMLPolicy";
 import Compliance from "./pages/Compliance";
@@ -29,6 +31,8 @@ const App = () => (
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/markets" element={<Markets />} />
           <Route path="/futures" element={<Futures />} />
+          <Route path="/spot" element={<Spot />} />
+          <Route path="/institutional" element={<Institutional />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/user-agreement" element={<UserAgreement />} />
