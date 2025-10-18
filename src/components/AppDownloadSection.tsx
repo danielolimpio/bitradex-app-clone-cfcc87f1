@@ -1,19 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone, Download, Star, Shield } from "lucide-react";
 import videoAppSrc from "@/assets/video_app.mp4";
-
 const AppDownloadSection = () => {
-  const appFeatures = [
-    "Real-time market data",
-    "Advanced charting tools", 
-    "AI trading bot integration",
-    "Secure biometric login",
-    "Push notifications",
-    "Multi-language support"
-  ];
-
-  return (
-    <section className="py-24 bg-[#0a0b0f] relative overflow-hidden">
+  const appFeatures = ["Real-time market data", "Advanced charting tools", "AI trading bot integration", "Secure biometric login", "Push notifications", "Multi-language support"];
+  return <section className="py-24 bg-[#0a0b0f] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 border border-primary rounded-full"></div>
@@ -40,7 +30,7 @@ const AppDownloadSection = () => {
 
             {/* QR Code Notice */}
             <div className="bg-gradient-card border border-border rounded-xl p-6">
-              <h4 className="text-lg font-semibold text-foreground mb-2">iOS & Android</h4>
+              <h4 className="text-lg text-foreground mb-2 font-normal">iOS & Android</h4>
               <p className="text-sm text-muted-foreground">
                 Use your phone's camera to scan the QR code for direct download.
               </p>
@@ -49,11 +39,7 @@ const AppDownloadSection = () => {
             {/* App Store Buttons */}
             <div className="flex flex-col gap-4">
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-primary hover:shadow-button transition-all duration-300 flex items-center space-x-3"
-                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-                >
+                <Button size="lg" className="bg-gradient-primary hover:shadow-button transition-all duration-300 flex items-center space-x-3" onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}>
                   <Smartphone className="w-5 h-5" />
                   <div className="text-left">
                     <div className="text-xs">Download on the</div>
@@ -61,12 +47,7 @@ const AppDownloadSection = () => {
                   </div>
                 </Button>
                 
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center space-x-3"
-                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-                >
+                <Button size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center space-x-3" onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}>
                   <Download className="w-5 h-5" />
                   <div className="text-left">
                     <div className="text-xs">Get it on</div>
@@ -81,9 +62,7 @@ const AppDownloadSection = () => {
             <div className="flex items-center space-x-8 pt-6">
               <div className="flex items-center space-x-2">
                 <div className="flex">
-                  {[1,2,3,4,5].map((star) => (
-                    <Star key={star} className="w-4 h-4 text-yellow-400 fill-current" />
-                  ))}
+                  {[1, 2, 3, 4, 5].map(star => <Star key={star} className="w-4 h-4 text-yellow-400 fill-current" />)}
                 </div>
                 <span className="text-sm text-muted-foreground">4.8/5 Rating</span>
               </div>
@@ -97,20 +76,11 @@ const AppDownloadSection = () => {
 
           {/* Right Image */}
           <div className="relative">
-            <video 
-              src={videoAppSrc}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-auto rounded-2xl"
-            />
+            <video src={videoAppSrc} autoPlay muted loop playsInline className="w-full h-auto rounded-2xl" />
             
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AppDownloadSection;
