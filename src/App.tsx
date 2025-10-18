@@ -17,6 +17,10 @@ import Institutional from "./pages/Institutional";
 import RiskDisclosure from "./pages/RiskDisclosure";
 import AMLPolicy from "./pages/AMLPolicy";
 import Compliance from "./pages/Compliance";
+import Contact from "./pages/Contact";
+import OurTeam from "./pages/OurTeam";
+import Careers from "./pages/Careers";
+import PressMedia from "./pages/PressMedia";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +44,10 @@ const App = () => (
           <Route path="/risk-disclosure" element={<RiskDisclosure />} />
           <Route path="/aml-policy" element={<AMLPolicy />} />
           <Route path="/compliance" element={<Compliance />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/press-media" element={<PressMedia />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

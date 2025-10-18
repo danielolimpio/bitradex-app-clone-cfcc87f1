@@ -10,16 +10,16 @@ const Footer = () => {
       title: "About Bitradex",
       links: [
         { text: "About Us", href: "/about-us" },
-        { text: "Our Team", href: "#" }, 
-        { text: "Careers", href: "#" },
-        { text: "Press & Media", href: "#" },
-        { text: "Contact Us", href: "#contact" }
+        { text: "Our Team", href: "/our-team" }, 
+        { text: "Careers", href: "/careers" },
+        { text: "Press & Media", href: "/press-media" },
+        { text: "Contact Us", href: "/contact" }
       ]
     },
     {
       title: "Products",
       links: [
-        { text: "Spot Trading", href: "#" },
+        { text: "Spot Trading", href: "/spot" },
         { text: "Futures Trading", href: "/futures" }, 
         { text: "AI Trading Bot", href: "#" },
         { text: "API Documentation", href: "#" },
@@ -29,7 +29,7 @@ const Footer = () => {
     {
       title: "Services",
       links: [
-        { text: "Institutional", href: "#" },
+        { text: "Institutional", href: "/institutional" },
         { text: "VIP Program", href: "#" },
         { text: "Referral Program", href: "#" },
         { text: "Security", href: "#" },
