@@ -126,7 +126,7 @@ const AboutUs = () => {
           <div className="max-w-2xl mx-auto">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6">AI Daily - Premium Package</h3>
+                <h3 className="text-2xl mb-6 font-normal">AI Daily - Premium Package</h3>
                 <div className="grid grid-cols-2 gap-6 mb-6">
                   <div>
                     <div className="text-sm text-muted-foreground mb-2">Daily Earnings</div>
