@@ -161,7 +161,7 @@ const Institutional = () => {
               <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">{feature.icon}</div>
                 <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
+                <p className="text-sm text-muted-foreground font-normal">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -183,12 +183,12 @@ const Institutional = () => {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                  <p className="text-muted-foreground mb-4 font-normal">{service.description}</p>
                   <ul className="space-y-2">
                     {service.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-primary mt-1">✓</span>
-                        <span className="text-sm">{benefit}</span>
+                        <span className="text-sm font-normal">{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -210,7 +210,7 @@ const Institutional = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4">REST API</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
+                    <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Complete trading functionality</li>
                       <li>• Account management</li>
                       <li>• Historical data access</li>
@@ -219,7 +219,7 @@ const Institutional = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-4">WebSocket API</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
+                    <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Real-time market data</li>
                       <li>• Order updates</li>
                       <li>• Account notifications</li>
@@ -228,7 +228,7 @@ const Institutional = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-4">FIX Protocol</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
+                    <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• FIX 4.2 & 4.4 support</li>
                       <li>• Drop copy reporting</li>
                       <li>• Custom message types</li>
@@ -237,7 +237,7 @@ const Institutional = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-4">Documentation</h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
+                    <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Comprehensive API docs</li>
                       <li>• Code examples</li>
                       <li>• Testing sandbox</li>
@@ -266,7 +266,7 @@ const Institutional = () => {
               <CardContent className="p-6 text-center">
                 <Shield className="w-16 h-16 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Security Measures</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground text-left">
+                <ul className="space-y-2 text-sm text-muted-foreground text-left font-normal">
                   <li>• Multi-signature wallets</li>
                   <li>• Cold storage (95%+ assets)</li>
                   <li>• Hardware security modules</li>
@@ -280,7 +280,7 @@ const Institutional = () => {
               <CardContent className="p-6 text-center">
                 <Lock className="w-16 h-16 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Compliance</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground text-left">
+                <ul className="space-y-2 text-sm text-muted-foreground text-left font-normal">
                   <li>• Full KYC/AML procedures</li>
                   <li>• GDPR compliant</li>
                   <li>• SOC 2 Type II certified</li>
@@ -294,7 +294,7 @@ const Institutional = () => {
               <CardContent className="p-6 text-center">
                 <Building2 className="w-16 h-16 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Insurance</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground text-left">
+                <ul className="space-y-2 text-sm text-muted-foreground text-left font-normal">
                   <li>• $100M+ insurance coverage</li>
                   <li>• Crime insurance</li>
                   <li>• Cyber liability coverage</li>

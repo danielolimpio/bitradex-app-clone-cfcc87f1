@@ -75,7 +75,7 @@ const AIBotSection = () => {
                     <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                       {feature.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed font-normal">
                       {feature.description}
                     </p>
                   </div>
@@ -113,7 +113,7 @@ const AIBotSection = () => {
                 </div>
               </div>
               
-              <p className="text-xs text-muted-foreground mt-4">
+              <p className="text-xs text-muted-foreground mt-4 font-light">
                 *Example performance only. Past performance does not guarantee future results.
               </p>
             </div>
