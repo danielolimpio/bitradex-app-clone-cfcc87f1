@@ -6,107 +6,74 @@ import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Shield, TrendingUp, Zap, Users, Globe, Lock, BarChart3 } from "lucide-react";
-
 const Institutional = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const features = [
-    {
-      icon: <Building2 className="w-12 h-12 text-primary" />,
-      title: "Enterprise-Grade Infrastructure",
-      description: "Scalable solutions built for institutional trading volumes with 99.99% uptime guarantee"
-    },
-    {
-      icon: <Shield className="w-12 h-12 text-primary" />,
-      title: "Advanced Security",
-      description: "Multi-signature wallets, cold storage, and institutional-grade custody solutions"
-    },
-    {
-      icon: <TrendingUp className="w-12 h-12 text-primary" />,
-      title: "Deep Liquidity",
-      description: "Access to deep order books and competitive pricing across multiple markets"
-    },
-    {
-      icon: <Zap className="w-12 h-12 text-primary" />,
-      title: "High-Performance API",
-      description: "Ultra-low latency trading APIs with FIX protocol support and WebSocket streaming"
-    },
-    {
-      icon: <Users className="w-12 h-12 text-primary" />,
-      title: "Dedicated Support",
-      description: "24/7 dedicated account management and technical support for institutional clients"
-    },
-    {
-      icon: <Globe className="w-12 h-12 text-primary" />,
-      title: "Global Reach",
-      description: "Multi-currency support with localized solutions for markets worldwide"
-    },
-    {
-      icon: <Lock className="w-12 h-12 text-primary" />,
-      title: "Regulatory Compliance",
-      description: "Full compliance with international regulations and comprehensive AML/KYC procedures"
-    },
-    {
-      icon: <BarChart3 className="w-12 h-12 text-primary" />,
-      title: "Advanced Analytics",
-      description: "Real-time reporting, customizable dashboards, and comprehensive portfolio analytics"
-    }
-  ];
-
-  const services = [
-    {
-      title: "Prime Brokerage",
-      description: "Comprehensive prime brokerage services including margin financing, securities lending, and consolidated reporting across multiple venues.",
-      benefits: [
-        "Cross-margining capabilities",
-        "Consolidated credit facility",
-        "Multi-exchange access",
-        "Unified reporting dashboard"
-      ]
-    },
-    {
-      title: "OTC Trading Desk",
-      description: "Institutional-grade OTC trading with competitive pricing, deep liquidity, and settlement flexibility for large block trades.",
-      benefits: [
-        "Personalized pricing",
-        "Deep liquidity pools",
-        "Flexible settlement options",
-        "Dedicated trading desk"
-      ]
-    },
-    {
-      title: "Custody Solutions",
-      description: "Bank-grade custody services with multi-signature technology, insurance coverage, and comprehensive audit trails.",
-      benefits: [
-        "Cold storage solutions",
-        "Insurance coverage",
-        "Multi-signature security",
-        "Comprehensive audit trails"
-      ]
-    },
-    {
-      title: "Market Making",
-      description: "Algorithmic market making services with advanced strategies to optimize liquidity provision and risk management.",
-      benefits: [
-        "Customized strategies",
-        "Real-time risk management",
-        "Optimal spread management",
-        "Performance analytics"
-      ]
-    }
-  ];
-
-  const stats = [
-    { value: "$50B+", label: "Daily Trading Volume" },
-    { value: "500+", label: "Institutional Clients" },
-    { value: "50ms", label: "Average Latency" },
-    { value: "99.99%", label: "System Uptime" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const features = [{
+    icon: <Building2 className="w-12 h-12 text-primary" />,
+    title: "Enterprise-Grade Infrastructure",
+    description: "Scalable solutions built for institutional trading volumes with 99.99% uptime guarantee"
+  }, {
+    icon: <Shield className="w-12 h-12 text-primary" />,
+    title: "Advanced Security",
+    description: "Multi-signature wallets, cold storage, and institutional-grade custody solutions"
+  }, {
+    icon: <TrendingUp className="w-12 h-12 text-primary" />,
+    title: "Deep Liquidity",
+    description: "Access to deep order books and competitive pricing across multiple markets"
+  }, {
+    icon: <Zap className="w-12 h-12 text-primary" />,
+    title: "High-Performance API",
+    description: "Ultra-low latency trading APIs with FIX protocol support and WebSocket streaming"
+  }, {
+    icon: <Users className="w-12 h-12 text-primary" />,
+    title: "Dedicated Support",
+    description: "24/7 dedicated account management and technical support for institutional clients"
+  }, {
+    icon: <Globe className="w-12 h-12 text-primary" />,
+    title: "Global Reach",
+    description: "Multi-currency support with localized solutions for markets worldwide"
+  }, {
+    icon: <Lock className="w-12 h-12 text-primary" />,
+    title: "Regulatory Compliance",
+    description: "Full compliance with international regulations and comprehensive AML/KYC procedures"
+  }, {
+    icon: <BarChart3 className="w-12 h-12 text-primary" />,
+    title: "Advanced Analytics",
+    description: "Real-time reporting, customizable dashboards, and comprehensive portfolio analytics"
+  }];
+  const services = [{
+    title: "Prime Brokerage",
+    description: "Comprehensive prime brokerage services including margin financing, securities lending, and consolidated reporting across multiple venues.",
+    benefits: ["Cross-margining capabilities", "Consolidated credit facility", "Multi-exchange access", "Unified reporting dashboard"]
+  }, {
+    title: "OTC Trading Desk",
+    description: "Institutional-grade OTC trading with competitive pricing, deep liquidity, and settlement flexibility for large block trades.",
+    benefits: ["Personalized pricing", "Deep liquidity pools", "Flexible settlement options", "Dedicated trading desk"]
+  }, {
+    title: "Custody Solutions",
+    description: "Bank-grade custody services with multi-signature technology, insurance coverage, and comprehensive audit trails.",
+    benefits: ["Cold storage solutions", "Insurance coverage", "Multi-signature security", "Comprehensive audit trails"]
+  }, {
+    title: "Market Making",
+    description: "Algorithmic market making services with advanced strategies to optimize liquidity provision and risk management.",
+    benefits: ["Customized strategies", "Real-time risk management", "Optimal spread management", "Performance analytics"]
+  }];
+  const stats = [{
+    value: "$50B+",
+    label: "Daily Trading Volume"
+  }, {
+    value: "500+",
+    label: "Institutional Clients"
+  }, {
+    value: "50ms",
+    label: "Average Latency"
+  }, {
+    value: "99.99%",
+    label: "System Uptime"
+  }];
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -123,21 +90,16 @@ const Institutional = () => {
             
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
+              {stats.map((stat, index) => <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                     {stat.value}
                   </div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <Button 
-                size="lg"
-                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-              >
+              <Button size="lg" onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}>
                 Contact Our Team
               </Button>
               <p className="text-xs text-muted-foreground">Get started with institutional trading</p>
@@ -157,13 +119,11 @@ const Institutional = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="text-center">
+            {features.map((feature, index) => <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">{feature.icon}</div>
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                <h3 className="text-lg mb-2 font-normal">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground font-normal">{feature.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -179,22 +139,18 @@ const Institutional = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {services.map((service, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
+                  <h3 className="text-2xl mb-3 font-medium">{service.title}</h3>
                   <p className="text-muted-foreground mb-4 font-normal">{service.description}</p>
                   <ul className="space-y-2">
-                    {service.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
+                    {service.benefits.map((benefit, idx) => <li key={idx} className="flex items-start gap-2">
                         <span className="text-primary mt-1">✓</span>
                         <span className="text-sm font-normal">{benefit}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -209,7 +165,7 @@ const Institutional = () => {
               <CardContent className="p-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">REST API</h3>
+                    <h3 className="text-xl mb-4 font-normal">REST API</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Complete trading functionality</li>
                       <li>• Account management</li>
@@ -218,7 +174,7 @@ const Institutional = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">WebSocket API</h3>
+                    <h3 className="text-xl mb-4 font-normal">WebSocket API</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Real-time market data</li>
                       <li>• Order updates</li>
@@ -227,7 +183,7 @@ const Institutional = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">FIX Protocol</h3>
+                    <h3 className="text-xl mb-4 font-normal">FIX Protocol</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• FIX 4.2 & 4.4 support</li>
                       <li>• Drop copy reporting</li>
@@ -236,7 +192,7 @@ const Institutional = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">Documentation</h3>
+                    <h3 className="text-xl mb-4 font-normal">Documentation</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Comprehensive API docs</li>
                       <li>• Code examples</li>
@@ -315,10 +271,7 @@ const Institutional = () => {
             Join hundreds of institutional clients trading on Bitradex. Our team is ready to discuss your specific requirements and provide a tailored solution.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <Button 
-              size="lg"
-              onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-            >
+            <Button size="lg" onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}>
               Schedule a Consultation
             </Button>
             <p className="text-xs text-muted-foreground">Contact our institutional sales team</p>
@@ -329,8 +282,6 @@ const Institutional = () => {
       <Footer />
       <ScrollToTop />
       <WhatsAppFloatingButton />
-    </div>
-  );
+    </div>;
 };
-
 export default Institutional;
