@@ -191,7 +191,7 @@ const Institutional = () => {
                       <li>• Enterprise integration</li>
                     </ul>
                   </div>
-                  <div>
+                  <div className="font-normal">
                     <h3 className="text-xl mb-4 font-normal">Documentation</h3>
                     <ul className="space-y-2 text-sm text-muted-foreground font-normal">
                       <li>• Comprehensive API docs</li>
