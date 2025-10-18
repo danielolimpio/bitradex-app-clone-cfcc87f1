@@ -1,38 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight, BarChart3, Target, Clock, Trophy } from "lucide-react";
 import videoBotSrc from "@/assets/video_aibot.mp4";
-
 const AIBotSection = () => {
-  const features = [
-    {
-      icon: Target,
-      title: "One-Click Subscribe",
-      description: "Start trading with AI in seconds. No complex setup or prior experience needed."
-    },
-    {
-      icon: BarChart3,
-      title: "AI-Driven Strategy",
-      description: "Leverages trillion-parameter financial models to identify optimal trading opportunities."
-    },
-    {
-      icon: Clock,
-      title: "Fully Transparent Trading",
-      description: "Real-time tracking of all trades and performance metrics with easy-to-understand dashboards."
-    },
-    {
-      icon: Trophy,
-      title: "Real-Time Risk Control",
-      description: "Advanced risk management algorithms protect your capital in volatile market conditions."
-    }
-  ];
-
-  const stats = [
-    { label: "Success Rate", value: "89%", subtext: "AI Bot" },
-    { label: "Average Return", value: "24.7%", subtext: "Monthly" }
-  ];
-
-  return (
-    <section className="py-24 bg-[#0a0b0f]">
+  const features = [{
+    icon: Target,
+    title: "One-Click Subscribe",
+    description: "Start trading with AI in seconds. No complex setup or prior experience needed."
+  }, {
+    icon: BarChart3,
+    title: "AI-Driven Strategy",
+    description: "Leverages trillion-parameter financial models to identify optimal trading opportunities."
+  }, {
+    icon: Clock,
+    title: "Fully Transparent Trading",
+    description: "Real-time tracking of all trades and performance metrics with easy-to-understand dashboards."
+  }, {
+    icon: Trophy,
+    title: "Real-Time Risk Control",
+    description: "Advanced risk management algorithms protect your capital in volatile market conditions."
+  }];
+  const stats = [{
+    label: "Success Rate",
+    value: "89%",
+    subtext: "AI Bot"
+  }, {
+    label: "Average Return",
+    value: "24.7%",
+    subtext: "Monthly"
+  }];
+  return <section className="py-24 bg-[#0a0b0f]">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -51,14 +47,7 @@ const AIBotSection = () => {
           {/* Left - Mobile App Image */}
           <div className="relative">
             <div className="relative z-10">
-              <video 
-                src={videoBotSrc}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-auto rounded-2xl"
-              />
+              <video src={videoBotSrc} autoPlay muted loop playsInline className="w-full h-auto rounded-2xl" />
             </div>
             
           </div>
@@ -66,21 +55,19 @@ const AIBotSection = () => {
           {/* Right - Features */}
           <div className="space-y-8">
             <div className="grid gap-6">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-4 group">
+              {features.map((feature, index) => <div key={index} className="flex items-start space-x-4 group">
                   <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:shadow-glow transition-all duration-300">
                     <feature.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-xl text-foreground group-hover:text-primary transition-colors duration-300 font-normal">
                       {feature.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed font-normal">
                       {feature.description}
                     </p>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* Performance Stats */}
@@ -120,11 +107,7 @@ const AIBotSection = () => {
 
             {/* CTA Button */}
             <div className="flex flex-col">
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg py-6"
-                onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-              >
+              <Button size="lg" className="w-full bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg py-6" onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}>
                 Try AI Bot Now
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -133,8 +116,6 @@ const AIBotSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AIBotSection;
