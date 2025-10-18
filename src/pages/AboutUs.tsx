@@ -167,7 +167,7 @@ const AboutUs = () => {
             {advantages.map((advantage, index) => <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">{advantage.icon}</div>
                 <div className="text-2xl font-bold text-primary mb-2">{advantage.value}</div>
-                <h3 className="text-lg font-semibold mb-2">{advantage.title}</h3>
+                <h3 className="text-lg mb-2 font-normal">{advantage.title}</h3>
                 <p className="text-sm text-muted-foreground">{advantage.description}</p>
               </div>)}
           </div>
