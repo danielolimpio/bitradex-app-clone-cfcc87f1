@@ -221,7 +221,7 @@ const Institutional = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
                 <Shield className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Security Measures</h3>
+                <h3 className="text-xl mb-3 font-normal">Security Measures</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground text-left font-normal">
                   <li>• Multi-signature wallets</li>
                   <li>• Cold storage (95%+ assets)</li>
