@@ -1,36 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone, TrendingUp, BarChart3, Wallet } from "lucide-react";
-
 const TradingEcosystem = () => {
-  const features = [
-    {
-      icon: Smartphone,
-      title: "Spot Trading",
-      description: "Buy and sell cryptocurrencies directly with competitive fees.",
-      link: "Trade Now"
-    },
-    {
-      icon: TrendingUp,
-      title: "Futures Trading",
-      description: "Trade with leverage and go long or short on the market.",
-      link: "Trade Now"
-    },
-    {
-      icon: BarChart3,
-      title: "AI Bot",
-      description: "One-click activation of AI Bot, intelligent quantitative strategies for automatic trading, easily seize market opportunities.",
-      link: "Learn More"
-    },
-    {
-      icon: Wallet,
-      title: "BTX Card",
-      description: "Issued in partnership with Visa, supporting Apple Pay, Google Pay, Alipay, WeChat Pay and other payment methods, globally accepted, transparent fees, only 0.7% handling fee",
-      link: "Learn More"
-    }
-  ];
-
-  return (
-    <section className="py-24 bg-bitradx-card">
+  const features = [{
+    icon: Smartphone,
+    title: "Spot Trading",
+    description: "Buy and sell cryptocurrencies directly with competitive fees.",
+    link: "Trade Now"
+  }, {
+    icon: TrendingUp,
+    title: "Futures Trading",
+    description: "Trade with leverage and go long or short on the market.",
+    link: "Trade Now"
+  }, {
+    icon: BarChart3,
+    title: "AI Bot",
+    description: "One-click activation of AI Bot, intelligent quantitative strategies for automatic trading, easily seize market opportunities.",
+    link: "Learn More"
+  }, {
+    icon: Wallet,
+    title: "BTX Card",
+    description: "Issued in partnership with Visa, supporting Apple Pay, Google Pay, Alipay, WeChat Pay and other payment methods, globally accepted, transparent fees, only 0.7% handling fee",
+    link: "Learn More"
+  }];
+  return <section className="py-24 bg-bitradx-card">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -44,11 +36,7 @@ const TradingEcosystem = () => {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="group relative bg-gradient-card border border-border rounded-2xl p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1"
-            >
+          {features.map((feature, index) => <div key={index} className="group relative bg-gradient-card border border-border rounded-2xl p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1">
               {/* Icon */}
               <div className="mb-6">
                 <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
@@ -67,24 +55,19 @@ const TradingEcosystem = () => {
               </div>
 
               {/* CTA Link */}
-              <Button 
-                variant="outline" 
-                className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}
-              >
+              <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300" onClick={() => window.open('https://wa.me/5512982519116?text=I%20would%20like%20to%20know%20more%20about%20Bitradex', '_blank')}>
                 {feature.link}
               </Button>
 
               {/* Hover Glow Effect */}
               <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300"></div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="bg-gradient-card border border-border rounded-2xl p-12 max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-4">
+            <h3 className="text-3xl text-foreground mb-4 font-medium">
               Ready to Start Trading?
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -92,28 +75,18 @@ const TradingEcosystem = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="flex flex-col items-center">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6"
-                  onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}
-                >
+                <Button size="lg" className="bg-gradient-primary hover:shadow-button transition-all duration-300 text-lg px-8 py-6" onClick={() => window.open('https://www.bitradex.com/en/account/register?inviteCode=7UII2W', '_blank')}>
                   Create Account
                 </Button>
                 <p className="text-xs text-muted-foreground mt-1">Sign up on mobile</p>
               </div>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300 text-lg px-8 py-6"
-              >
+              <Button size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300 text-lg px-8 py-6">
                 Explore Features
               </Button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TradingEcosystem;
