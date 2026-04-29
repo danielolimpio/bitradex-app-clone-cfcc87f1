@@ -9,7 +9,8 @@
     "contactUs": "Contato",
     "login": "Entrar",
     "signup": "Cadastrar",
-    "signupMobile": "Cadastre-se no celular"
+    "signupMobile": "Cadastre-se no celular",
+    "faq": "FAQ"
   },
   "hero": {
     "title": "Negocie Cripto com Confiança",
@@ -45,6 +46,168 @@
     "privacyPolicy": "Política de Privacidade",
     "riskDisclosure": "Divulgação de Riscos",
     "amlPolicy": "Política AML",
-    "compliance": "Compliance"
+    "compliance": "Compliance",
+    "faq": "FAQ"
+  },
+  "faq": {
+    "badge": "Central de Ajuda",
+    "title": "FAQ Bitradex – Tudo o que Você Precisa Saber",
+    "subtitle": "Respostas detalhadas sobre a plataforma Bitradex, bot de IA, token BTX, taxas, segurança, KYC, depósitos, saques e como começar a negociar criptomoedas com confiança.",
+    "searchPlaceholder": "Buscar perguntas (ex: 'Bitradex é confiável?', 'saque', 'KYC')",
+    "noResults": "Nenhuma pergunta encontrada. Tente outras palavras-chave.",
+    "ctaTitle": "Ainda tem dúvidas?",
+    "ctaSubtitle": "Nosso suporte 24/7 está pronto para ajudar com qualquer dúvida sobre a Bitradex.",
+    "ctaButton": "Falar com o Suporte",
+    "nav": "FAQ",
+    "categories": [
+      {
+        "title": "Sobre a Bitradex",
+        "items": [
+          {
+            "q": "O que é a Bitradex e como funciona a corretora Bitradex?",
+            "a": "A Bitradex é uma exchange de criptomoedas com inteligência artificial, operada pela BITRADEX FINTECH LIMITED. A plataforma Bitradex combina trading spot, futuros e um bot de IA automatizado baseado no modelo proprietário ARK. Os usuários podem comprar, vender e negociar BTC, ETH, BNB, SOL e o token BTX com alta liquidez, gráficos avançados e segurança de nível institucional."
+          },
+          {
+            "q": "A Bitradex é confiável, segura e legítima em 2025?",
+            "a": "Sim, a Bitradex é uma exchange legítima. Ela é registrada como BITRADEX FINTECH LIMITED, auditada pela CertiK, publica prova de reservas, aplica KYC/AML rigorosos e utiliza custódia em cold wallet, autenticação multifator e monitoramento de risco 24 horas para proteger os fundos e dados dos usuários."
+          },
+          {
+            "q": "Bitradex é golpe ou é uma corretora real?",
+            "a": "A Bitradex é uma corretora real e auditada, com registro corporativo verificável, auditorias de segurança da CertiK, prova de reservas pública e procedimentos de compliance regulados. Sempre acesse a Bitradex apenas pelos domínios oficiais bitradex.com ou bitradex.app para evitar golpes de phishing."
+          },
+          {
+            "q": "Quem é o dono da Bitradex e onde a empresa está registrada?",
+            "a": "A Bitradex é operada pela BITRADEX FINTECH LIMITED, com registro MSB no Reino Unido e parceiros de compliance globais. A empresa mantém licenças e registros em múltiplas jurisdições para oferecer serviços de trading de cripto regulados."
+          }
+        ]
+      },
+      {
+        "title": "Conta, Cadastro e Login",
+        "items": [
+          {
+            "q": "Como faço o cadastro e crio uma conta na Bitradex?",
+            "a": "Para se cadastrar na Bitradex, acesse o site oficial, clique em 'Cadastrar', informe seu e-mail ou telefone, crie uma senha forte e verifique a conta. Você pode usar um código de convite ou indicação para receber um bônus de boas-vindas e, em seguida, completar o KYC para liberar todos os limites de trading e saque."
+          },
+          {
+            "q": "Como fazer login na Bitradex e recuperar a senha?",
+            "a": "Faça login em bitradex.com com seu e-mail ou telefone cadastrado, sua senha e o código de 2FA. Se esqueceu a senha, clique em 'Esqueci a senha' na página de login da Bitradex para receber um link seguro de redefinição por e-mail."
+          },
+          {
+            "q": "O que é o código de convite Bitradex e como usá-lo?",
+            "a": "O código de convite (ou código de indicação) Bitradex é um identificador único que vincula novas contas a um usuário existente. Ao informar o código no cadastro, você pode receber bônus de boas-vindas, descontos em taxas e comissões vitalícias do programa de indicação."
+          },
+          {
+            "q": "Como funciona a verificação KYC da Bitradex?",
+            "a": "O KYC da Bitradex exige um documento oficial, uma selfie e, em níveis avançados, comprovante de endereço. A verificação costuma ser concluída em minutos e é obrigatória para cumprir as normas globais de AML, aumentar limites de saque e liberar produtos como futuros e bot de IA."
+          }
+        ]
+      },
+      {
+        "title": "Depósitos, Saques e Taxas",
+        "items": [
+          {
+            "q": "Como fazer depósito na Bitradex?",
+            "a": "Para depositar na Bitradex, faça login, abra a Carteira, clique em 'Depósito', escolha o ativo (BTC, ETH, USDT, BNB, SOL ou BTX) e a rede, e envie os fundos para o endereço exibido. Depósitos cripto são creditados após confirmações on-chain; depósitos em moeda fiduciária dependem do método e da região."
+          },
+          {
+            "q": "Como sacar dinheiro da Bitradex?",
+            "a": "Para sacar na Bitradex, abra a Carteira, clique em 'Saque', selecione o ativo e a rede, cole um endereço verificado, informe o valor e confirme com 2FA e verificação por e-mail. A Bitradex processa saques 24/7 com checagens de segurança para proteger os fundos."
+          },
+          {
+            "q": "Quais são as taxas de trading da Bitradex?",
+            "a": "A Bitradex oferece taxas competitivas com modelo maker–taker em spot e futuros, níveis VIP por volume e descontos extras ao usar o token BTX. As taxas de saque variam por ativo e rede e a tabela completa está publicada na página oficial de taxas da Bitradex."
+          },
+          {
+            "q": "Qual o valor mínimo de depósito e saque na Bitradex?",
+            "a": "Os valores mínimos na Bitradex variam conforme o ativo e a rede. Moedas principais como BTC, ETH e USDT têm mínimos baixos, e os limites exatos são exibidos nas telas de depósito e saque antes de você confirmar qualquer operação."
+          }
+        ]
+      },
+      {
+        "title": "Bot de IA e Modelo ARK",
+        "items": [
+          {
+            "q": "O que é o bot de IA da Bitradex?",
+            "a": "O bot de IA da Bitradex é um sistema de trading automatizado que usa o modelo proprietário ARK e machine learning para monitorar mercados, detectar sinais e executar estratégias em spot e futuros 24 horas por dia. Ele busca retornos consistentes ajustados ao risco, mantendo o usuário no controle do capital e dos parâmetros de risco."
+          },
+          {
+            "q": "Como o modelo ARK da Bitradex gera alpha?",
+            "a": "O modelo ARK é um sistema de IA multiagente e auto-evolutivo desenvolvido pela Bitradex. Ele analisa livros de ordens, dados on-chain, fluxo de derivativos e sinais macro em BTC, ETH, BNB e SOL para identificar oportunidades de alta probabilidade, executando ordens no motor da Bitradex em milissegundos."
+          },
+          {
+            "q": "Vale a pena usar trading automatizado na Bitradex?",
+            "a": "As estratégias de IA da Bitradex historicamente entregam bons retornos ajustados ao risco, mas o mercado de criptomoedas é volátil e desempenho passado não garante resultados futuros. Reveja o perfil de risco de cada estratégia, comece com capital menor e siga a Divulgação de Riscos antes de ativar qualquer bot."
+          }
+        ]
+      },
+      {
+        "title": "Token BTX e Recompensas",
+        "items": [
+          {
+            "q": "O que é o token BTX da Bitradex?",
+            "a": "BTX é o token utilitário nativo do ecossistema Bitradex. Holders de BTX recebem descontos em taxas, acesso a projetos do launchpad, recompensas de staking, direito de voto em propostas da plataforma e benefícios exclusivos como o cartão Bitradex BTX e o programa VIP."
+          },
+          {
+            "q": "Onde verificar o token BTX no CoinMarketCap?",
+            "a": "O token BTX da Bitradex está listado no CoinMarketCap e no CoinGecko. Você pode conferir preço em tempo real, oferta circulante, capitalização de mercado e volume diretamente nessas plataformas ou na seção Mercados do bitradex.com."
+          },
+          {
+            "q": "Como ganhar renda passiva na Bitradex?",
+            "a": "A Bitradex oferece várias formas de ganhar: staking de BTX, savings, dual investment, estratégias com bot de IA e programa de indicação. Cada produto tem APY, prazo de bloqueio e nível de risco descritos na seção Earn da plataforma."
+          }
+        ]
+      },
+      {
+        "title": "Segurança e Compliance",
+        "items": [
+          {
+            "q": "Como a Bitradex protege os fundos dos usuários?",
+            "a": "A Bitradex armazena a maior parte dos fundos em cold wallets offline, com custódia multi-assinatura, monitoramento de risco em tempo real, whitelist de saques, código antiphishing, 2FA obrigatório e um fundo de segurança dedicado para cobrir usuários em eventos extremos. A plataforma é auditada pela CertiK e publica prova de reservas."
+          },
+          {
+            "q": "A Bitradex segue normas de AML e KYC?",
+            "a": "Sim. A Bitradex aplica uma política AML rigorosa alinhada às recomendações do GAFI/FATF, executa KYC em todos os usuários, faz screening contra listas globais de sanções e coopera com reguladores ao redor do mundo para prevenir lavagem de dinheiro e financiamento ao terrorismo."
+          },
+          {
+            "q": "A Bitradex é regulada e licenciada?",
+            "a": "A BITRADEX FINTECH LIMITED possui registro MSB no Reino Unido e opera por meio de uma rede de entidades reguladas e parceiros. Alguns produtos podem ser restritos em determinadas jurisdições para cumprir leis locais, conforme detalhado na página de Compliance da Bitradex."
+          }
+        ]
+      },
+      {
+        "title": "Trading: Spot, Futuros e Mercados",
+        "items": [
+          {
+            "q": "O que é o trading Spot da Bitradex?",
+            "a": "O Spot da Bitradex permite comprar e vender cripto a preços de mercado em tempo real, com taxas baixas, alta liquidez e gráficos da TradingView. Os pares mais populares incluem BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT e BTX/USDT, com ordens a mercado e limitadas."
+          },
+          {
+            "q": "O que é o Futuros da Bitradex e como funciona a alavancagem?",
+            "a": "O Futuros da Bitradex permite negociar contratos perpétuos das principais criptomoedas com alta alavancagem, ordens avançadas e margem isolada ou cruzada. Alavancagens maiores ampliam ganhos e perdas, por isso é essencial seguir uma gestão de risco rigorosa, conforme descrito na Divulgação de Riscos."
+          },
+          {
+            "q": "Como ver as cotações ao vivo na Bitradex?",
+            "a": "As cotações ao vivo de BTC, ETH, BNB, SOL e BTX estão disponíveis na página Mercados da Bitradex e dentro da interface de trading, com gráficos em tempo real, livro de ordens, profundidade e estatísticas como volume 24h e variação de preço."
+          }
+        ]
+      },
+      {
+        "title": "Aplicativo Móvel e Suporte",
+        "items": [
+          {
+            "q": "Como baixar o aplicativo Bitradex?",
+            "a": "O app da Bitradex está disponível para iOS na App Store e para Android no Google Play, além de um download direto via APK no site oficial. O app suporta trading completo, gerenciamento da carteira, controle do bot de IA e notificações 24/7."
+          },
+          {
+            "q": "Como entrar em contato com o suporte Bitradex?",
+            "a": "O suporte da Bitradex está disponível 24 horas por dia via chat ao vivo no app, Central de Ajuda, página de Contato e canais sociais oficiais. Para questões sensíveis, use sempre canais internos do app e nunca compartilhe senha, código 2FA ou frase semente com terceiros."
+          },
+          {
+            "q": "O que fazer se eu suspeitar de um site falso da Bitradex?",
+            "a": "Se suspeitar de um site de phishing imitando a Bitradex, não digite credenciais, não clique em links suspeitos e reporte para support@bitradex.com. Verifique sempre se a URL é bitradex.com ou bitradex.app e se a conexão usa HTTPS."
+          }
+        ]
+      }
+    ]
   }
 }

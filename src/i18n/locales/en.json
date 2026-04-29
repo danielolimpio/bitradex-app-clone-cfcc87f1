@@ -9,7 +9,8 @@
     "contactUs": "Contact Us",
     "login": "Log In",
     "signup": "Sign Up",
-    "signupMobile": "Sign up on mobile"
+    "signupMobile": "Sign up on mobile",
+    "faq": "FAQ"
   },
   "hero": {
     "title": "Trade Crypto with Confidence",
@@ -45,6 +46,168 @@
     "privacyPolicy": "Privacy Policy",
     "riskDisclosure": "Risk Disclosure",
     "amlPolicy": "AML Policy",
-    "compliance": "Compliance"
+    "compliance": "Compliance",
+    "faq": "FAQ"
+  },
+  "faq": {
+    "badge": "Help Center",
+    "title": "Bitradex FAQ – Everything You Need to Know",
+    "subtitle": "Find detailed answers about the Bitradex platform, AI trading bot, BTX token, fees, security, KYC, deposits, withdrawals and how to start trading crypto with confidence.",
+    "searchPlaceholder": "Search questions (e.g. 'Is Bitradex legit?', 'Withdrawal', 'KYC')",
+    "noResults": "No questions matched your search. Try different keywords.",
+    "ctaTitle": "Still have questions?",
+    "ctaSubtitle": "Our 24/7 customer support team is ready to help you with any question about Bitradex.",
+    "ctaButton": "Contact Support",
+    "nav": "FAQ",
+    "categories": [
+      {
+        "title": "About Bitradex",
+        "items": [
+          {
+            "q": "What is Bitradex and how does the Bitradex exchange work?",
+            "a": "Bitradex is an AI-powered cryptocurrency exchange operated by BITRADEX FINTECH LIMITED. The Bitradex platform combines spot trading, futures trading and an automated AI trading bot powered by the proprietary ARK model. Users can buy, sell and trade BTC, ETH, BNB, SOL and the BTX token with deep liquidity, advanced charts and institutional-grade security."
+          },
+          {
+            "q": "Is Bitradex legit, safe and trustworthy in 2025?",
+            "a": "Yes, Bitradex is a legitimate exchange. It is registered as BITRADEX FINTECH LIMITED, audited by CertiK, publishes proof of reserves, enforces strict KYC/AML compliance and uses cold wallet custody, multi-factor authentication and 24/7 risk monitoring to keep user funds and data safe."
+          },
+          {
+            "q": "Who owns Bitradex and where is the company registered?",
+            "a": "Bitradex is operated by BITRADEX FINTECH LIMITED, with UK MSB registration and global compliance partners. The company holds licenses and registrations across multiple jurisdictions to provide regulated crypto trading services."
+          },
+          {
+            "q": "Is Bitradex a scam or a real exchange?",
+            "a": "Bitradex is a real, audited exchange with verifiable corporate registration, CertiK security audits, public proof of reserves and regulated compliance procedures. Always access Bitradex only through the official domain bitradex.com or bitradex.app to avoid phishing scams."
+          }
+        ]
+      },
+      {
+        "title": "Account, Sign Up & Login",
+        "items": [
+          {
+            "q": "How do I sign up and create a Bitradex account?",
+            "a": "To sign up on Bitradex, visit the official website, click 'Sign Up', enter your email or phone number, create a strong password and verify your account. Optionally enter a Bitradex invite code or referral code to claim a welcome bonus, then complete KYC verification to unlock full trading and withdrawal limits."
+          },
+          {
+            "q": "How do I log in to Bitradex and recover my password?",
+            "a": "Log in at bitradex.com using your registered email or phone and password, plus your 2FA code. If you forgot your password, click 'Forgot password' on the Bitradex login page to receive a secure reset link by email and reset access to your account."
+          },
+          {
+            "q": "What is a Bitradex invite code or referral code and how do I use it?",
+            "a": "A Bitradex invite code (also called referral code) is a unique identifier that links new accounts to an existing user. Entering an invite code during sign up may unlock a welcome bonus, fee discounts and lifetime referral commissions for both the new user and the inviter."
+          },
+          {
+            "q": "How does Bitradex KYC verification work?",
+            "a": "Bitradex KYC requires a government-issued ID, a selfie and proof of address for higher tiers. Verification is usually completed in minutes and is required to comply with global AML regulations, increase withdrawal limits and access advanced products like futures and the AI bot."
+          }
+        ]
+      },
+      {
+        "title": "Deposits, Withdrawals & Fees",
+        "items": [
+          {
+            "q": "How do I deposit money on Bitradex?",
+            "a": "To deposit on Bitradex, log in, open the Wallet section, choose 'Deposit', select the asset (BTC, ETH, USDT, BNB, SOL or BTX) and the network, then send funds to the displayed deposit address. Crypto deposits are credited after on-chain confirmations; fiat deposits depend on the payment method and region."
+          },
+          {
+            "q": "How do I withdraw funds from Bitradex?",
+            "a": "To withdraw on Bitradex, open the Wallet, click 'Withdraw', select the asset and network, paste a verified address, enter the amount and confirm with 2FA and email verification. Bitradex processes withdrawals 24/7 with security checks to protect user funds."
+          },
+          {
+            "q": "What are the Bitradex trading fees?",
+            "a": "Bitradex offers competitive fees with maker–taker pricing for spot and futures markets, volume-based VIP tiers and extra discounts when using the BTX token. Withdrawal fees vary by asset and network, and the full fee schedule is published on the official Bitradex fees page."
+          },
+          {
+            "q": "What is the minimum deposit and withdrawal on Bitradex?",
+            "a": "Minimum amounts on Bitradex depend on the asset and network. Most major coins like BTC, ETH and USDT have low minimums, and exact thresholds are displayed on the deposit and withdrawal screens before you confirm any transaction."
+          }
+        ]
+      },
+      {
+        "title": "Bitradex AI Trading Bot & ARK Model",
+        "items": [
+          {
+            "q": "What is the Bitradex AI trading bot?",
+            "a": "The Bitradex AI trading bot is an automated trading system that uses the proprietary ARK model and machine learning to monitor markets, detect signals and execute spot and futures strategies 24/7. It is designed to deliver consistent risk-adjusted returns while keeping the user in full control of capital and risk parameters."
+          },
+          {
+            "q": "How does the Bitradex ARK model generate alpha?",
+            "a": "The ARK model is a multi-agent self-evolving AI system developed by Bitradex. It analyzes order books, on-chain data, derivatives flow and macro signals across BTC, ETH, BNB and SOL to identify high-probability setups, then routes orders through the Bitradex matching engine in milliseconds."
+          },
+          {
+            "q": "Is automated trading on Bitradex profitable?",
+            "a": "Bitradex AI strategies have historically delivered strong risk-adjusted returns, but cryptocurrency markets are volatile and past performance does not guarantee future results. Users should review each strategy's risk profile, start with smaller capital and follow the Bitradex Risk Disclosure before activating any bot."
+          }
+        ]
+      },
+      {
+        "title": "BTX Token & Rewards",
+        "items": [
+          {
+            "q": "What is the BTX token (Bitradex token)?",
+            "a": "BTX is the native utility token of the Bitradex ecosystem. Holders of BTX get trading fee discounts, access to launchpad projects, staking rewards, voting rights on platform proposals and exclusive benefits like the Bitradex BTX card and VIP program."
+          },
+          {
+            "q": "Where can I check the BTX token on CoinMarketCap?",
+            "a": "The Bitradex BTX token is listed on CoinMarketCap and CoinGecko. You can verify the live price, circulating supply, market cap and trading volume directly on those platforms or in the Markets section of bitradex.com."
+          },
+          {
+            "q": "How do I earn passive income on Bitradex?",
+            "a": "Bitradex offers multiple ways to earn: BTX staking, savings products, dual investment, AI bot strategies and the referral program. Each product has clear APY ranges, lock-up terms and risk levels described in the Earn section of the platform."
+          }
+        ]
+      },
+      {
+        "title": "Security & Compliance",
+        "items": [
+          {
+            "q": "How does Bitradex protect user funds?",
+            "a": "Bitradex stores the majority of user funds in offline cold wallets, uses multi-signature custody, real-time risk monitoring, withdrawal whitelists, anti-phishing codes, mandatory 2FA and a dedicated security fund to cover users in extreme events. The platform is audited by CertiK and publishes proof of reserves."
+          },
+          {
+            "q": "Does Bitradex follow AML and KYC regulations?",
+            "a": "Yes. Bitradex enforces a strict AML policy aligned with FATF recommendations, performs KYC on all users, screens transactions against global sanctions lists and cooperates with regulators worldwide to prevent money laundering and terrorist financing."
+          },
+          {
+            "q": "Is Bitradex regulated and licensed?",
+            "a": "BITRADEX FINTECH LIMITED holds UK MSB registration and operates through a network of regulated entities and partners. Specific products may be restricted in certain jurisdictions to comply with local laws, as detailed on the Bitradex Compliance page."
+          }
+        ]
+      },
+      {
+        "title": "Trading: Spot, Futures & Markets",
+        "items": [
+          {
+            "q": "What is Bitradex Spot trading?",
+            "a": "Bitradex Spot lets you buy and sell crypto at live market prices with low fees, deep liquidity and TradingView charts. Popular spot pairs include BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT and BTX/USDT, with both market and limit orders available."
+          },
+          {
+            "q": "What is Bitradex Futures and how does leverage work?",
+            "a": "Bitradex Futures lets you trade perpetual contracts on major cryptocurrencies with high leverage, advanced order types and isolated or cross margin modes. Higher leverage increases potential gains and losses, so users should always apply strict risk management as described in the Risk Disclosure."
+          },
+          {
+            "q": "How can I see live crypto prices on Bitradex?",
+            "a": "Live crypto prices for BTC, ETH, BNB, SOL and BTX are available on the Bitradex Markets page and inside the trading interface, with real-time charts, order books, depth visualization and key statistics like 24h volume and price change."
+          }
+        ]
+      },
+      {
+        "title": "Mobile App & Support",
+        "items": [
+          {
+            "q": "How do I download the Bitradex mobile app?",
+            "a": "The Bitradex app is available for iOS on the App Store and for Android on Google Play, plus a direct APK download from the official site. The mobile app supports full trading, wallet management, AI bot control and 24/7 push notifications."
+          },
+          {
+            "q": "How do I contact Bitradex customer support?",
+            "a": "Bitradex customer support is available 24/7 through live chat in the app, the Help Center, the official Contact page and verified social channels. For account-sensitive issues, always use in-app channels and never share passwords, 2FA codes or seed phrases with anyone."
+          },
+          {
+            "q": "What should I do if I suspect a Bitradex phishing site?",
+            "a": "If you suspect a phishing site impersonating Bitradex, do not enter your credentials, do not click suspicious links, and report the site to support@bitradex.com. Always verify the URL is bitradex.com or bitradex.app and that the connection is secured by HTTPS."
+          }
+        ]
+      }
+    ]
   }
 }
