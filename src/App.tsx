@@ -21,6 +21,7 @@ import Contact from "./pages/Contact";
 import OurTeam from "./pages/OurTeam";
 import Careers from "./pages/Careers";
 import PressMedia from "./pages/PressMedia";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/press-media" element={<PressMedia />} />
+          <Route path="/faq" element={<FAQ />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
