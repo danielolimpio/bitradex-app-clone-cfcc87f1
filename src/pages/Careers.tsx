@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Briefcase, Users, TrendingUp, Heart, Zap, Globe } from "lucide-react";
+import SEO from "@/seo/SEO";
 
 const Careers = () => {
   useEffect(() => {
@@ -134,6 +135,7 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       
       {/* Hero Section */}

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
+import SEO from "@/seo/SEO";
 
 const AMLPolicy = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const AMLPolicy = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       <main className="container mx-auto px-4 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto">

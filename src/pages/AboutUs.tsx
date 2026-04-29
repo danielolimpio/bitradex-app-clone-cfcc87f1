@@ -6,6 +6,7 @@ import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Users, DollarSign, Zap } from "lucide-react";
+import SEO from "@/seo/SEO";
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -55,6 +56,7 @@ const AboutUs = () => {
     description: "User-friendly interface designed for traders of all experience levels. Our automated systems handle the complexity while you focus on results."
   }];
   return <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       
       {/* Hero Section */}

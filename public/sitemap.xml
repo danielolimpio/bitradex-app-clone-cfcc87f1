@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bitradex.app/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitradex.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bitradex.app/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bitradex.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bitradex.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bitradex.app/?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://bitradex.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bitradex.app/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bitradex.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitradex.app/"/>
+  </url>
+  <url><loc>https://bitradex.app/about-us</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bitradex.app/markets</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://bitradex.app/spot</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://bitradex.app/futures</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://bitradex.app/institutional</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bitradex.app/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://bitradex.app/our-team</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://bitradex.app/careers</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://bitradex.app/press-media</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://bitradex.app/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bitradex.app/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bitradex.app/risk-disclosure</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bitradex.app/aml-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bitradex.app/compliance</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

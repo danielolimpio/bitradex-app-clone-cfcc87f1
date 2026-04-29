@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, MessageSquare, Headphones } from "lucide-react";
+import SEO from "@/seo/SEO";
 
 const Contact = () => {
   useEffect(() => {
@@ -71,6 +72,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       
       {/* Hero Section */}

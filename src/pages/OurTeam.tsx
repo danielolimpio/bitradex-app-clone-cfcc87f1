@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Twitter } from "lucide-react";
+import SEO from "@/seo/SEO";
 
 const OurTeam = () => {
   useEffect(() => {
@@ -91,6 +92,7 @@ const OurTeam = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       
       {/* Hero Section */}

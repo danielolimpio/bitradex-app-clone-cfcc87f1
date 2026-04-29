@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import SEO from "@/seo/SEO";
 
 const Disclaimer = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const Disclaimer = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       <main className="container mx-auto px-4 lg:px-8 py-16 max-w-4xl">
         <h1 className="text-4xl md:text-5xl font-bold mb-8">BitradeX Risk Disclosure and Disclaimer</h1>

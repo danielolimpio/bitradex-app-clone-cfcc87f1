@@ -6,6 +6,7 @@ import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Download, Mail, ExternalLink, Calendar, Award, TrendingUp } from "lucide-react";
+import SEO from "@/seo/SEO";
 
 const PressMedia = () => {
   useEffect(() => {
@@ -124,6 +125,7 @@ const PressMedia = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       
       {/* Hero Section */}
