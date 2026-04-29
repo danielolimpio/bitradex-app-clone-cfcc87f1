@@ -158,7 +158,22 @@ const Footer = () => {
             </div>)}
         </div>
 
-        {/* Footer Bottom */}
+        {/* Legal Links — Horizontal Centered */}
+        <div className="py-6 border-t border-border">
+          <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            {legalLinks.map((link, idx) => (
+              <Link
+                key={idx}
+                to={link.href}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+              >
+                {link.text}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+
         <div className="py-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
