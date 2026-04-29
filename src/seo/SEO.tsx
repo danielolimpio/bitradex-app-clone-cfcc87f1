@@ -1,0 +1,120 @@
+import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import { seoLocales, seoLangs, SITE_URL, BRAND, type SeoLang } from "./keywords";
+
+interface SEOProps {
+  /** Override page path used for the lookup. Defaults to current pathname. */
+  pathKey?: string;
+  /** Override the title for this specific page. */
+  title?: string;
+  /** Override the description for this specific page. */
+  description?: string;
+  /** Extra keywords to merge with the locale defaults. */
+  extraKeywords?: string[];
+  /** Optional Open Graph image. */
+  image?: string;
+}
+
+const DEFAULT_IMAGE = "https://bitradex.app/assets/bitradex-logo-CS93K5c3.png";
+
+/**
+ * Renders SEO meta tags scoped to the current i18n language.
+ * Each language only exposes its own keyword set so search engines see
+ * locale-specific content (e.g. PT keywords only when language is pt).
+ */
+const SEO = ({ pathKey, title, description, extraKeywords, image }: SEOProps) => {
+  const { i18n } = useTranslation();
+  const location = useLocation();
+
+  const lang = (seoLangs as string[]).includes(i18n.language)
+    ? (i18n.language as SeoLang)
+    : "en";
+  const locale = seoLocales[lang];
+
+  const path = pathKey ?? location.pathname ?? "/";
+  const page = locale.pages[path] ?? {
+    title: locale.defaultTitle,
+    description: locale.defaultDescription,
+  };
+
+  const finalTitle = title ?? page.title;
+  const finalDescription = description ?? page.description;
+  const finalKeywords = [
+    ...locale.keywords,
+    ...(extraKeywords ?? []),
+  ].join(", ");
+  const canonical = `${SITE_URL}${path === "/" ? "" : path}`;
+  const ogImage = image ?? DEFAULT_IMAGE;
+
+  // JSON-LD structured data
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: BRAND,
+    legalName: "BITRADEX FINTECH LIMITED",
+    url: SITE_URL,
+    logo: ogImage,
+    sameAs: [
+      "https://twitter.com/Bitradexen",
+    ],
+  };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: BRAND,
+    url: SITE_URL,
+    inLanguage: locale.htmlLang,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITE_URL}/?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  return (
+    <Helmet>
+      <html lang={locale.htmlLang} />
+      <title>{finalTitle}</title>
+      <meta name="description" content={finalDescription} />
+      <meta name="keywords" content={finalKeywords} />
+      <meta name="author" content={BRAND} />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+      <link rel="canonical" href={canonical} />
+
+      {/* Hreflang alternates for each supported language */}
+      {seoLangs.map((l) => (
+        <link
+          key={l}
+          rel="alternate"
+          hrefLang={seoLocales[l].htmlLang}
+          href={`${SITE_URL}${path === "/" ? "" : path}?lang=${l}`}
+        />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={canonical} />
+
+      {/* Open Graph */}
+      <meta property="og:site_name" content={locale.siteName} />
+      <meta property="og:locale" content={locale.ogLocale} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={finalTitle} />
+      <meta property="og:description" content={finalDescription} />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={ogImage} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@Bitradexen" />
+      <meta name="twitter:title" content={finalTitle} />
+      <meta name="twitter:description" content={finalDescription} />
+      <meta name="twitter:image" content={ogImage} />
+
+      <script type="application/ld+json">{JSON.stringify(orgJsonLd)}</script>
+      <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
+    </Helmet>
+  );
+};
+
+export default SEO;
