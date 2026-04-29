@@ -6,6 +6,7 @@ import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Shield, TrendingUp, Zap, Users, Globe, Lock, BarChart3 } from "lucide-react";
+import SEO from "@/seo/SEO";
 const Institutional = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -74,6 +75,7 @@ const Institutional = () => {
     label: "System Uptime"
   }];
   return <div className="min-h-screen bg-background">
+      <SEO />
       <Header />
       
       {/* Hero Section */}

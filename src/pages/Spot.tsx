@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
+import SEO from "@/seo/SEO";
 
 const Spot = () => {
   const chartContainerRef = useRef<HTMLDivElement>(null);
@@ -67,6 +68,7 @@ const Spot = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEO />
       <Header />
       
       <main className="flex-1 container mx-auto px-4 lg:px-8 py-4">
