@@ -64,6 +64,9 @@ const Footer = () => {
       text: "Help Center",
       href: "#"
     }, {
+      text: "FAQ",
+      href: "/faq"
+    }, {
       text: "Trading Guide",
       href: "#"
     }, {
@@ -72,29 +75,15 @@ const Footer = () => {
     }, {
       text: "System Status",
       href: "#"
-    }, {
-      text: "Bug Report",
-      href: "#"
-    }]
-  }, {
-    title: "Legal",
-    links: [{
-      text: "Terms of Service",
-      href: "/terms-of-service"
-    }, {
-      text: "Privacy Policy",
-      href: "/privacy-policy"
-    }, {
-      text: "Risk Disclosure",
-      href: "/risk-disclosure"
-    }, {
-      text: "AML Policy",
-      href: "/aml-policy"
-    }, {
-      text: "Compliance",
-      href: "/compliance"
     }]
   }];
+  const legalLinks = [
+    { text: "Terms of Service", href: "/terms-of-service" },
+    { text: "Privacy Policy", href: "/privacy-policy" },
+    { text: "Risk Disclosure", href: "/risk-disclosure" },
+    { text: "AML Policy", href: "/aml-policy" },
+    { text: "Compliance", href: "/compliance" },
+  ];
   const socialLinks = [{
     icon: Twitter,
     href: "#",
