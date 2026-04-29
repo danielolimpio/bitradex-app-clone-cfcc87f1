@@ -176,6 +176,11 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
         description:
           "Bitradex compliance program: UK registration, MSB registration, sanctions screening and regulatory cooperation worldwide.",
       },
+      "/faq": {
+        title: "Bitradex FAQ | Help Center, Support & Trading Questions",
+        description:
+          "Bitradex FAQ: answers about sign up, login, KYC, deposits, withdrawals, fees, AI trading bot, BTX token, security and how to start trading crypto safely.",
+      },
     },
   },
 
@@ -307,6 +312,11 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
         title: "Compliance | Padrões Regulatórios Globais da Bitradex",
         description:
           "Programa de compliance da Bitradex: registro no Reino Unido, MSB, screening de sanções e cooperação regulatória.",
+      },
+      "/faq": {
+        title: "FAQ Bitradex | Central de Ajuda, Suporte e Dúvidas",
+        description:
+          "FAQ da Bitradex: respostas sobre cadastro, login, KYC, depósitos, saques, taxas, bot de IA, token BTX, segurança e como começar a negociar cripto com segurança.",
       },
     },
   },
