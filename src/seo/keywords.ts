@@ -51,7 +51,7 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
     siteName: "Bitradex",
     defaultTitle: "Bitradex | AI-Powered Crypto Exchange & Trading Platform",
     defaultDescription:
-      "Bitradex is a trusted AI-powered cryptocurrency exchange. Trade BTC, ETH, BNB and SOL on spot and futures markets, use the Bitradex AI bot, and earn with the BTX token.",
+      "Trusted AI-powered crypto exchange. Trade BTC, ETH, BNB & SOL on spot and futures with the Bitradex AI bot and earn with BTX token.",
     keywords: [
       ...brandCore,
       "Bitradex review",
