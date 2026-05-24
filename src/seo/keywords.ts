@@ -179,7 +179,17 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
       "/faq": {
         title: "Bitradex FAQ | Help Center, Support & Trading Questions",
         description:
-          "Bitradex FAQ: answers about sign up, login, KYC, deposits, withdrawals, fees, AI trading bot, BTX token, security and how to start trading crypto safely.",
+          "Bitradex FAQ: answers about sign up, login, KYC, deposits, withdrawals, fees, AI trading bot, BTX token, security and how to start trading crypto.",
+      },
+      "/disclaimer": {
+        title: "Disclaimer | Bitradex Legal Notice & Liability",
+        description:
+          "Bitradex legal disclaimer covering platform information, third-party content, market data accuracy and limitation of liability.",
+      },
+      "/user-agreement": {
+        title: "User Agreement | Bitradex Account & Platform Terms",
+        description:
+          "Bitradex user agreement defining account rules, trading conduct, eligibility, prohibited activities and platform responsibilities.",
       },
     },
   },
