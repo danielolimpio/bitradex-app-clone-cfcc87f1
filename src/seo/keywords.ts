@@ -326,7 +326,17 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
       "/faq": {
         title: "FAQ Bitradex | Central de Ajuda, Suporte e Dúvidas",
         description:
-          "FAQ da Bitradex: respostas sobre cadastro, login, KYC, depósitos, saques, taxas, bot de IA, token BTX, segurança e como começar a negociar cripto com segurança.",
+          "FAQ da Bitradex: cadastro, login, KYC, depósitos, saques, taxas, bot de IA, token BTX, segurança e como começar a negociar cripto.",
+      },
+      "/disclaimer": {
+        title: "Aviso Legal | Bitradex Termos de Isenção",
+        description:
+          "Aviso legal da Bitradex sobre informações da plataforma, conteúdo de terceiros, dados de mercado e limitação de responsabilidade.",
+      },
+      "/user-agreement": {
+        title: "Acordo do Usuário | Termos de Conta Bitradex",
+        description:
+          "Acordo do usuário Bitradex: regras da conta, conduta de trading, elegibilidade, atividades proibidas e responsabilidades da plataforma.",
       },
     },
   },
