@@ -512,6 +512,91 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
         description:
           "Handeln Sie Krypto sicher auf Bitradex. KI-Bot, Spot & Futures, BTX-Token, von CertiK geprüfte Sicherheit und globale Compliance.",
       },
+      "/about-us": {
+        title: "Über Bitradex | Mission, Team und Unternehmen",
+        description:
+          "Erfahren Sie mehr über Bitradex (BITRADEX FINTECH LIMITED), unsere Mission, unser Team und unsere Vision für KI-Krypto-Trading.",
+      },
+      "/markets": {
+        title: "Bitradex Märkte | Live Krypto-Kurse BTC, ETH, BNB, SOL",
+        description:
+          "Live Krypto-Kurse auf Bitradex. Verfolgen Sie BTC, ETH, BNB, SOL und den BTX-Token in Echtzeit auf Spot- und Futures-Märkten.",
+      },
+      "/spot": {
+        title: "Bitradex Spot | Krypto sofort kaufen und verkaufen",
+        description:
+          "Handeln Sie Krypto auf Bitradex Spot mit niedrigen Gebühren, hoher Liquidität und TradingView-Charts für BTC, ETH, BNB, SOL und BTX.",
+      },
+      "/futures": {
+        title: "Bitradex Futures | Krypto-Derivate mit Hebel",
+        description:
+          "Handeln Sie Bitradex Futures mit Hebel, fortschrittlichen Risiko-Tools und KI-Automatisierung auf einer CertiK-geprüften Plattform.",
+      },
+      "/institutional": {
+        title: "Bitradex Institutional | OTC, Custody und API",
+        description:
+          "Bitradex institutionelle Services: OTC-Desk, sichere Custody, API-Zugang, tiefe Liquidität und dedizierter Support für Fonds.",
+      },
+      "/contact": {
+        title: "Kontakt Bitradex | Kundensupport und Hilfecenter",
+        description:
+          "Kontaktieren Sie das Bitradex-Team für Support bei Login, Auszahlungen, Einzahlungen, KYC, KI-Bot und Konto-Fragen.",
+      },
+      "/our-team": {
+        title: "Unser Team | Bitradex Führung und Entwickler",
+        description:
+          "Lernen Sie das Führungsteam von Bitradex hinter unserer KI-Krypto-Börse und dem BTX-Token-Ökosystem kennen.",
+      },
+      "/careers": {
+        title: "Karriere bei Bitradex | Werden Sie Teil der KI-Revolution",
+        description:
+          "Offene Stellen bei Bitradex. Gestalten Sie die Zukunft des KI-Krypto-Tradings in einem globalen Team aus Engineering und Produkt.",
+      },
+      "/press-media": {
+        title: "Bitradex Presse & Medien | News und Pressemitteilungen",
+        description:
+          "Bitradex Pressemitteilungen, Media-Kit, Markenmaterial und offizielle Statements zum BTX-Token, Partnerschaften und Meilensteinen.",
+      },
+      "/terms-of-service": {
+        title: "Nutzungsbedingungen | Bitradex",
+        description:
+          "Lesen Sie die Bitradex Nutzungsbedingungen für Plattform, Konten, Trading, Gebühren und den BTX-Token.",
+      },
+      "/privacy-policy": {
+        title: "Datenschutzerklärung | Bitradex",
+        description:
+          "Wie Bitradex Ihre persönlichen Daten, KYC-Informationen und Kontoaktivitäten erhebt, verwendet und schützt.",
+      },
+      "/risk-disclosure": {
+        title: "Risikohinweis | Krypto-Trading-Risiken Bitradex",
+        description:
+          "Wichtiger Risikohinweis für den Handel mit Krypto, Futures und Derivaten auf Bitradex, inklusive Volatilität und Hebelrisiken.",
+      },
+      "/aml-policy": {
+        title: "AML-Richtlinie | Bitradex Geldwäscheprävention",
+        description:
+          "Bitradex AML-Richtlinie, KYC-Anforderungen und unser Engagement gegen Geldwäsche und Terrorismusfinanzierung.",
+      },
+      "/compliance": {
+        title: "Compliance | Bitradex Globale Regulierungsstandards",
+        description:
+          "Bitradex Compliance-Programm: UK-Registrierung, MSB, Sanktionsprüfung und regulatorische Zusammenarbeit weltweit.",
+      },
+      "/faq": {
+        title: "Bitradex FAQ | Hilfecenter, Support und Fragen",
+        description:
+          "Bitradex FAQ: Antworten zu Registrierung, Login, KYC, Einzahlungen, Auszahlungen, Gebühren, KI-Bot, BTX-Token und Sicherheit.",
+      },
+      "/disclaimer": {
+        title: "Haftungsausschluss | Bitradex Rechtlicher Hinweis",
+        description:
+          "Bitradex Haftungsausschluss zu Plattforminformationen, Inhalten Dritter, Marktdaten und Haftungsbeschränkungen.",
+      },
+      "/user-agreement": {
+        title: "Nutzervereinbarung | Bitradex Konto- und Plattformregeln",
+        description:
+          "Bitradex Nutzervereinbarung: Kontoregeln, Trading-Verhalten, Eignung, verbotene Aktivitäten und Plattformverantwortung.",
+      },
     },
   },
 
