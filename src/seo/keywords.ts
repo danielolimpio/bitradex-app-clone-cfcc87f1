@@ -636,6 +636,91 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
         description:
           "Trading kripto dengan percaya diri di Bitradex. Bot AI, pasar spot & futures, token BTX, keamanan diaudit CertiK, dan kepatuhan global.",
       },
+      "/about-us": {
+        title: "Tentang Bitradex | Misi, Tim & Informasi Perusahaan",
+        description:
+          "Pelajari tentang Bitradex (BITRADEX FINTECH LIMITED), misi, tim, dan visi kami untuk trading kripto berbasis AI di seluruh dunia.",
+      },
+      "/markets": {
+        title: "Pasar Bitradex | Harga Kripto Live BTC, ETH, BNB, SOL",
+        description:
+          "Harga kripto live di Bitradex. Pantau BTC, ETH, BNB, SOL, dan token BTX secara real-time di pasar spot dan futures.",
+      },
+      "/spot": {
+        title: "Bitradex Spot | Beli & Jual Kripto Secara Instan",
+        description:
+          "Trading kripto di Bitradex Spot dengan biaya rendah, likuiditas tinggi, dan grafik TradingView untuk BTC, ETH, BNB, SOL, dan BTX.",
+      },
+      "/futures": {
+        title: "Bitradex Futures | Trading Derivatif Kripto dengan Leverage",
+        description:
+          "Trading Bitradex Futures dengan leverage tinggi, alat manajemen risiko, dan otomatisasi AI pada platform yang diaudit CertiK.",
+      },
+      "/institutional": {
+        title: "Bitradex Institutional | OTC, Custody & API",
+        description:
+          "Layanan institusional Bitradex: OTC desk, custody aman, akses API, likuiditas dalam, dan dukungan khusus untuk dana dan korporasi.",
+      },
+      "/contact": {
+        title: "Kontak Bitradex | Dukungan Pelanggan & Pusat Bantuan",
+        description:
+          "Hubungi tim Bitradex untuk dukungan terkait login, penarikan, deposit, KYC, bot AI, dan pertanyaan akun.",
+      },
+      "/our-team": {
+        title: "Tim Kami | Kepemimpinan & Insinyur Bitradex",
+        description:
+          "Temui tim kepemimpinan Bitradex di balik exchange kripto berbasis AI dan ekosistem token BTX.",
+      },
+      "/careers": {
+        title: "Karier di Bitradex | Bergabunglah dengan Revolusi AI Kripto",
+        description:
+          "Lowongan terbuka di Bitradex. Bangun masa depan trading kripto AI bersama tim global di engineering, compliance, dan produk.",
+      },
+      "/press-media": {
+        title: "Pers & Media Bitradex | Berita, Aset Merek & Rilis",
+        description:
+          "Rilis pers, media kit, aset merek, dan pernyataan resmi Bitradex tentang token BTX, kemitraan, dan pencapaian.",
+      },
+      "/terms-of-service": {
+        title: "Ketentuan Layanan | Bitradex",
+        description:
+          "Baca Ketentuan Layanan Bitradex yang mengatur penggunaan platform, akun, trading, biaya, dan token BTX.",
+      },
+      "/privacy-policy": {
+        title: "Kebijakan Privasi | Bitradex",
+        description:
+          "Bagaimana Bitradex mengumpulkan, menggunakan, dan melindungi data pribadi, informasi KYC, dan aktivitas akun Anda.",
+      },
+      "/risk-disclosure": {
+        title: "Pengungkapan Risiko | Risiko Trading Kripto Bitradex",
+        description:
+          "Pengungkapan risiko penting untuk trading kripto, futures, dan derivatif di Bitradex, termasuk volatilitas dan risiko leverage.",
+      },
+      "/aml-policy": {
+        title: "Kebijakan AML | Anti Pencucian Uang Bitradex",
+        description:
+          "Kebijakan AML Bitradex, persyaratan KYC, dan komitmen kami melawan pencucian uang serta pendanaan terorisme.",
+      },
+      "/compliance": {
+        title: "Compliance | Standar Regulasi Global Bitradex",
+        description:
+          "Program compliance Bitradex: registrasi UK, MSB, skrining sanksi, dan kerja sama regulasi di seluruh dunia.",
+      },
+      "/faq": {
+        title: "FAQ Bitradex | Pusat Bantuan, Dukungan & Trading",
+        description:
+          "FAQ Bitradex: jawaban tentang pendaftaran, login, KYC, deposit, penarikan, biaya, bot AI, token BTX, dan keamanan.",
+      },
+      "/disclaimer": {
+        title: "Penafian | Pemberitahuan Hukum Bitradex",
+        description:
+          "Penafian hukum Bitradex mencakup informasi platform, konten pihak ketiga, akurasi data pasar, dan batasan tanggung jawab.",
+      },
+      "/user-agreement": {
+        title: "Perjanjian Pengguna | Ketentuan Akun Bitradex",
+        description:
+          "Perjanjian pengguna Bitradex: aturan akun, perilaku trading, kelayakan, aktivitas terlarang, dan tanggung jawab platform.",
+      },
     },
   },
 
