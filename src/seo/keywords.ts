@@ -880,7 +880,92 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
       "/": {
         title: "Bitradex | AI 암호화폐 거래소 및 트레이딩 플랫폼",
         description:
-          "Bitradex에서 자신 있게 암호화폐를 거래하세요. AI 봇, 현물 및 선물 시장, BTX 토큰, CertiK 감사 보안, 글로벌 컴플라이언스.",
+          "Bitradex에서 자신 있게 암호화폐를 거래하세요. AI 봇, 현물 및 선물, BTX 토큰, CertiK 감사 보안과 글로벌 컴플라이언스.",
+      },
+      "/about-us": {
+        title: "Bitradex 소개 | 미션, 팀, 회사 정보",
+        description:
+          "Bitradex(BITRADEX FINTECH LIMITED), 우리의 미션, 팀, 그리고 전 세계 AI 기반 암호화폐 거래의 비전을 알아보세요.",
+      },
+      "/markets": {
+        title: "Bitradex 마켓 | 실시간 BTC, ETH, BNB, SOL 시세",
+        description:
+          "Bitradex의 실시간 암호화폐 시세. 현물 및 선물 시장에서 BTC, ETH, BNB, SOL 및 BTX 토큰을 실시간으로 확인하세요.",
+      },
+      "/spot": {
+        title: "Bitradex 현물 | 즉시 암호화폐 매수·매도",
+        description:
+          "낮은 수수료, 풍부한 유동성, BTC·ETH·BNB·SOL·BTX용 TradingView 차트로 Bitradex 현물에서 거래하세요.",
+      },
+      "/futures": {
+        title: "Bitradex 선물 | 레버리지 암호화폐 파생상품 거래",
+        description:
+          "높은 레버리지, 고급 리스크 도구, AI 자동화를 갖춘 CertiK 감사 플랫폼에서 Bitradex 선물을 거래하세요.",
+      },
+      "/institutional": {
+        title: "Bitradex 기관 | OTC, 커스터디 및 API",
+        description:
+          "Bitradex 기관 서비스: OTC 데스크, 안전한 커스터디, API 액세스, 깊은 유동성, 펀드 및 기업을 위한 전담 지원.",
+      },
+      "/contact": {
+        title: "Bitradex 문의 | 고객 지원 및 도움말 센터",
+        description:
+          "로그인, 출금, 입금, KYC, AI 봇, 계정 관련 문의는 Bitradex 팀에 연락해 주세요.",
+      },
+      "/our-team": {
+        title: "팀 소개 | Bitradex 리더십 및 엔지니어",
+        description:
+          "AI 기반 암호화폐 거래소와 BTX 토큰 생태계를 이끄는 Bitradex 리더십 팀을 만나보세요.",
+      },
+      "/careers": {
+        title: "Bitradex 채용 | AI·암호화폐 혁명에 합류하세요",
+        description:
+          "Bitradex의 채용 공고. 엔지니어링, 컴플라이언스, 제품 분야의 글로벌 팀과 함께 AI 암호화폐 거래의 미래를 만드세요.",
+      },
+      "/press-media": {
+        title: "Bitradex 보도 자료 및 미디어 | 뉴스 및 브랜드 자료",
+        description:
+          "Bitradex 보도 자료, 미디어 키트, 브랜드 자산, BTX 토큰·파트너십·주요 성과에 대한 공식 발표.",
+      },
+      "/terms-of-service": {
+        title: "서비스 약관 | Bitradex",
+        description:
+          "플랫폼, 계정, 거래, 수수료 및 BTX 토큰 사용을 규정하는 Bitradex 서비스 약관을 확인하세요.",
+      },
+      "/privacy-policy": {
+        title: "개인정보 처리방침 | Bitradex",
+        description:
+          "Bitradex가 회원의 개인정보, KYC 정보 및 계정 활동을 수집·이용·보호하는 방법을 안내합니다.",
+      },
+      "/risk-disclosure": {
+        title: "위험 고지 | Bitradex 암호화폐 거래 위험",
+        description:
+          "변동성 및 레버리지 위험 등 Bitradex에서의 암호화폐, 선물, 파생상품 거래에 대한 중요한 위험 고지.",
+      },
+      "/aml-policy": {
+        title: "AML 정책 | Bitradex 자금세탁 방지",
+        description:
+          "Bitradex의 AML 정책, KYC 요건, 자금세탁 및 테러자금 조달 방지에 대한 우리의 약속.",
+      },
+      "/compliance": {
+        title: "컴플라이언스 | Bitradex 글로벌 규제 표준",
+        description:
+          "Bitradex 컴플라이언스 프로그램: 영국 등록, MSB 등록, 제재 스크리닝 및 글로벌 규제 협력.",
+      },
+      "/faq": {
+        title: "Bitradex FAQ | 도움말 센터 및 거래 관련 질문",
+        description:
+          "Bitradex FAQ: 가입, 로그인, KYC, 입출금, 수수료, AI 봇, BTX 토큰, 보안 및 거래 시작 방법에 대한 답변.",
+      },
+      "/disclaimer": {
+        title: "면책 조항 | Bitradex 법적 고지",
+        description:
+          "플랫폼 정보, 제3자 콘텐츠, 시장 데이터 정확성 및 책임 제한에 관한 Bitradex 법적 면책 조항.",
+      },
+      "/user-agreement": {
+        title: "이용자 약관 | Bitradex 계정 및 플랫폼 규정",
+        description:
+          "Bitradex 이용자 약관: 계정 규정, 거래 행위, 자격, 금지 활동 및 플랫폼 책임을 정의합니다.",
       },
     },
   },
