@@ -1,7 +1,7 @@
 // SEO keywords by language. Each language gets ONLY its own keyword set.
 // Brand keyword "Bitradex" is global priority across all locales.
 
-export type SeoLang = "en" | "pt" | "es" | "de" | "id" | "th" | "ko" | "ru";
+export type SeoLang = "en" | "pt" | "es" | "de" | "id" | "th" | "ko" | "ru" | "ja" | "ms" | "zh";
 
 export const SITE_URL = "https://bitradex.app";
 export const BRAND = "Bitradex";
@@ -17,31 +17,55 @@ interface SeoLocale {
 }
 
 const brandCore = [
-  "Bitradex",
-  "Bitradex login",
-  "Bitradex app",
-  "Bitradex exchange",
-  "Bitradex platform",
-  "Bitradex.ai",
-  "Bitradex.com",
-  "Bitradex AI bot",
-  "Bitradex AI trading",
-  "Bitradex automated trading",
-  "Bitradex ARK model",
-  "Bitradex futures",
-  "Bitradex spot trading",
-  "Bitradex staking",
-  "Bitradex token",
-  "BTX token",
-  "Bitradex BTX",
-  "Bitradex coinmarketcap",
-  "Bitradex certik",
-  "Bitradex security audit",
-  "Bitradex proof of reserves",
-  "Bitradex card",
-  "Bitradex BTX card",
-  "Bitradex UK registration",
-  "BITRADEX FINTECH LIMITED",
+  // Primary brand
+  "Bitradex", "bitradex", "BITRADEX", "Bitradex.com", "Bitradex.app", "Bitradex.ai",
+  "Bitradex login", "Bitradex sign in", "Bitradex log in", "Bitradex register", "Bitradex sign up",
+  "Bitradex app", "Bitradex mobile app", "Bitradex iOS app", "Bitradex Android app",
+  "Bitradex app download", "Bitradex download", "Bitradex official site",
+  // Secondary brand
+  "Bitradex exchange", "Bitradex crypto exchange", "Bitradex platform", "Bitradex trading platform",
+  "Bitradex AI", "Bitradex AI bot", "Bitradex AI trading", "Bitradex AI trading bot",
+  "Bitradex automated trading", "Bitradex quant trading", "Bitradex algorithmic trading",
+  "Bitradex ARK model", "Bitradex ARK trading model", "Bitradex ARK AI", "ARK trading model",
+  "Bitradex futures", "Bitradex perpetual", "Bitradex futures trading", "Bitradex derivatives",
+  "Bitradex spot", "Bitradex spot trading", "Bitradex margin", "Bitradex margin trading",
+  "Bitradex staking", "Bitradex earn", "Bitradex savings", "Bitradex launchpad",
+  "Bitradex token", "BTX token", "BTX coin", "Bitradex BTX", "BTX crypto",
+  "BTX coinmarketcap", "BTX coingecko", "Bitradex coinmarketcap", "Bitradex coingecko",
+  "Bitradex certik", "Bitradex CertiK audit", "Bitradex security audit",
+  "Bitradex proof of reserves", "Bitradex POR", "Bitradex audit report",
+  "Bitradex card", "BTX card", "Bitradex BTX card", "Bitradex Visa card", "Bitradex crypto card",
+  "Bitradex UK", "Bitradex UK registration", "Bitradex MSB", "Bitradex MSB registration",
+  "BITRADEX FINTECH LIMITED", "Bitradex Fintech", "Bitradex company",
+  // Long-tail and trust
+  "Bitradex review", "Bitradex reviews", "Bitradex review 2025", "Bitradex review 2026",
+  "Bitradex legit", "Bitradex legitimate", "Bitradex scam", "Bitradex fraud",
+  "Bitradex safe", "Bitradex safety", "Bitradex trustworthy", "Bitradex reliable",
+  "Bitradex testimonials", "Bitradex feedback", "Bitradex user reviews", "Bitradex ratings",
+  "is Bitradex safe", "is Bitradex legit", "is Bitradex a scam", "is Bitradex trustworthy",
+  // Onboarding
+  "Bitradex invite code", "Bitradex referral code", "Bitradex referral", "Bitradex referral program",
+  "Bitradex bonus", "Bitradex welcome bonus", "Bitradex signup bonus", "Bitradex referral bonus",
+  "Bitradex promo code", "Bitradex coupon",
+  // Operations
+  "Bitradex how to withdraw", "Bitradex how to deposit", "Bitradex withdrawal", "Bitradex deposit",
+  "Bitradex withdrawal limits", "Bitradex deposit limits", "Bitradex fees", "Bitradex trading fees",
+  "Bitradex withdrawal fees", "Bitradex KYC", "Bitradex verification", "Bitradex tutorial",
+  "Bitradex guide", "Bitradex how to use", "Bitradex how to trade", "Bitradex demo",
+  // Earnings
+  "Bitradex ROI", "Bitradex passive income", "Bitradex yield", "Bitradex investment",
+  "Bitradex returns", "Bitradex profit", "Bitradex daily income", "Bitradex monthly income",
+  "Bitradex earnings", "Bitradex APY", "Bitradex APR",
+  // Comparisons
+  "Bitradex vs Binance", "Bitradex vs OKX", "Bitradex vs Bybit", "Bitradex vs Coinbase",
+  "Bitradex vs Kraken", "Bitradex vs KuCoin", "Bitradex vs MEXC", "Bitradex vs Gate.io",
+  "Bitradex vs Bitget", "Bitradex alternative", "Bitradex competitors",
+  "best AI crypto exchange", "best AI crypto trading bot", "best automated crypto exchange",
+  // Security & compliance
+  "Bitradex security", "Bitradex 2FA", "Bitradex cold storage", "Bitradex insurance",
+  "Bitradex regulation", "Bitradex regulated", "Bitradex license", "Bitradex compliance",
+  "Bitradex AML", "Bitradex KYC verification", "Bitradex Singapore", "Bitradex Europe",
+  "Bitradex Asia", "Bitradex global",
 ];
 
 export const seoLocales: Record<SeoLang, SeoLocale> = {
@@ -1092,6 +1116,127 @@ export const seoLocales: Record<SeoLang, SeoLocale> = {
       },
     },
   },
+
+  ja: {
+    htmlLang: "ja",
+    ogLocale: "ja_JP",
+    siteName: "Bitradex",
+    defaultTitle: "Bitradex | AI暗号資産取引所・トレーディングプラットフォーム",
+    defaultDescription:
+      "Bitradexは英国登録のAI搭載暗号資産取引所。BTC・ETH・BNB・SOLを現物と先物で取引、AI BotとBTXトークンで収益を獲得。",
+    keywords: [
+      ...brandCore,
+      "Bitradex 取引所", "Bitradex ログイン", "Bitradex 登録", "Bitradex 入金", "Bitradex 出金",
+      "Bitradex 手数料", "Bitradex 評判", "Bitradex 信頼できる", "Bitradex 詐欺", "Bitradex 使い方",
+      "Bitradex AI ボット", "Bitradex 自動売買", "Bitradex 先物", "Bitradex スポット", "Bitradex BTX トークン",
+      "Bitradex ステーキング", "Bitradex 招待コード", "Bitradex 紹介コード", "Bitradex ボーナス", "Bitradex 日本",
+      "Bitradex アプリ", "Bitradex iOS", "Bitradex Android", "Bitradex CertiK", "Bitradex セキュリティ監査",
+      "Bitradex vs バイナンス", "Bitradex vs Bybit", "Bitradex 代替", "Bitradex KYC", "Bitradex カード",
+      "AI 暗号資産取引ボット", "ベスト暗号通貨取引所", "暗号通貨自動売買", "AI トレーディング 日本",
+      "Bitradex とは", "Bitradex 評価", "Bitradex 安全", "ビットラデックス", "ビットラデックス 取引所",
+    ],
+    pages: {
+      "/": { title: "Bitradex | AI暗号資産取引所・トレーディングプラットフォーム", description: "BitradexでAI Botを使い、BTC・ETH・BNB・SOLを安全に取引。CertiK監査済み、英国登録の信頼できる取引所。" },
+      "/about-us": { title: "Bitradexについて | 会社情報・チーム・ミッション", description: "BITRADEX FINTECH LIMITEDの企業情報、チーム、AI暗号資産取引のビジョンをご紹介します。" },
+      "/markets": { title: "Bitradexマーケット | BTC・ETH・BNB・SOLのライブ価格", description: "Bitradexで暗号資産のリアルタイム価格を確認。BTC・ETH・BNB・SOL・BTXトークンの市場データ。" },
+      "/spot": { title: "Bitradex 現物取引 | 暗号資産を瞬時に売買", description: "BitradexのSpotで低手数料・高流動性。BTC・ETH・BNB・SOL・BTXをTradingViewチャートで取引。" },
+      "/futures": { title: "Bitradex 先物 | レバレッジ暗号資産デリバティブ取引", description: "Bitradex先物で高レバレッジ取引。高度なリスク管理ツールとAI自動化、CertiK監査済み。" },
+      "/institutional": { title: "Bitradex 機関投資家 | OTC・カストディ・API取引", description: "Bitradex機関向けサービス:OTCデスク、安全なカストディ、API、ディープ流動性、専任サポート。" },
+      "/contact": { title: "Bitradexお問い合わせ | カスタマーサポート", description: "Bitradexサポート:ログイン、入出金、KYC、AI Bot、アカウントに関するご質問はこちら。" },
+      "/our-team": { title: "Bitradexチーム | リーダーシップ・エンジニア", description: "AI暗号資産取引所Bitradexを支えるリーダーシップチームをご紹介します。" },
+      "/careers": { title: "Bitradex採用 | AI暗号資産業界で働く", description: "Bitradexの求人情報。グローバルチームでAI暗号資産取引の未来を構築しましょう。" },
+      "/press-media": { title: "Bitradexプレス・メディア | ニュース・ブランド資料", description: "Bitradexプレスリリース、メディアキット、ブランド資料、公式声明。" },
+      "/terms-of-service": { title: "利用規約 | Bitradex", description: "Bitradexプラットフォーム、アカウント、取引、手数料、BTXトークンに関する利用規約。" },
+      "/privacy-policy": { title: "プライバシーポリシー | Bitradex", description: "Bitradexによる個人データ、KYC情報、アカウント活動の収集・利用・保護に関する方針。" },
+      "/risk-disclosure": { title: "リスク開示 | Bitradex 暗号資産取引リスク", description: "Bitradexで暗号資産・先物・デリバティブを取引する際の重要なリスク情報。" },
+      "/aml-policy": { title: "AMLポリシー | Bitradex マネーロンダリング対策", description: "BitradexのAMLポリシー、KYC要件、マネーロンダリングおよびテロ資金供与対策へのコミットメント。" },
+      "/compliance": { title: "コンプライアンス | Bitradex グローバル規制基準", description: "Bitradexコンプライアンスプログラム:英国登録、MSB登録、制裁スクリーニング、世界各国の規制協力。" },
+      "/faq": { title: "Bitradex FAQ | ヘルプセンター・サポート", description: "Bitradex FAQ:登録、ログイン、KYC、入出金、手数料、AI Bot、BTXトークン、セキュリティに関する回答。" },
+      "/disclaimer": { title: "免責事項 | Bitradex 法的通知", description: "Bitradexの法的免責事項。プラットフォーム情報、第三者コンテンツ、市場データの正確性、責任制限。" },
+      "/user-agreement": { title: "ユーザー規約 | Bitradex アカウント規約", description: "Bitradexユーザー規約:アカウントルール、取引行動、適格性、禁止行為、プラットフォーム責任。" },
+    },
+  },
+
+  ms: {
+    htmlLang: "ms",
+    ogLocale: "ms_MY",
+    siteName: "Bitradex",
+    defaultTitle: "Bitradex | Pertukaran Kripto AI & Platform Dagangan",
+    defaultDescription:
+      "Bitradex ialah bursa kripto berkuasa AI yang dipercayai. Dagangkan BTC, ETH, BNB & SOL di spot dan futures dengan AI Bot dan token BTX.",
+    keywords: [
+      ...brandCore,
+      "Bitradex Malaysia", "Bitradex log masuk", "Bitradex daftar", "Bitradex deposit", "Bitradex pengeluaran",
+      "Bitradex yuran", "Bitradex sah", "Bitradex selamat", "Bitradex penipuan", "Bitradex ulasan",
+      "Bitradex AI bot", "Bitradex dagangan automatik", "Bitradex futures", "Bitradex spot", "Bitradex BTX",
+      "Bitradex staking", "Bitradex kod jemputan", "Bitradex bonus", "Bitradex aplikasi", "Bitradex iOS",
+      "Bitradex Android", "Bitradex KYC", "Bitradex CertiK", "Bitradex vs Binance", "Bitradex alternatif",
+      "bot dagangan kripto AI", "bursa kripto terbaik Malaysia", "platform dagangan kripto Malaysia",
+      "pelaburan kripto AI", "pendapatan pasif kripto", "cara dagang kripto Malaysia",
+      "Bitradex halal", "Bitradex syariah", "Bitradex pendapatan harian",
+    ],
+    pages: {
+      "/": { title: "Bitradex | Pertukaran Kripto AI & Platform Dagangan", description: "Dagangkan kripto dengan yakin di Bitradex. AI bot, spot & futures, token BTX, diaudit CertiK." },
+      "/about-us": { title: "Tentang Bitradex | Misi, Pasukan & Syarikat", description: "Ketahui tentang BITRADEX FINTECH LIMITED, misi kami dan visi dagangan kripto berkuasa AI." },
+      "/markets": { title: "Pasaran Bitradex | Harga Kripto Langsung BTC, ETH, BNB, SOL", description: "Harga pasaran kripto langsung di Bitradex. Pantau BTC, ETH, BNB, SOL dan token BTX." },
+      "/spot": { title: "Bitradex Spot | Beli & Jual Kripto Serta-merta", description: "Dagangkan kripto di Bitradex Spot dengan yuran rendah dan kecairan mendalam." },
+      "/futures": { title: "Bitradex Futures | Dagangan Derivatif Kripto Berleveraj", description: "Dagangkan Bitradex Futures dengan leveraj tinggi dan automasi AI pada platform diaudit CertiK." },
+      "/institutional": { title: "Bitradex Institusi | OTC, Kustodi & Dagangan API", description: "Perkhidmatan institusi Bitradex: OTC, kustodi selamat, API, kecairan mendalam dan sokongan khusus." },
+      "/contact": { title: "Hubungi Bitradex | Pusat Sokongan Pelanggan", description: "Hubungi Bitradex untuk sokongan log masuk, pengeluaran, deposit, KYC dan AI bot." },
+      "/our-team": { title: "Pasukan Bitradex | Kepimpinan & Jurutera", description: "Temui pasukan kepimpinan di sebalik bursa kripto AI Bitradex dan ekosistem BTX." },
+      "/careers": { title: "Kerjaya di Bitradex | Sertai Revolusi Kripto & AI", description: "Jawatan kosong di Bitradex. Bina masa depan dagangan kripto AI bersama pasukan global." },
+      "/press-media": { title: "Bitradex Akhbar & Media | Berita & Aset Jenama", description: "Siaran akhbar Bitradex, kit media, aset jenama dan kenyataan rasmi." },
+      "/terms-of-service": { title: "Terma Perkhidmatan | Bitradex", description: "Baca Terma Perkhidmatan Bitradex untuk akaun, dagangan, yuran dan token BTX." },
+      "/privacy-policy": { title: "Dasar Privasi | Bitradex", description: "Bagaimana Bitradex mengumpul, menggunakan dan melindungi data peribadi dan aktiviti akaun anda." },
+      "/risk-disclosure": { title: "Pendedahan Risiko | Bitradex", description: "Pendedahan risiko penting untuk dagangan kripto, futures dan derivatif di Bitradex." },
+      "/aml-policy": { title: "Dasar AML | Bitradex Anti Pengubahan Wang Haram", description: "Dasar AML Bitradex, keperluan KYC dan komitmen melawan pengubahan wang haram." },
+      "/compliance": { title: "Pematuhan | Bitradex Piawaian Pengawal Selia Global", description: "Program pematuhan Bitradex: pendaftaran UK, MSB, saringan sekatan dan kerjasama pengawal selia." },
+      "/faq": { title: "Bitradex Soalan Lazim | Pusat Bantuan & Sokongan", description: "FAQ Bitradex: jawapan tentang pendaftaran, log masuk, KYC, deposit, pengeluaran, yuran, AI bot." },
+      "/disclaimer": { title: "Penafian | Bitradex Notis Undang-undang", description: "Penafian undang-undang Bitradex meliputi maklumat platform, kandungan pihak ketiga dan had liabiliti." },
+      "/user-agreement": { title: "Perjanjian Pengguna | Bitradex", description: "Perjanjian pengguna Bitradex: peraturan akaun, tingkah laku dagangan, aktiviti terlarang." },
+    },
+  },
+
+  zh: {
+    htmlLang: "zh-CN",
+    ogLocale: "zh_CN",
+    siteName: "Bitradex",
+    defaultTitle: "Bitradex | AI 加密货币交易所与交易平台",
+    defaultDescription:
+      "Bitradex 是受信任的 AI 驱动加密货币交易所。在现货和合约市场交易 BTC、ETH、BNB 和 SOL,使用 AI Bot 和 BTX 代币获得收益。",
+    keywords: [
+      ...brandCore,
+      "Bitradex 交易所", "Bitradex 登录", "Bitradex 注册", "Bitradex 充值", "Bitradex 提现",
+      "Bitradex 手续费", "Bitradex 安全吗", "Bitradex 可靠吗", "Bitradex 骗局", "Bitradex 评价",
+      "Bitradex AI 机器人", "Bitradex 量化交易", "Bitradex 合约", "Bitradex 现货", "Bitradex BTX 代币",
+      "Bitradex 质押", "Bitradex 邀请码", "Bitradex 返佣", "Bitradex 推荐码", "Bitradex 奖励",
+      "Bitradex App 下载", "Bitradex 苹果", "Bitradex 安卓", "Bitradex KYC", "Bitradex CertiK 审计",
+      "Bitradex vs 币安", "Bitradex vs Bybit", "Bitradex 替代", "Bitradex 卡", "Bitradex 中国",
+      "AI 加密货币交易机器人", "最佳加密货币交易所", "自动加密货币交易平台", "AI 量化交易",
+      "比特拉迪克斯", "Bitradex 教程", "Bitradex 收益", "Bitradex 被动收入", "Bitradex 投资",
+      "Bitradex 出入金", "Bitradex 合约交易", "Bitradex 现货交易",
+    ],
+    pages: {
+      "/": { title: "Bitradex | AI 加密货币交易所与交易平台", description: "在 Bitradex 自信交易加密货币。AI 机器人、现货与合约、BTX 代币、CertiK 审计安全和全球合规。" },
+      "/about-us": { title: "关于 Bitradex | 使命、团队与公司信息", description: "了解 Bitradex(BITRADEX FINTECH LIMITED)、我们的使命、团队以及 AI 加密货币交易的愿景。" },
+      "/markets": { title: "Bitradex 行情 | BTC、ETH、BNB、SOL 实时价格", description: "Bitradex 上的实时加密货币行情。跟踪 BTC、ETH、BNB、SOL 和 BTX 代币的现货与合约价格。" },
+      "/spot": { title: "Bitradex 现货交易 | 即时买卖加密货币", description: "在 Bitradex 现货以低费率、深度流动性交易,支持 BTC、ETH、BNB、SOL 和 BTX 的 TradingView 图表。" },
+      "/futures": { title: "Bitradex 合约 | 加密货币杠杆衍生品交易", description: "在 Bitradex 合约使用高杠杆、先进风控工具和 AI 自动化,平台经 CertiK 审计。" },
+      "/institutional": { title: "Bitradex 机构服务 | OTC、托管与 API 交易", description: "Bitradex 机构服务:OTC 交易台、安全托管、API 接入、深度流动性、专属支持。" },
+      "/contact": { title: "联系 Bitradex | 客户支持与帮助中心", description: "联系 Bitradex 团队获取登录、提现、充值、KYC、AI 机器人和账户问题的支持。" },
+      "/our-team": { title: "我们的团队 | Bitradex 领导层与工程师", description: "认识 Bitradex 背后的领导团队和 BTX 代币生态系统。" },
+      "/careers": { title: "Bitradex 招聘 | 加入加密货币与 AI 革命", description: "Bitradex 招聘职位。与全球团队一起构建 AI 加密货币交易的未来。" },
+      "/press-media": { title: "Bitradex 新闻与媒体 | 新闻稿与品牌资产", description: "Bitradex 新闻稿、媒体资源包、品牌资产和有关 BTX 代币、合作伙伴的官方声明。" },
+      "/terms-of-service": { title: "服务条款 | Bitradex", description: "阅读 Bitradex 服务条款,涵盖平台使用、账户、交易、费用和 BTX 代币。" },
+      "/privacy-policy": { title: "隐私政策 | Bitradex", description: "Bitradex 如何收集、使用和保护您的个人数据、KYC 信息和账户活动。" },
+      "/risk-disclosure": { title: "风险披露 | Bitradex 加密货币交易风险", description: "Bitradex 上交易加密货币、合约和衍生品的重要风险披露,包括波动性和杠杆风险。" },
+      "/aml-policy": { title: "反洗钱政策 | Bitradex AML", description: "Bitradex 反洗钱政策、KYC 要求,以及我们打击洗钱和恐怖融资的承诺。" },
+      "/compliance": { title: "合规 | Bitradex 全球监管标准", description: "Bitradex 合规计划:英国注册、MSB 注册、制裁筛查和全球监管合作。" },
+      "/faq": { title: "Bitradex 常见问题 | 帮助中心与支持", description: "Bitradex 常见问题:关于注册、登录、KYC、充值、提现、费用、AI 机器人、BTX 代币和安全的答案。" },
+      "/disclaimer": { title: "免责声明 | Bitradex 法律声明", description: "Bitradex 法律免责声明,涵盖平台信息、第三方内容、市场数据准确性和责任限制。" },
+      "/user-agreement": { title: "用户协议 | Bitradex 账户与平台条款", description: "Bitradex 用户协议:账户规则、交易行为、资格、禁止活动和平台责任。" },
+    },
+  },
 };
 
 export const seoLangs: SeoLang[] = [
@@ -1103,4 +1248,8 @@ export const seoLangs: SeoLang[] = [
   "th",
   "ko",
   "ru",
+  "ja",
+  "ms",
+  "zh",
 ];
+

@@ -5,16 +5,33 @@
     <loc>https://bitradex.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitradex.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bitradex.app/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://bitradex.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bitradex.app/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bitradex.app/?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://bitradex.app/?lang=th"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://bitradex.app/?lang=ko"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://bitradex.app/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitradex.app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bitradex.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bitradex.app/es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bitradex.app/de"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://bitradex.app/id"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bitradex.app/ms"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://bitradex.app/th"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bitradex.app/ko"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bitradex.app/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bitradex.app/zh"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bitradex.app/ru"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bitradex.app/"/>
   </url>
+
+  <!-- Language-prefixed homepages -->
+  <url><loc>https://bitradex.app/pt</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/es</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/de</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/id</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/ms</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/th</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/ko</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/ja</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/zh</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+  <url><loc>https://bitradex.app/ru</loc><changefreq>daily</changefreq><priority>0.95</priority></url>
+
+  <!-- Main pages (EN canonical) -->
   <url><loc>https://bitradex.app/about-us</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://bitradex.app/markets</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://bitradex.app/spot</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
@@ -24,9 +41,12 @@
   <url><loc>https://bitradex.app/our-team</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://bitradex.app/careers</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://bitradex.app/press-media</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://bitradex.app/faq</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://bitradex.app/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bitradex.app/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bitradex.app/risk-disclosure</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bitradex.app/aml-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://bitradex.app/compliance</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bitradex.app/disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://bitradex.app/user-agreement</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
