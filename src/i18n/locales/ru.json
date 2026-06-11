@@ -1,7 +1,34 @@
 {
+  "common": {
+    "signupMobile": "Регистрация в моб.",
+    "learnMore": "Подробнее",
+    "tradeNow": "Торговать",
+    "getStarted": "Начать",
+    "comingSoon": "Coming Soon",
+    "readMore": "Read More",
+    "applyNow": "Apply Now",
+    "viewMore": "View More Markets →",
+    "send": "Send",
+    "submit": "Submit",
+    "perpetual": "Perpetual",
+    "spot": "Spot",
+    "buy": "Buy",
+    "sell": "Sell",
+    "price": "Price",
+    "amount": "Amount",
+    "total": "Total",
+    "available": "Available",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "transfer": "Transfer",
+    "high24h": "24H High",
+    "low24h": "24H Low",
+    "volume24h": "24H Vol",
+    "change24h": "24h Change"
+  },
   "nav": {
     "home": "Главная",
-    "aboutUs": "О нас",
+    "aboutUs": "О Нас",
     "market": "Рынок",
     "futures": "Фьючерсы",
     "spot": "Спот",
@@ -9,14 +36,144 @@
     "contactUs": "Контакты",
     "login": "Войти",
     "signup": "Регистрация",
-    "signupMobile": "Зарегистрироваться на мобильном",
+    "signupMobile": "Регистрация в моб.",
     "faq": "FAQ"
   },
   "hero": {
+    "headline1": "Чемпионы Рекомендуют",
+    "headline2": "Интеллект Ведёт",
+    "ambassador": "Чемпион мира Оливье Жиру официально становится глобальным посланником бренда Bitradex",
+    "registerNow": "Регистрация",
+    "watchDemo": "Смотреть Демо",
+    "stats": {
+      "activeUsers": "Активные Пользователи",
+      "volumeTraded": "Объём Торгов",
+      "uptime": "Доступность"
+    },
     "title": "Торгуйте криптовалютой с уверенностью",
     "subtitle": "Присоединяйтесь к миллионам трейдеров по всему миру на самой надежной платформе обмена криптовалют",
     "getStarted": "Начать",
     "learnMore": "Узнать больше"
+  },
+  "whyChoose": {
+    "title": "Почему Bitradex",
+    "subtitle": "Узнайте преимущества, которые делают нас предпочитаемой платформой для трейдеров по всему миру",
+    "items": {
+      "ai": {
+        "title": "Умный ИИ",
+        "description": "Основан на модели ARK Trading с триллионами параметров для оптимальных стратегий"
+      },
+      "security": {
+        "title": "Максимальная Безопасность",
+        "description": "Регистрация в Великобритании, многоуровневая защита и постоянный аудит"
+      },
+      "global": {
+        "title": "Глобальный Доступ",
+        "description": "Доступ из любой точки мира с многоязычной поддержкой"
+      },
+      "fast": {
+        "title": "Молниеносная Скорость",
+        "description": "Исполнение сделок за миллисекунды на высокопроизводительном движке"
+      }
+    }
+  },
+  "marketOverview": {
+    "title": "Market Overview",
+    "subtitle": "Stay updated with real-time cryptocurrency prices and market trends",
+    "headers": {
+      "rank": "Rank",
+      "name": "Name",
+      "lastPrice": "Last Price",
+      "change24h": "24h Change",
+      "volume24h": "24h Volume",
+      "marketCap": "Market Cap"
+    },
+    "viewMore": "View More Markets →",
+    "volume": "Volume"
+  },
+  "aiBot": {
+    "badge": "Powered by ARK Trading Model",
+    "title": "Bitradex AI Bot: Будущее Трейдинга",
+    "subtitle": "Say goodbye to constant market monitoring. Let our advanced AI do the trading for you with institutional-grade strategies.",
+    "features": {
+      "oneClick": {
+        "title": "One-Click Subscribe",
+        "description": "Start trading with AI in seconds. No complex setup or prior experience needed."
+      },
+      "strategy": {
+        "title": "AI-Driven Strategy",
+        "description": "Leverages trillion-parameter financial models to identify optimal trading opportunities."
+      },
+      "transparent": {
+        "title": "Fully Transparent Trading",
+        "description": "Real-time tracking of all trades and performance metrics with easy-to-understand dashboards."
+      },
+      "risk": {
+        "title": "Real-Time Risk Control",
+        "description": "Advanced risk management algorithms protect your capital in volatile market conditions."
+      }
+    },
+    "performance": {
+      "title": "Example Performance",
+      "winRate": "Win Rate*",
+      "annualReturn": "Annual Return*",
+      "availability": "Availability",
+      "disclaimer": "*Example performance only. Past performance does not guarantee future results."
+    },
+    "cta": "Попробовать AI Bot"
+  },
+  "ecosystem": {
+    "title": "Полная Торговая Экосистема",
+    "subtitle": "Explore our comprehensive suite of products and services designed for all types of traders",
+    "items": {
+      "spot": {
+        "title": "Spot Trading",
+        "description": "Buy and sell cryptocurrencies directly with competitive fees.",
+        "cta": "Trade Now"
+      },
+      "futures": {
+        "title": "Futures Trading",
+        "description": "Trade with leverage and go long or short on the market.",
+        "cta": "Trade Now"
+      },
+      "aiBot": {
+        "title": "AI Bot",
+        "description": "One-click activation of AI Bot, intelligent quantitative strategies for automatic trading, easily seize market opportunities.",
+        "cta": "Learn More"
+      },
+      "btxCard": {
+        "title": "BTX Card",
+        "description": "Issued in partnership with Visa, supporting Apple Pay, Google Pay, Alipay, WeChat Pay and other payment methods, globally accepted, transparent fees, only 0.7% handling fee",
+        "cta": "Learn More"
+      }
+    },
+    "ctaTitle": "Ready to Start Trading?",
+    "ctaSubtitle": "Join over 500,000 traders who trust Bitradex for their digital asset trading needs. Get started in minutes with our intuitive platform.",
+    "createAccount": "Создать Аккаунт",
+    "exploreFeatures": "Explore Features"
+  },
+  "trustedBy": {
+    "title": "Доверие Лидеров Индустрии",
+    "subtitle": "Backed by top investors and compliant with global regulatory standards",
+    "stats": {
+      "activeTraders": "Active Traders",
+      "dailyVolume": "Daily Volume",
+      "tradingPairs": "Trading Pairs",
+      "uptime": "Uptime"
+    }
+  },
+  "appDownload": {
+    "badge": "Trade Anytime, Anywhere with the Bitradex App",
+    "title": "Сканируйте для Загрузки",
+    "description": "Experience the full power of Bitradex in your pocket. Our mobile app provides seamless access to all features, including AI Bot, real-time market data, and secure trading.",
+    "platforms": "iOS & Android",
+    "platformsDesc": "Use your phone's camera to scan the QR code for direct download.",
+    "appStore": "App Store",
+    "appStoreSmall": "Download on the",
+    "googlePlay": "Google Play",
+    "googlePlaySmall": "Get it on",
+    "rating": "Рейтинг 4.8/5",
+    "secure": "100% Безопасно"
   },
   "cookies": {
     "title": "Согласие на использование файлов cookie",
@@ -28,8 +185,45 @@
     "cookiePolicy": "Политика использования файлов cookie"
   },
   "footer": {
-    "allRights": "Все права защищены",
+    "tagline": "AI-Driven Capital Alpha Generation. Leading the future of digital asset trading with intelligent automation and professional-grade tools.",
+    "stayUpdated": "Stay Updated",
+    "emailPlaceholder": "Enter your email",
     "developedBy": "Разработано",
+    "allRights": "Все права защищены",
+    "sections": {
+      "about": "About Bitradex",
+      "products": "Products",
+      "services": "Services",
+      "support": "Support"
+    },
+    "links": {
+      "aboutUs": "About Us",
+      "ourTeam": "Our Team",
+      "careers": "Careers",
+      "pressMedia": "Press & Media",
+      "contactUs": "Contact Us",
+      "spotTrading": "Spot Trading",
+      "futuresTrading": "Futures Trading",
+      "aiBot": "AI Trading Bot",
+      "apiDocs": "API Documentation",
+      "mobileApp": "Mobile App",
+      "institutional": "Institutional",
+      "vipProgram": "VIP Program",
+      "referral": "Referral Program",
+      "security": "Security",
+      "supportCenter": "Support Center",
+      "helpCenter": "Help Center",
+      "faq": "FAQ",
+      "tradingGuide": "Trading Guide",
+      "systemStatus": "System Status",
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "riskDisclosure": "Risk Disclosure",
+      "amlPolicy": "AML Policy",
+      "compliance": "Compliance",
+      "userAgreement": "User Agreement",
+      "disclaimer": "Disclaimer"
+    },
     "about": "О компании",
     "aboutUs": "О нас",
     "careers": "Карьера",
@@ -48,6 +242,612 @@
     "amlPolicy": "Политика AML",
     "compliance": "Соответствие",
     "faq": "FAQ"
+  },
+  "markets": {
+    "title": "Market Overview",
+    "topGainers": "Top Gainers",
+    "topVolume": "Top Vol.",
+    "tabs": {
+      "fav": "Fav",
+      "futures": "Futures",
+      "spot": "Spot"
+    },
+    "table": {
+      "tradingPair": "Trading Pair",
+      "price": "Price",
+      "change24h": "24H Change",
+      "highLow": "24H High/24H Low",
+      "vol24h": "24H Vol.",
+      "action": "Action",
+      "trade": "Trade"
+    }
+  },
+  "spot": {
+    "label": "Spot",
+    "openOrders": "Open Orders",
+    "orderHistory": "Order History",
+    "tradeHistory": "Trade History",
+    "funds": "Funds",
+    "noOpenOrders": "No Open Orders",
+    "startTrading": "Start Trading",
+    "orderBook": "Order Book",
+    "recentTrades": "Recent Trades",
+    "priceUSDT": "Price (USDT)",
+    "amountBTC": "Amount (BTC)",
+    "totalCol": "Total",
+    "time": "Time",
+    "buyBTC": "Buy BTC",
+    "sellBTC": "Sell BTC"
+  },
+  "futures": {
+    "label": "Perpetual",
+    "currentPositions": "Current Positions",
+    "activeOrders": "Active Orders",
+    "orderHistory": "Order History",
+    "transactionDetails": "Transaction Details",
+    "fundFlow": "Fund Flow",
+    "noData": "No Data Available",
+    "openPosition": "Open Position",
+    "orderInformation": "Order Information",
+    "recentTrades": "Recent Trades",
+    "quantity": "Quantity",
+    "maxOpenLong": "Max. Open (Long):",
+    "maxOpenShort": "Max. Open (Short):",
+    "openLong": "Open Long",
+    "openShort": "Open Short",
+    "assets": "Assets",
+    "accountBalance": "Account Balance:",
+    "unrealizedPnl": "Unrealized P&L:"
+  },
+  "institutional": {
+    "title": "Institutional Trading Solutions",
+    "subtitle": "Trusted by leading financial institutions, hedge funds, and trading firms worldwide",
+    "stats": {
+      "volume": "Daily Trading Volume",
+      "clients": "Institutional Clients",
+      "latency": "Average Latency",
+      "uptime": "System Uptime"
+    },
+    "contactTeam": "Contact Our Team",
+    "getStartedHelp": "Get started with institutional trading",
+    "whyChoose": "Why Choose Bitradex Institutional",
+    "whyChooseSubtitle": "Enterprise-grade trading infrastructure designed for institutional clients",
+    "features": {
+      "infra": {
+        "title": "Enterprise-Grade Infrastructure",
+        "description": "Scalable solutions built for institutional trading volumes with 99.99% uptime guarantee"
+      },
+      "security": {
+        "title": "Advanced Security",
+        "description": "Multi-signature wallets, cold storage, and institutional-grade custody solutions"
+      },
+      "liquidity": {
+        "title": "Deep Liquidity",
+        "description": "Access to deep order books and competitive pricing across multiple markets"
+      },
+      "api": {
+        "title": "High-Performance API",
+        "description": "Ultra-low latency trading APIs with FIX protocol support and WebSocket streaming"
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "24/7 dedicated account management and technical support for institutional clients"
+      },
+      "global": {
+        "title": "Global Reach",
+        "description": "Multi-currency support with localized solutions for markets worldwide"
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Full compliance with international regulations and comprehensive AML/KYC procedures"
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Real-time reporting, customizable dashboards, and comprehensive portfolio analytics"
+      }
+    },
+    "ourServices": "Our Services",
+    "ourServicesSubtitle": "Comprehensive suite of institutional trading services",
+    "services": {
+      "prime": {
+        "title": "Prime Brokerage",
+        "description": "Comprehensive prime brokerage services including margin financing, securities lending, and consolidated reporting across multiple venues.",
+        "benefits": [
+          "Cross-margining capabilities",
+          "Consolidated credit facility",
+          "Multi-exchange access",
+          "Unified reporting dashboard"
+        ]
+      },
+      "otc": {
+        "title": "OTC Trading Desk",
+        "description": "Institutional-grade OTC trading with competitive pricing, deep liquidity, and settlement flexibility for large block trades.",
+        "benefits": [
+          "Personalized pricing",
+          "Deep liquidity pools",
+          "Flexible settlement options",
+          "Dedicated trading desk"
+        ]
+      },
+      "custody": {
+        "title": "Custody Solutions",
+        "description": "Bank-grade custody services with multi-signature technology, insurance coverage, and comprehensive audit trails.",
+        "benefits": [
+          "Cold storage solutions",
+          "Insurance coverage",
+          "Multi-signature security",
+          "Comprehensive audit trails"
+        ]
+      },
+      "marketMaking": {
+        "title": "Market Making",
+        "description": "Algorithmic market making services with advanced strategies to optimize liquidity provision and risk management.",
+        "benefits": [
+          "Customized strategies",
+          "Real-time risk management",
+          "Optimal spread management",
+          "Performance analytics"
+        ]
+      }
+    },
+    "apiTitle": "API & Integration",
+    "api": {
+      "rest": {
+        "title": "REST API",
+        "items": [
+          "Complete trading functionality",
+          "Account management",
+          "Historical data access",
+          "Rate limiting: 100 req/sec"
+        ]
+      },
+      "ws": {
+        "title": "WebSocket API",
+        "items": [
+          "Real-time market data",
+          "Order updates",
+          "Account notifications",
+          "Sub-millisecond latency"
+        ]
+      },
+      "fix": {
+        "title": "FIX Protocol",
+        "items": [
+          "FIX 4.2 & 4.4 support",
+          "Drop copy reporting",
+          "Custom message types",
+          "Enterprise integration"
+        ]
+      },
+      "docs": {
+        "title": "Documentation",
+        "items": [
+          "Comprehensive API docs",
+          "Code examples",
+          "Testing sandbox",
+          "Developer support"
+        ]
+      }
+    },
+    "secCompTitle": "Security & Compliance",
+    "secCompSubtitle": "Bank-grade security measures and regulatory compliance",
+    "secComp": {
+      "security": {
+        "title": "Security Measures",
+        "items": [
+          "Multi-signature wallets",
+          "Cold storage (95%+ assets)",
+          "Hardware security modules",
+          "24/7 security monitoring",
+          "DDoS protection"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance",
+        "items": [
+          "Full KYC/AML procedures",
+          "GDPR compliant",
+          "SOC 2 Type II certified",
+          "Regular audits",
+          "Transaction monitoring"
+        ]
+      },
+      "insurance": {
+        "title": "Insurance",
+        "items": [
+          "$100M+ insurance coverage",
+          "Crime insurance",
+          "Cyber liability coverage",
+          "Professional indemnity",
+          "Lloyd's of London backed"
+        ]
+      }
+    },
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Join hundreds of institutional clients trading on Bitradex. Our team is ready to discuss your specific requirements and provide a tailored solution.",
+    "scheduleConsultation": "Schedule a Consultation",
+    "contactSales": "Contact our institutional sales team"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help. Contact our team for support, partnerships, or general inquiries.",
+    "methods": {
+      "email": {
+        "title": "Email Support",
+        "description": "Get in touch via email for general inquiries",
+        "action": "Send Email"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "description": "Speak directly with our support team",
+        "action": "Call Now"
+      },
+      "chat": {
+        "title": "Live Chat",
+        "description": "Chat with us in real-time for instant support",
+        "contact": "Available 24/7",
+        "action": "Start Chat"
+      },
+      "vip": {
+        "title": "VIP Support",
+        "description": "Dedicated support for institutional clients",
+        "action": "Contact VIP"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "Fill out the form below and our team will get back to you within 24 hours.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "subjectPlaceholder": "How can we help you?",
+      "messagePlaceholder": "Tell us more about your inquiry...",
+      "send": "Send Message"
+    },
+    "offices": {
+      "title": "Our Offices",
+      "subtitle": "Visit us at one of our global offices or reach out to our regional teams."
+    },
+    "businessHours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday:",
+      "saturday": "Saturday:",
+      "sunday": "Sunday:",
+      "closed": "Closed",
+      "online247": "24/7 Online Support Available"
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faqSubtitle": "Quick answers to common questions. Can't find what you're looking for? Contact our support team.",
+    "faqs": {
+      "create": {
+        "q": "How do I create an account?",
+        "a": "Click on the \"Sign Up\" button in the header, fill in your details, verify your email, and complete the KYC process to start trading."
+      },
+      "fees": {
+        "q": "What are the trading fees?",
+        "a": "Our fees are competitive and transparent. Maker fees start at 0.10% and taker fees at 0.15%, with volume-based discounts available."
+      },
+      "secure": {
+        "q": "Is my account secure?",
+        "a": "Yes. We use bank-grade security including 2FA, cold storage for 95% of assets, and advanced encryption protocols."
+      },
+      "withdraw": {
+        "q": "How long do withdrawals take?",
+        "a": "Crypto withdrawals are typically processed within 30 minutes. Fiat withdrawals may take 1-3 business days depending on your bank."
+      }
+    }
+  },
+  "aboutUs": {
+    "title": "AiBot",
+    "subtitle": "Your Intelligent Trading Co-Pilot, Making Every Decision More Efficient And Precise",
+    "stats": {
+      "s1": "Multi Agent Self-Evolution System",
+      "s2": "Omnidimensional Intelligent System",
+      "s3": "Ten Million Dollar Fund Pool Increment",
+      "s4": "Ultra-High Annualized Return Rate"
+    },
+    "ai30360": "AI 30-360",
+    "ai30360Subtitle": "Lock in higher returns, higher APY",
+    "card": {
+      "dailyEarnings": "Daily Earnings:",
+      "historicalReturn": "Historical Return:",
+      "participants": "Participants:",
+      "variable": "Variable"
+    },
+    "aiDaily": "AI Daily",
+    "aiDailySubtitle": "Deposit and withdraw anytime, flexible fund allocation",
+    "aiDailyTitle": "AI Daily - Premium Package",
+    "metrics": {
+      "dailyEarnings": "Daily Earnings",
+      "historicalReturn": "Historical Return",
+      "orders24h": "24 Hour Orders",
+      "participantsCount": "Participants Count",
+      "volatility": "Volatility"
+    },
+    "advantagesTitle": "Product Advantages",
+    "advantages": {
+      "data": {
+        "title": "High-quality trading data",
+        "description": "Real-time integration with global market liquidity"
+      },
+      "intel": {
+        "title": "Omnidimensional Intelligent System",
+        "description": "Advanced AI-powered trading algorithms"
+      },
+      "speed": {
+        "title": "Signal response speed",
+        "description": "Lightning-fast execution and analysis"
+      },
+      "fund": {
+        "title": "Security Fund",
+        "description": "Comprehensive asset protection mechanism"
+      }
+    },
+    "reasonsTitle": "3 Reasons to Choose Us",
+    "reasons": {
+      "r1": {
+        "title": "Smart investment with guaranteed compensation for peace of mind, stable and reassuring returns",
+        "description": "Comprehensive risk management and investor protection mechanisms ensure your assets are safeguarded at all times."
+      },
+      "r2": {
+        "title": "Utilize fully-legal aluminum mechanisms, automatic de-check sandbox, and design with root capabilities",
+        "description": "Built on cutting-edge compliance frameworks with advanced security protocols and root-level system architecture for maximum reliability."
+      },
+      "r3": {
+        "title": "Simple one-click operation, no worries about growth anymore",
+        "description": "User-friendly interface designed for traders of all experience levels. Our automated systems handle the complexity while you focus on results."
+      }
+    },
+    "moreTitle": "More About AiBot",
+    "moreText": "Our AI-powered trading system combines cutting-edge machine learning algorithms with real-time market analysis to deliver unprecedented trading performance. With over 50,000 intelligent decision points and millisecond-level execution, AiBot represents the future of automated trading.",
+    "ctaButton": "Get Started Today"
+  },
+  "ourTeam": {
+    "title": "Meet Our Team",
+    "subtitle": "Industry veterans and innovators building the future of digital asset trading",
+    "leadershipTitle": "Leadership Team",
+    "leadershipSubtitle": "Our executive team brings decades of experience from leading financial institutions and tech companies",
+    "departments": {
+      "engineering": "Engineering",
+      "productDesign": "Product & Design",
+      "businessOps": "Business & Operations"
+    },
+    "advisoryTitle": "Advisory Board",
+    "advisorySubtitle": "World-class advisors guiding our strategic direction and innovation",
+    "joinTitle": "Join Our Team",
+    "joinSubtitle": "We're always looking for talented individuals to join our mission of revolutionizing digital asset trading.",
+    "viewPositions": "View Open Positions",
+    "roles": {
+      "ceo": "Chief Executive Officer",
+      "cto": "Chief Technology Officer",
+      "coo": "Chief Operating Officer",
+      "cfo": "Chief Financial Officer",
+      "vpEng": "VP of Engineering",
+      "leadBlockchain": "Lead Blockchain Developer",
+      "srBackend": "Senior Backend Engineer",
+      "securityEng": "Security Engineer",
+      "headProduct": "Head of Product",
+      "leadUx": "Lead UX Designer",
+      "pm": "Product Manager",
+      "uiDesigner": "UI Designer",
+      "headBd": "Head of Business Development",
+      "headCompliance": "Head of Compliance",
+      "csLead": "Customer Success Lead",
+      "opsManager": "Operations Manager",
+      "strategicAdv": "Strategic Advisor",
+      "regulatoryAdv": "Regulatory Advisor",
+      "tradingAdv": "Trading Advisor"
+    }
+  },
+  "careers": {
+    "title": "Build the Future of Trading",
+    "subtitle": "Join a team of world-class engineers, designers, and innovators reshaping digital asset trading",
+    "viewPositions": "View Open Positions",
+    "whyTitle": "Why Join Bitradex?",
+    "whySubtitle": "We offer more than just a job – it's an opportunity to make a real impact in the crypto industry",
+    "benefits": {
+      "comp": {
+        "title": "Competitive Compensation",
+        "description": "Industry-leading salaries, equity options, and performance bonuses"
+      },
+      "health": {
+        "title": "Health & Wellness",
+        "description": "Comprehensive health insurance, mental health support, and gym memberships"
+      },
+      "growth": {
+        "title": "Professional Growth",
+        "description": "Learning budgets, conference attendance, and mentorship programs"
+      },
+      "remote": {
+        "title": "Remote Flexibility",
+        "description": "Work from anywhere with flexible hours and unlimited PTO"
+      },
+      "culture": {
+        "title": "Inclusive Culture",
+        "description": "Diverse team, regular team events, and collaborative environment"
+      },
+      "tech": {
+        "title": "Latest Technology",
+        "description": "Top-tier equipment, cutting-edge tools, and modern tech stack"
+      }
+    },
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The principles that guide everything we do",
+    "values": {
+      "innovation": {
+        "title": "Innovation First",
+        "description": "We embrace cutting-edge technology and encourage creative problem-solving"
+      },
+      "user": {
+        "title": "User-Centric",
+        "description": "Every decision is made with our traders and investors in mind"
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Open communication, honest feedback, and clear expectations"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We set high standards and continuously strive to exceed them"
+      }
+    },
+    "openTitle": "Open Positions",
+    "openSubtitle": "We're hiring talented individuals across multiple departments",
+    "applyNow": "Apply Now",
+    "requirements": "Requirements:",
+    "fullTime": "Full-time",
+    "processTitle": "Our Hiring Process",
+    "processSubtitle": "A transparent and efficient process designed to find the best fit for both parties",
+    "process": {
+      "application": {
+        "title": "Application",
+        "description": "Submit your application and resume through our careers portal"
+      },
+      "screening": {
+        "title": "Screening",
+        "description": "Our team reviews your application and reaches out for initial chat"
+      },
+      "interviews": {
+        "title": "Interviews",
+        "description": "Technical and behavioral interviews with team members"
+      },
+      "offer": {
+        "title": "Offer",
+        "description": "Receive your offer and join the Bitradex family!"
+      }
+    },
+    "noRoleTitle": "Don't See Your Role?",
+    "noRoleSubtitle": "We're always looking for exceptional talent. Send us your resume and tell us how you can contribute to Bitradex.",
+    "sendApplication": "Send General Application",
+    "departments": {
+      "engineering": "Engineering",
+      "product": "Product",
+      "security": "Security",
+      "design": "Design",
+      "legal": "Legal & Compliance",
+      "data": "Data & AI"
+    },
+    "positions": {
+      "backend": {
+        "title": "Senior Backend Engineer",
+        "description": "Build scalable trading infrastructure and high-performance APIs for institutional clients.",
+        "requirements": [
+          "5+ years backend development",
+          "Experience with microservices",
+          "Proficient in Go/Rust",
+          "Knowledge of distributed systems"
+        ]
+      },
+      "blockchain": {
+        "title": "Blockchain Developer",
+        "description": "Develop and maintain blockchain integrations, smart contracts, and Web3 infrastructure.",
+        "requirements": [
+          "3+ years blockchain development",
+          "Solidity/Rust expertise",
+          "DeFi protocol experience",
+          "Security-first mindset"
+        ]
+      },
+      "pm": {
+        "title": "Product Manager",
+        "description": "Lead product strategy and roadmap for our AI trading bot and institutional products.",
+        "requirements": [
+          "4+ years product management",
+          "Fintech/Crypto experience",
+          "Data-driven approach",
+          "Strong communication skills"
+        ]
+      },
+      "security": {
+        "title": "Security Engineer",
+        "description": "Ensure platform security, conduct audits, and implement advanced security protocols.",
+        "requirements": [
+          "5+ years security engineering",
+          "Penetration testing experience",
+          "Crypto security knowledge",
+          "Security certifications"
+        ]
+      },
+      "ux": {
+        "title": "UX/UI Designer",
+        "description": "Create intuitive and beautiful interfaces for our trading platforms and mobile apps.",
+        "requirements": [
+          "3+ years UX/UI design",
+          "Figma proficiency",
+          "Mobile design experience",
+          "Portfolio required"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance Officer",
+        "description": "Manage regulatory compliance, AML/KYC procedures, and liaise with regulators.",
+        "requirements": [
+          "5+ years compliance role",
+          "Crypto regulations knowledge",
+          "Legal background preferred",
+          "Multi-jurisdictional experience"
+        ]
+      },
+      "devops": {
+        "title": "DevOps Engineer",
+        "description": "Manage cloud infrastructure, CI/CD pipelines, and ensure system reliability.",
+        "requirements": [
+          "4+ years DevOps experience",
+          "Kubernetes/Docker expertise",
+          "AWS/GCP knowledge",
+          "Monitoring tools proficiency"
+        ]
+      },
+      "data": {
+        "title": "Data Scientist",
+        "description": "Build ML models for trading algorithms, market prediction, and risk analysis.",
+        "requirements": [
+          "3+ years data science",
+          "ML/AI expertise",
+          "Python proficiency",
+          "Financial markets knowledge"
+        ]
+      }
+    }
+  },
+  "press": {
+    "title": "Press & Media",
+    "subtitle": "Latest news, press releases, and media resources from Bitradex",
+    "contactPress": "Contact Press Team",
+    "downloadKit": "Download Media Kit",
+    "inquiriesTitle": "Media Inquiries",
+    "pressContact": "Press Contact",
+    "pressContactDesc": "For all media inquiries, interview requests, and press releases",
+    "partnershipInquiries": "Partnership Inquiries",
+    "partnershipDesc": "For partnership opportunities and business development",
+    "email": "Email:",
+    "phone": "Phone:",
+    "releasesTitle": "Latest Press Releases",
+    "releasesSubtitle": "Stay updated with our latest announcements and company news",
+    "coverageTitle": "Media Coverage",
+    "coverageSubtitle": "What leading publications are saying about Bitradex",
+    "awardsTitle": "Awards & Recognition",
+    "awardsSubtitle": "Industry recognition for excellence and innovation",
+    "kitTitle": "Media Kit",
+    "kitSubtitle": "Download our brand assets, logos, and company information",
+    "downloadComplete": "Download Complete Media Kit",
+    "glance": "Company at a Glance",
+    "stats": {
+      "volume": "Daily Trading Volume",
+      "clients": "Institutional Clients",
+      "users": "Active Users",
+      "pairs": "Trading Pairs"
+    },
+    "categories": {
+      "productLaunch": "Product Launch",
+      "milestone": "Milestone",
+      "partnership": "Partnership",
+      "expansion": "Expansion",
+      "compliance": "Compliance",
+      "productUpdate": "Product Update"
+    }
   },
   "faq": {
     "badge": "Центр помощи",
@@ -209,5 +1009,11 @@
         ]
       }
     ]
+  },
+  "legal": {
+    "lastUpdated": "Last Updated",
+    "backToHome": "Back to Home",
+    "downloadPdf": "Download PDF",
+    "contactLegal": "Contact our legal team for any questions"
   }
 }
