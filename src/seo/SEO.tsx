@@ -32,7 +32,10 @@ const SEO = ({ pathKey, title, description, extraKeywords, image }: SEOProps) =>
     : "en";
   const locale = seoLocales[lang];
 
-  const path = pathKey ?? location.pathname ?? "/";
+  const rawPath = pathKey ?? location.pathname ?? "/";
+  // Strip language prefix (e.g. "/pt/spot" -> "/spot") for page lookup
+  const langPrefixRegex = /^\/(en|pt|es|de|id|th|ko|ru|ja|ms|zh)(?=\/|$)/;
+  const path = rawPath.replace(langPrefixRegex, "") || "/";
   const page = locale.pages[path] ?? {
     title: locale.defaultTitle,
     description: locale.defaultDescription,
