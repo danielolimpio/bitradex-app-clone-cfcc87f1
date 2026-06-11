@@ -1,7 +1,7 @@
 // SEO keywords by language. Each language gets ONLY its own keyword set.
 // Brand keyword "Bitradex" is global priority across all locales.
 
-export type SeoLang = "en" | "pt" | "es" | "de" | "id" | "th" | "ko" | "ru";
+export type SeoLang = "en" | "pt" | "es" | "de" | "id" | "th" | "ko" | "ru" | "ja" | "ms" | "zh";
 
 export const SITE_URL = "https://bitradex.app";
 export const BRAND = "Bitradex";
