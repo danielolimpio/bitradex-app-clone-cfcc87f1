@@ -8,102 +8,61 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, Clock, MessageSquare, Headphones } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import SEO from "@/seo/SEO";
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const { t } = useTranslation();
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
-  const contactMethods = [
-    {
-      icon: <Mail className="w-8 h-8 text-primary" />,
-      title: "Email Support",
-      description: "Get in touch via email for general inquiries",
-      contact: "contact@bitradex.app",
-      action: "Send Email"
-    },
-    {
-      icon: <Phone className="w-8 h-8 text-primary" />,
-      title: "Phone Support",
-      description: "Speak directly with our support team",
-      contact: "+55 1298251-9116",
-      action: "Call Now"
-    },
-    {
-      icon: <MessageSquare className="w-8 h-8 text-primary" />,
-      title: "Live Chat",
-      description: "Chat with us in real-time for instant support",
-      contact: "Available 24/7",
-      action: "Start Chat"
-    },
-    {
-      icon: <Headphones className="w-8 h-8 text-primary" />,
-      title: "VIP Support",
-      description: "Dedicated support for institutional clients",
-      contact: "vip@bitradex.app",
-      action: "Contact VIP"
-    }
-  ];
+  const methodIcons: Record<string, JSX.Element> = {
+    email: <Mail className="w-8 h-8 text-primary" />,
+    phone: <Phone className="w-8 h-8 text-primary" />,
+    chat: <MessageSquare className="w-8 h-8 text-primary" />,
+    vip: <Headphones className="w-8 h-8 text-primary" />,
+  };
+  const methodContacts: Record<string, string> = {
+    email: "contact@bitradex.app",
+    phone: "+55 1298251-9116",
+    chat: t("contact.methods.chat.contact"),
+    vip: "vip@bitradex.app",
+  };
+  const methodKeys = ["email", "phone", "chat", "vip"];
 
   const offices = [
-    {
-      city: "Paris",
-      country: "France",
-      address: "20 Rue de Penthièvre, Paris, 75008",
-      phone: "+33 1 234 5678",
-      email: "paris@bitradex.app"
-    },
-    {
-      city: "São Paulo",
-      country: "Brazil",
-      address: "Av. Paulista, 1578 - Bela Vista",
-      phone: "+55 1298251-9116",
-      email: "saopaulo@bitradex.app"
-    },
-    {
-      city: "Singapore",
-      country: "Singapore",
-      address: "1 Raffles Place, #40-02",
-      phone: "+65 6789 0123",
-      email: "singapore@bitradex.app"
-    }
+    { city: "Paris", country: "France", address: "20 Rue de Penthièvre, Paris, 75008", phone: "+33 1 234 5678", email: "paris@bitradex.app" },
+    { city: "São Paulo", country: "Brazil", address: "Av. Paulista, 1578 - Bela Vista", phone: "+55 1298251-9116", email: "saopaulo@bitradex.app" },
+    { city: "Singapore", country: "Singapore", address: "1 Raffles Place, #40-02", phone: "+65 6789 0123", email: "singapore@bitradex.app" },
   ];
+
+  const faqKeys = ["create", "fees", "secure", "withdraw"];
 
   return (
     <div className="min-h-screen bg-background">
       <SEO />
       <Header />
-      
-      {/* Hero Section */}
+
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Get in Touch
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              We're here to help. Contact our team for support, partnerships, or general inquiries.
-            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">{t("contact.title")}</h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">{t("contact.subtitle")}</p>
           </div>
         </div>
       </section>
 
-      {/* Contact Methods */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {contactMethods.map((method, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {methodKeys.map((key) => (
+              <Card key={key} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="flex justify-center mb-4">{method.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{method.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{method.description}</p>
-                  <p className="text-sm font-medium text-primary mb-4">{method.contact}</p>
-                  <Button variant="outline" className="w-full">
-                    {method.action}
-                  </Button>
+                  <div className="flex justify-center mb-4">{methodIcons[key]}</div>
+                  <h3 className="text-xl font-semibold mb-2">{t(`contact.methods.${key}.title`)}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{t(`contact.methods.${key}.description`)}</p>
+                  <p className="text-sm font-medium text-primary mb-4">{methodContacts[key]}</p>
+                  <Button variant="outline" className="w-full">{t(`contact.methods.${key}.action`)}</Button>
                 </CardContent>
               </Card>
             ))}
@@ -111,70 +70,55 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
-              <p className="text-muted-foreground mb-8">
-                Fill out the form below and our team will get back to you within 24 hours.
-              </p>
-              
+              <h2 className="text-3xl font-bold mb-6">{t("contact.form.title")}</h2>
+              <p className="text-muted-foreground mb-8">{t("contact.form.subtitle")}</p>
+
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-sm font-medium mb-2 block">First Name</label>
+                    <label className="text-sm font-medium mb-2 block">{t("contact.form.firstName")}</label>
                     <Input placeholder="John" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Last Name</label>
+                    <label className="text-sm font-medium mb-2 block">{t("contact.form.lastName")}</label>
                     <Input placeholder="Doe" />
                   </div>
                 </div>
-                
+
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Email</label>
+                  <label className="text-sm font-medium mb-2 block">{t("contact.form.email")}</label>
                   <Input type="email" placeholder="john.doe@example.com" />
                 </div>
-                
+
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Subject</label>
-                  <Input placeholder="How can we help you?" />
+                  <label className="text-sm font-medium mb-2 block">{t("contact.form.subject")}</label>
+                  <Input placeholder={t("contact.form.subjectPlaceholder")} />
                 </div>
-                
+
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Message</label>
-                  <Textarea 
-                    placeholder="Tell us more about your inquiry..."
-                    className="min-h-[150px]"
-                  />
+                  <label className="text-sm font-medium mb-2 block">{t("contact.form.message")}</label>
+                  <Textarea placeholder={t("contact.form.messagePlaceholder")} className="min-h-[150px]" />
                 </div>
-                
-                <Button 
-                  className="w-full bg-gradient-primary hover:shadow-button"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Send Message
+
+                <Button className="w-full bg-gradient-primary hover:shadow-button" onClick={(e) => e.preventDefault()}>
+                  {t("contact.form.send")}
                 </Button>
               </form>
             </div>
 
-            {/* Office Locations */}
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our Offices</h2>
-              <p className="text-muted-foreground mb-8">
-                Visit us at one of our global offices or reach out to our regional teams.
-              </p>
-              
+              <h2 className="text-3xl font-bold mb-6">{t("contact.offices.title")}</h2>
+              <p className="text-muted-foreground mb-8">{t("contact.offices.subtitle")}</p>
+
               <div className="space-y-6">
-                {offices.map((office, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow">
+                {offices.map((office, i) => (
+                  <Card key={i} className="hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-semibold mb-2">
-                        {office.city}, {office.country}
-                      </h3>
+                      <h3 className="text-xl font-semibold mb-2">{office.city}, {office.country}</h3>
                       <div className="space-y-3 text-sm text-muted-foreground">
                         <div className="flex items-start space-x-3">
                           <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
@@ -194,28 +138,27 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Business Hours */}
               <Card className="mt-6 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
                     <Clock className="w-6 h-6 text-primary" />
-                    <h3 className="text-xl font-semibold">Business Hours</h3>
+                    <h3 className="text-xl font-semibold">{t("contact.businessHours.title")}</h3>
                   </div>
                   <div className="space-y-2 text-sm text-muted-foreground">
                     <div className="flex justify-between">
-                      <span>Monday - Friday:</span>
+                      <span>{t("contact.businessHours.weekdays")}</span>
                       <span className="font-medium">9:00 AM - 6:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Saturday:</span>
+                      <span>{t("contact.businessHours.saturday")}</span>
                       <span className="font-medium">10:00 AM - 4:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Sunday:</span>
-                      <span className="font-medium">Closed</span>
+                      <span>{t("contact.businessHours.sunday")}</span>
+                      <span className="font-medium">{t("contact.businessHours.closed")}</span>
                     </div>
                     <div className="pt-3 border-t border-border mt-3">
-                      <p className="text-primary font-medium">24/7 Online Support Available</p>
+                      <p className="text-primary font-medium">{t("contact.businessHours.online247")}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -225,52 +168,22 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Quick answers to common questions. Can't find what you're looking for? Contact our support team.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("contact.faqTitle")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t("contact.faqSubtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">How do I create an account?</h3>
-                <p className="text-sm text-muted-foreground">
-                  Click on the "Sign Up" button in the header, fill in your details, verify your email, and complete the KYC process to start trading.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">What are the trading fees?</h3>
-                <p className="text-sm text-muted-foreground">
-                  Our fees are competitive and transparent. Maker fees start at 0.10% and taker fees at 0.15%, with volume-based discounts available.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">Is my account secure?</h3>
-                <p className="text-sm text-muted-foreground">
-                  Yes. We use bank-grade security including 2FA, cold storage for 95% of assets, and advanced encryption protocols.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2">How long do withdrawals take?</h3>
-                <p className="text-sm text-muted-foreground">
-                  Crypto withdrawals are typically processed within 30 minutes. Fiat withdrawals may take 1-3 business days depending on your bank.
-                </p>
-              </CardContent>
-            </Card>
+            {faqKeys.map((key) => (
+              <Card key={key} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">{t(`contact.faqs.${key}.q`)}</h3>
+                  <p className="text-sm text-muted-foreground">{t(`contact.faqs.${key}.a`)}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

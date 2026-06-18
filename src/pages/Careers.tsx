@@ -7,174 +7,70 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Briefcase, Users, TrendingUp, Heart, Zap, Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import SEO from "@/seo/SEO";
 
 const Careers = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const { t } = useTranslation();
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
-  const benefits = [
-    {
-      icon: <TrendingUp className="w-8 h-8 text-primary" />,
-      title: "Competitive Compensation",
-      description: "Industry-leading salaries, equity options, and performance bonuses"
-    },
-    {
-      icon: <Heart className="w-8 h-8 text-primary" />,
-      title: "Health & Wellness",
-      description: "Comprehensive health insurance, mental health support, and gym memberships"
-    },
-    {
-      icon: <Zap className="w-8 h-8 text-primary" />,
-      title: "Professional Growth",
-      description: "Learning budgets, conference attendance, and mentorship programs"
-    },
-    {
-      icon: <Globe className="w-8 h-8 text-primary" />,
-      title: "Remote Flexibility",
-      description: "Work from anywhere with flexible hours and unlimited PTO"
-    },
-    {
-      icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Inclusive Culture",
-      description: "Diverse team, regular team events, and collaborative environment"
-    },
-    {
-      icon: <Briefcase className="w-8 h-8 text-primary" />,
-      title: "Latest Technology",
-      description: "Top-tier equipment, cutting-edge tools, and modern tech stack"
-    }
-  ];
+  const benefitIcons: Record<string, JSX.Element> = {
+    comp: <TrendingUp className="w-8 h-8 text-primary" />,
+    health: <Heart className="w-8 h-8 text-primary" />,
+    growth: <Zap className="w-8 h-8 text-primary" />,
+    remote: <Globe className="w-8 h-8 text-primary" />,
+    culture: <Users className="w-8 h-8 text-primary" />,
+    tech: <Briefcase className="w-8 h-8 text-primary" />,
+  };
+  const benefitKeys = ["comp", "health", "growth", "remote", "culture", "tech"];
+  const valueKeys = ["innovation", "user", "transparency", "excellence"];
+  const processKeys = ["application", "screening", "interviews", "offer"];
 
-  const openPositions = [
-    {
-      title: "Senior Backend Engineer",
-      department: "Engineering",
-      location: "Remote / Paris",
-      type: "Full-time",
-      description: "Build scalable trading infrastructure and high-performance APIs for institutional clients.",
-      requirements: ["5+ years backend development", "Experience with microservices", "Proficient in Go/Rust", "Knowledge of distributed systems"]
-    },
-    {
-      title: "Blockchain Developer",
-      department: "Engineering",
-      location: "Remote / Singapore",
-      type: "Full-time",
-      description: "Develop and maintain blockchain integrations, smart contracts, and Web3 infrastructure.",
-      requirements: ["3+ years blockchain development", "Solidity/Rust expertise", "DeFi protocol experience", "Security-first mindset"]
-    },
-    {
-      title: "Product Manager",
-      department: "Product",
-      location: "São Paulo / Remote",
-      type: "Full-time",
-      description: "Lead product strategy and roadmap for our AI trading bot and institutional products.",
-      requirements: ["4+ years product management", "Fintech/Crypto experience", "Data-driven approach", "Strong communication skills"]
-    },
-    {
-      title: "Security Engineer",
-      department: "Security",
-      location: "Remote",
-      type: "Full-time",
-      description: "Ensure platform security, conduct audits, and implement advanced security protocols.",
-      requirements: ["5+ years security engineering", "Penetration testing experience", "Crypto security knowledge", "Security certifications"]
-    },
-    {
-      title: "UX/UI Designer",
-      department: "Design",
-      location: "Remote / Paris",
-      type: "Full-time",
-      description: "Create intuitive and beautiful interfaces for our trading platforms and mobile apps.",
-      requirements: ["3+ years UX/UI design", "Figma proficiency", "Mobile design experience", "Portfolio required"]
-    },
-    {
-      title: "Compliance Officer",
-      department: "Legal & Compliance",
-      location: "Paris",
-      type: "Full-time",
-      description: "Manage regulatory compliance, AML/KYC procedures, and liaise with regulators.",
-      requirements: ["5+ years compliance role", "Crypto regulations knowledge", "Legal background preferred", "Multi-jurisdictional experience"]
-    },
-    {
-      title: "DevOps Engineer",
-      department: "Engineering",
-      location: "Remote",
-      type: "Full-time",
-      description: "Manage cloud infrastructure, CI/CD pipelines, and ensure system reliability.",
-      requirements: ["4+ years DevOps experience", "Kubernetes/Docker expertise", "AWS/GCP knowledge", "Monitoring tools proficiency"]
-    },
-    {
-      title: "Data Scientist",
-      department: "Data & AI",
-      location: "Remote / Singapore",
-      type: "Full-time",
-      description: "Build ML models for trading algorithms, market prediction, and risk analysis.",
-      requirements: ["3+ years data science", "ML/AI expertise", "Python proficiency", "Financial markets knowledge"]
-    }
-  ];
-
-  const values = [
-    {
-      title: "Innovation First",
-      description: "We embrace cutting-edge technology and encourage creative problem-solving"
-    },
-    {
-      title: "User-Centric",
-      description: "Every decision is made with our traders and investors in mind"
-    },
-    {
-      title: "Transparency",
-      description: "Open communication, honest feedback, and clear expectations"
-    },
-    {
-      title: "Excellence",
-      description: "We set high standards and continuously strive to exceed them"
-    }
+  const positions = [
+    { key: "backend", department: "engineering", location: "Remote / Paris" },
+    { key: "blockchain", department: "engineering", location: "Remote / Singapore" },
+    { key: "pm", department: "product", location: "São Paulo / Remote" },
+    { key: "security", department: "security", location: "Remote" },
+    { key: "ux", department: "design", location: "Remote / Paris" },
+    { key: "compliance", department: "legal", location: "Paris" },
+    { key: "devops", department: "engineering", location: "Remote" },
+    { key: "data", department: "data", location: "Remote / Singapore" },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <SEO />
       <Header />
-      
-      {/* Hero Section */}
+
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Build the Future of Trading
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Join a team of world-class engineers, designers, and innovators reshaping digital asset trading
-            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">{t("careers.title")}</h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">{t("careers.subtitle")}</p>
             <div className="flex justify-center gap-4">
               <Button size="lg" className="bg-gradient-primary hover:shadow-button">
-                View Open Positions
+                {t("careers.viewPositions")}
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Join Us */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Join Bitradex?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We offer more than just a job – it's an opportunity to make a real impact in the crypto industry
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("careers.whyTitle")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t("careers.whySubtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {benefitKeys.map((key) => (
+              <Card key={key} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="flex justify-center mb-4">{benefit.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                  <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                  <div className="flex justify-center mb-4">{benefitIcons[key]}</div>
+                  <h3 className="text-xl font-semibold mb-2">{t(`careers.benefits.${key}.title`)}</h3>
+                  <p className="text-sm text-muted-foreground">{t(`careers.benefits.${key}.description`)}</p>
                 </CardContent>
               </Card>
             ))}
@@ -182,22 +78,19 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Our Values */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Values</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("careers.valuesTitle")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t("careers.valuesSubtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {values.map((value, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {valueKeys.map((key) => (
+              <Card key={key} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
-                  <p className="text-sm text-muted-foreground">{value.description}</p>
+                  <h3 className="text-lg font-semibold mb-2">{t(`careers.values.${key}.title`)}</h3>
+                  <p className="text-sm text-muted-foreground">{t(`careers.values.${key}.description`)}</p>
                 </CardContent>
               </Card>
             ))}
@@ -205,105 +98,90 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Open Positions */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Open Positions</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're hiring talented individuals across multiple departments
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("careers.openTitle")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t("careers.openSubtitle")}</p>
           </div>
 
           <div className="space-y-6 max-w-5xl mx-auto">
-            {openPositions.map((position, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                    <div>
-                      <h3 className="text-2xl font-semibold mb-2">{position.title}</h3>
-                      <div className="flex flex-wrap gap-3">
-                        <Badge variant="secondary" className="flex items-center gap-1">
-                          <Briefcase className="w-3 h-3" />
-                          {position.department}
-                        </Badge>
-                        <Badge variant="outline" className="flex items-center gap-1">
-                          <MapPin className="w-3 h-3" />
-                          {position.location}
-                        </Badge>
-                        <Badge variant="outline" className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          {position.type}
-                        </Badge>
+            {positions.map((pos) => {
+              const reqs = t(`careers.positions.${pos.key}.requirements`, { returnObjects: true }) as string[];
+              return (
+                <Card key={pos.key} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                      <div>
+                        <h3 className="text-2xl font-semibold mb-2">{t(`careers.positions.${pos.key}.title`)}</h3>
+                        <div className="flex flex-wrap gap-3">
+                          <Badge variant="secondary" className="flex items-center gap-1">
+                            <Briefcase className="w-3 h-3" />
+                            {t(`careers.departments.${pos.department}`)}
+                          </Badge>
+                          <Badge variant="outline" className="flex items-center gap-1">
+                            <MapPin className="w-3 h-3" />
+                            {pos.location}
+                          </Badge>
+                          <Badge variant="outline" className="flex items-center gap-1">
+                            <Clock className="w-3 h-3" />
+                            {t("careers.fullTime")}
+                          </Badge>
+                        </div>
                       </div>
+                      <Button className="bg-gradient-primary hover:shadow-button whitespace-nowrap">
+                        {t("careers.applyNow")}
+                      </Button>
                     </div>
-                    <Button className="bg-gradient-primary hover:shadow-button whitespace-nowrap">
-                      Apply Now
-                    </Button>
-                  </div>
-                  
-                  <p className="text-muted-foreground mb-4">{position.description}</p>
-                  
-                  <div>
-                    <h4 className="font-semibold mb-2">Requirements:</h4>
-                    <ul className="space-y-1">
-                      {position.requirements.map((req, idx) => (
-                        <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
-                          <span>{req}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+
+                    <p className="text-muted-foreground mb-4">{t(`careers.positions.${pos.key}.description`)}</p>
+
+                    <div>
+                      <h4 className="font-semibold mb-2">{t("careers.requirements")}</h4>
+                      <ul className="space-y-1">
+                        {reqs.map((req, i) => (
+                          <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                            <span className="text-primary mt-1">•</span>
+                            <span>{req}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Application Process */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Hiring Process</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A transparent and efficient process designed to find the best fit for both parties
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("careers.processTitle")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t("careers.processSubtitle")}</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            {[
-              { step: "01", title: "Application", description: "Submit your application and resume through our careers portal" },
-              { step: "02", title: "Screening", description: "Our team reviews your application and reaches out for initial chat" },
-              { step: "03", title: "Interviews", description: "Technical and behavioral interviews with team members" },
-              { step: "04", title: "Offer", description: "Receive your offer and join the Bitradex family!" }
-            ].map((stage, index) => (
-              <div key={index} className="text-center">
+            {processKeys.map((key, index) => (
+              <div key={key} className="text-center">
                 <div className="w-16 h-16 bg-gradient-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  {stage.step}
+                  {String(index + 1).padStart(2, "0")}
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{stage.title}</h3>
-                <p className="text-sm text-muted-foreground">{stage.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{t(`careers.process.${key}.title`)}</h3>
+                <p className="text-sm text-muted-foreground">{t(`careers.process.${key}.description`)}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Don't See Your Role?</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            We're always looking for exceptional talent. Send us your resume and tell us how you can contribute to Bitradex.
-          </p>
-          <Button 
-            size="lg"
-            variant="outline"
-            onClick={() => window.location.href = 'mailto:careers@bitradex.app'}
-          >
-            Send General Application
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("careers.noRoleTitle")}</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">{t("careers.noRoleSubtitle")}</p>
+          <Button size="lg" variant="outline" onClick={() => (window.location.href = "mailto:careers@bitradex.app")}>
+            {t("careers.sendApplication")}
           </Button>
         </div>
       </section>
