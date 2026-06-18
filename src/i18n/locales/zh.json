@@ -989,9 +989,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "本法律文件以英文发布，以确保各司法管辖区的法律准确性和一致性。如需帮助，请联系我们的支持团队。"
   }
 }

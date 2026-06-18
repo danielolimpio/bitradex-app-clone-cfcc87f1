@@ -1011,9 +1011,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "Этот юридический документ публикуется на английском языке для обеспечения юридической точности и единообразия во всех юрисдикциях. По всем вопросам обращайтесь в службу поддержки."
   }
 }

@@ -1011,9 +1011,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "Dieses Rechtsdokument wird auf Englisch veröffentlicht, um juristische Genauigkeit und Konsistenz über alle Rechtsräume hinweg zu gewährleisten. Bei Fragen wenden Sie sich an unseren Support."
   }
 }

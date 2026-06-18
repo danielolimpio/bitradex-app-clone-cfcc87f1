@@ -1011,9 +1011,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "Dokumen hukum ini diterbitkan dalam bahasa Inggris untuk menjaga akurasi hukum di berbagai yurisdiksi. Untuk bantuan, hubungi tim dukungan kami."
   }
 }

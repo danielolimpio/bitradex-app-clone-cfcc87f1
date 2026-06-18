@@ -1011,9 +1011,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "เอกสารทางกฎหมายนี้เผยแพร่เป็นภาษาอังกฤษเพื่อความถูกต้องและความสม่ำเสมอทางกฎหมายในทุกเขตอำนาจศาล หากต้องการความช่วยเหลือ โปรดติดต่อทีมสนับสนุนของเรา"
   }
 }
