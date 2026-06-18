@@ -1011,9 +1011,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "Este documento legal é publicado em inglês para garantir precisão jurídica e consistência entre jurisdições. Se precisar de ajuda para entender qualquer seção, entre em contato com nosso suporte."
   }
 }

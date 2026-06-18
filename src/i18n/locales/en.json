@@ -291,36 +291,155 @@
     "whyChoose": "Why Choose Bitradex Institutional",
     "whyChooseSubtitle": "Enterprise-grade trading infrastructure designed for institutional clients",
     "features": {
-      "infra": { "title": "Enterprise-Grade Infrastructure", "description": "Scalable solutions built for institutional trading volumes with 99.99% uptime guarantee" },
-      "security": { "title": "Advanced Security", "description": "Multi-signature wallets, cold storage, and institutional-grade custody solutions" },
-      "liquidity": { "title": "Deep Liquidity", "description": "Access to deep order books and competitive pricing across multiple markets" },
-      "api": { "title": "High-Performance API", "description": "Ultra-low latency trading APIs with FIX protocol support and WebSocket streaming" },
-      "support": { "title": "Dedicated Support", "description": "24/7 dedicated account management and technical support for institutional clients" },
-      "global": { "title": "Global Reach", "description": "Multi-currency support with localized solutions for markets worldwide" },
-      "compliance": { "title": "Regulatory Compliance", "description": "Full compliance with international regulations and comprehensive AML/KYC procedures" },
-      "analytics": { "title": "Advanced Analytics", "description": "Real-time reporting, customizable dashboards, and comprehensive portfolio analytics" }
+      "infra": {
+        "title": "Enterprise-Grade Infrastructure",
+        "description": "Scalable solutions built for institutional trading volumes with 99.99% uptime guarantee"
+      },
+      "security": {
+        "title": "Advanced Security",
+        "description": "Multi-signature wallets, cold storage, and institutional-grade custody solutions"
+      },
+      "liquidity": {
+        "title": "Deep Liquidity",
+        "description": "Access to deep order books and competitive pricing across multiple markets"
+      },
+      "api": {
+        "title": "High-Performance API",
+        "description": "Ultra-low latency trading APIs with FIX protocol support and WebSocket streaming"
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "24/7 dedicated account management and technical support for institutional clients"
+      },
+      "global": {
+        "title": "Global Reach",
+        "description": "Multi-currency support with localized solutions for markets worldwide"
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Full compliance with international regulations and comprehensive AML/KYC procedures"
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Real-time reporting, customizable dashboards, and comprehensive portfolio analytics"
+      }
     },
     "ourServices": "Our Services",
     "ourServicesSubtitle": "Comprehensive suite of institutional trading services",
     "services": {
-      "prime": { "title": "Prime Brokerage", "description": "Comprehensive prime brokerage services including margin financing, securities lending, and consolidated reporting across multiple venues.", "benefits": ["Cross-margining capabilities", "Consolidated credit facility", "Multi-exchange access", "Unified reporting dashboard"] },
-      "otc": { "title": "OTC Trading Desk", "description": "Institutional-grade OTC trading with competitive pricing, deep liquidity, and settlement flexibility for large block trades.", "benefits": ["Personalized pricing", "Deep liquidity pools", "Flexible settlement options", "Dedicated trading desk"] },
-      "custody": { "title": "Custody Solutions", "description": "Bank-grade custody services with multi-signature technology, insurance coverage, and comprehensive audit trails.", "benefits": ["Cold storage solutions", "Insurance coverage", "Multi-signature security", "Comprehensive audit trails"] },
-      "marketMaking": { "title": "Market Making", "description": "Algorithmic market making services with advanced strategies to optimize liquidity provision and risk management.", "benefits": ["Customized strategies", "Real-time risk management", "Optimal spread management", "Performance analytics"] }
+      "prime": {
+        "title": "Prime Brokerage",
+        "description": "Comprehensive prime brokerage services including margin financing, securities lending, and consolidated reporting across multiple venues.",
+        "benefits": [
+          "Cross-margining capabilities",
+          "Consolidated credit facility",
+          "Multi-exchange access",
+          "Unified reporting dashboard"
+        ]
+      },
+      "otc": {
+        "title": "OTC Trading Desk",
+        "description": "Institutional-grade OTC trading with competitive pricing, deep liquidity, and settlement flexibility for large block trades.",
+        "benefits": [
+          "Personalized pricing",
+          "Deep liquidity pools",
+          "Flexible settlement options",
+          "Dedicated trading desk"
+        ]
+      },
+      "custody": {
+        "title": "Custody Solutions",
+        "description": "Bank-grade custody services with multi-signature technology, insurance coverage, and comprehensive audit trails.",
+        "benefits": [
+          "Cold storage solutions",
+          "Insurance coverage",
+          "Multi-signature security",
+          "Comprehensive audit trails"
+        ]
+      },
+      "marketMaking": {
+        "title": "Market Making",
+        "description": "Algorithmic market making services with advanced strategies to optimize liquidity provision and risk management.",
+        "benefits": [
+          "Customized strategies",
+          "Real-time risk management",
+          "Optimal spread management",
+          "Performance analytics"
+        ]
+      }
     },
     "apiTitle": "API & Integration",
     "api": {
-      "rest": { "title": "REST API", "items": ["Complete trading functionality", "Account management", "Historical data access", "Rate limiting: 100 req/sec"] },
-      "ws": { "title": "WebSocket API", "items": ["Real-time market data", "Order updates", "Account notifications", "Sub-millisecond latency"] },
-      "fix": { "title": "FIX Protocol", "items": ["FIX 4.2 & 4.4 support", "Drop copy reporting", "Custom message types", "Enterprise integration"] },
-      "docs": { "title": "Documentation", "items": ["Comprehensive API docs", "Code examples", "Testing sandbox", "Developer support"] }
+      "rest": {
+        "title": "REST API",
+        "items": [
+          "Complete trading functionality",
+          "Account management",
+          "Historical data access",
+          "Rate limiting: 100 req/sec"
+        ]
+      },
+      "ws": {
+        "title": "WebSocket API",
+        "items": [
+          "Real-time market data",
+          "Order updates",
+          "Account notifications",
+          "Sub-millisecond latency"
+        ]
+      },
+      "fix": {
+        "title": "FIX Protocol",
+        "items": [
+          "FIX 4.2 & 4.4 support",
+          "Drop copy reporting",
+          "Custom message types",
+          "Enterprise integration"
+        ]
+      },
+      "docs": {
+        "title": "Documentation",
+        "items": [
+          "Comprehensive API docs",
+          "Code examples",
+          "Testing sandbox",
+          "Developer support"
+        ]
+      }
     },
     "secCompTitle": "Security & Compliance",
     "secCompSubtitle": "Bank-grade security measures and regulatory compliance",
     "secComp": {
-      "security": { "title": "Security Measures", "items": ["Multi-signature wallets", "Cold storage (95%+ assets)", "Hardware security modules", "24/7 security monitoring", "DDoS protection"] },
-      "compliance": { "title": "Compliance", "items": ["Full KYC/AML procedures", "GDPR compliant", "SOC 2 Type II certified", "Regular audits", "Transaction monitoring"] },
-      "insurance": { "title": "Insurance", "items": ["$100M+ insurance coverage", "Crime insurance", "Cyber liability coverage", "Professional indemnity", "Lloyd's of London backed"] }
+      "security": {
+        "title": "Security Measures",
+        "items": [
+          "Multi-signature wallets",
+          "Cold storage (95%+ assets)",
+          "Hardware security modules",
+          "24/7 security monitoring",
+          "DDoS protection"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance",
+        "items": [
+          "Full KYC/AML procedures",
+          "GDPR compliant",
+          "SOC 2 Type II certified",
+          "Regular audits",
+          "Transaction monitoring"
+        ]
+      },
+      "insurance": {
+        "title": "Insurance",
+        "items": [
+          "$100M+ insurance coverage",
+          "Crime insurance",
+          "Cyber liability coverage",
+          "Professional indemnity",
+          "Lloyd's of London backed"
+        ]
+      }
     },
     "ctaTitle": "Ready to Get Started?",
     "ctaSubtitle": "Join hundreds of institutional clients trading on Bitradex. Our team is ready to discuss your specific requirements and provide a tailored solution.",
@@ -331,10 +450,27 @@
     "title": "Get in Touch",
     "subtitle": "We're here to help. Contact our team for support, partnerships, or general inquiries.",
     "methods": {
-      "email": { "title": "Email Support", "description": "Get in touch via email for general inquiries", "action": "Send Email" },
-      "phone": { "title": "Phone Support", "description": "Speak directly with our support team", "action": "Call Now" },
-      "chat": { "title": "Live Chat", "description": "Chat with us in real-time for instant support", "contact": "Available 24/7", "action": "Start Chat" },
-      "vip": { "title": "VIP Support", "description": "Dedicated support for institutional clients", "action": "Contact VIP" }
+      "email": {
+        "title": "Email Support",
+        "description": "Get in touch via email for general inquiries",
+        "action": "Send Email"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "description": "Speak directly with our support team",
+        "action": "Call Now"
+      },
+      "chat": {
+        "title": "Live Chat",
+        "description": "Chat with us in real-time for instant support",
+        "contact": "Available 24/7",
+        "action": "Start Chat"
+      },
+      "vip": {
+        "title": "VIP Support",
+        "description": "Dedicated support for institutional clients",
+        "action": "Contact VIP"
+      }
     },
     "form": {
       "title": "Send Us a Message",
@@ -363,10 +499,22 @@
     "faqTitle": "Frequently Asked Questions",
     "faqSubtitle": "Quick answers to common questions. Can't find what you're looking for? Contact our support team.",
     "faqs": {
-      "create": { "q": "How do I create an account?", "a": "Click on the \"Sign Up\" button in the header, fill in your details, verify your email, and complete the KYC process to start trading." },
-      "fees": { "q": "What are the trading fees?", "a": "Our fees are competitive and transparent. Maker fees start at 0.10% and taker fees at 0.15%, with volume-based discounts available." },
-      "secure": { "q": "Is my account secure?", "a": "Yes. We use bank-grade security including 2FA, cold storage for 95% of assets, and advanced encryption protocols." },
-      "withdraw": { "q": "How long do withdrawals take?", "a": "Crypto withdrawals are typically processed within 30 minutes. Fiat withdrawals may take 1-3 business days depending on your bank." }
+      "create": {
+        "q": "How do I create an account?",
+        "a": "Click on the \"Sign Up\" button in the header, fill in your details, verify your email, and complete the KYC process to start trading."
+      },
+      "fees": {
+        "q": "What are the trading fees?",
+        "a": "Our fees are competitive and transparent. Maker fees start at 0.10% and taker fees at 0.15%, with volume-based discounts available."
+      },
+      "secure": {
+        "q": "Is my account secure?",
+        "a": "Yes. We use bank-grade security including 2FA, cold storage for 95% of assets, and advanced encryption protocols."
+      },
+      "withdraw": {
+        "q": "How long do withdrawals take?",
+        "a": "Crypto withdrawals are typically processed within 30 minutes. Fiat withdrawals may take 1-3 business days depending on your bank."
+      }
     }
   },
   "aboutUs": {
@@ -398,16 +546,37 @@
     },
     "advantagesTitle": "Product Advantages",
     "advantages": {
-      "data": { "title": "High-quality trading data", "description": "Real-time integration with global market liquidity" },
-      "intel": { "title": "Omnidimensional Intelligent System", "description": "Advanced AI-powered trading algorithms" },
-      "speed": { "title": "Signal response speed", "description": "Lightning-fast execution and analysis" },
-      "fund": { "title": "Security Fund", "description": "Comprehensive asset protection mechanism" }
+      "data": {
+        "title": "High-quality trading data",
+        "description": "Real-time integration with global market liquidity"
+      },
+      "intel": {
+        "title": "Omnidimensional Intelligent System",
+        "description": "Advanced AI-powered trading algorithms"
+      },
+      "speed": {
+        "title": "Signal response speed",
+        "description": "Lightning-fast execution and analysis"
+      },
+      "fund": {
+        "title": "Security Fund",
+        "description": "Comprehensive asset protection mechanism"
+      }
     },
     "reasonsTitle": "3 Reasons to Choose Us",
     "reasons": {
-      "r1": { "title": "Smart investment with guaranteed compensation for peace of mind, stable and reassuring returns", "description": "Comprehensive risk management and investor protection mechanisms ensure your assets are safeguarded at all times." },
-      "r2": { "title": "Utilize fully-legal aluminum mechanisms, automatic de-check sandbox, and design with root capabilities", "description": "Built on cutting-edge compliance frameworks with advanced security protocols and root-level system architecture for maximum reliability." },
-      "r3": { "title": "Simple one-click operation, no worries about growth anymore", "description": "User-friendly interface designed for traders of all experience levels. Our automated systems handle the complexity while you focus on results." }
+      "r1": {
+        "title": "Smart investment with guaranteed compensation for peace of mind, stable and reassuring returns",
+        "description": "Comprehensive risk management and investor protection mechanisms ensure your assets are safeguarded at all times."
+      },
+      "r2": {
+        "title": "Utilize fully-legal aluminum mechanisms, automatic de-check sandbox, and design with root capabilities",
+        "description": "Built on cutting-edge compliance frameworks with advanced security protocols and root-level system architecture for maximum reliability."
+      },
+      "r3": {
+        "title": "Simple one-click operation, no worries about growth anymore",
+        "description": "User-friendly interface designed for traders of all experience levels. Our automated systems handle the complexity while you focus on results."
+      }
     },
     "moreTitle": "More About AiBot",
     "moreText": "Our AI-powered trading system combines cutting-edge machine learning algorithms with real-time market analysis to deliver unprecedented trading performance. With over 50,000 intelligent decision points and millisecond-level execution, AiBot represents the future of automated trading.",
@@ -457,20 +626,50 @@
     "whyTitle": "Why Join Bitradex?",
     "whySubtitle": "We offer more than just a job – it's an opportunity to make a real impact in the crypto industry",
     "benefits": {
-      "comp": { "title": "Competitive Compensation", "description": "Industry-leading salaries, equity options, and performance bonuses" },
-      "health": { "title": "Health & Wellness", "description": "Comprehensive health insurance, mental health support, and gym memberships" },
-      "growth": { "title": "Professional Growth", "description": "Learning budgets, conference attendance, and mentorship programs" },
-      "remote": { "title": "Remote Flexibility", "description": "Work from anywhere with flexible hours and unlimited PTO" },
-      "culture": { "title": "Inclusive Culture", "description": "Diverse team, regular team events, and collaborative environment" },
-      "tech": { "title": "Latest Technology", "description": "Top-tier equipment, cutting-edge tools, and modern tech stack" }
+      "comp": {
+        "title": "Competitive Compensation",
+        "description": "Industry-leading salaries, equity options, and performance bonuses"
+      },
+      "health": {
+        "title": "Health & Wellness",
+        "description": "Comprehensive health insurance, mental health support, and gym memberships"
+      },
+      "growth": {
+        "title": "Professional Growth",
+        "description": "Learning budgets, conference attendance, and mentorship programs"
+      },
+      "remote": {
+        "title": "Remote Flexibility",
+        "description": "Work from anywhere with flexible hours and unlimited PTO"
+      },
+      "culture": {
+        "title": "Inclusive Culture",
+        "description": "Diverse team, regular team events, and collaborative environment"
+      },
+      "tech": {
+        "title": "Latest Technology",
+        "description": "Top-tier equipment, cutting-edge tools, and modern tech stack"
+      }
     },
     "valuesTitle": "Our Values",
     "valuesSubtitle": "The principles that guide everything we do",
     "values": {
-      "innovation": { "title": "Innovation First", "description": "We embrace cutting-edge technology and encourage creative problem-solving" },
-      "user": { "title": "User-Centric", "description": "Every decision is made with our traders and investors in mind" },
-      "transparency": { "title": "Transparency", "description": "Open communication, honest feedback, and clear expectations" },
-      "excellence": { "title": "Excellence", "description": "We set high standards and continuously strive to exceed them" }
+      "innovation": {
+        "title": "Innovation First",
+        "description": "We embrace cutting-edge technology and encourage creative problem-solving"
+      },
+      "user": {
+        "title": "User-Centric",
+        "description": "Every decision is made with our traders and investors in mind"
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Open communication, honest feedback, and clear expectations"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We set high standards and continuously strive to exceed them"
+      }
     },
     "openTitle": "Open Positions",
     "openSubtitle": "We're hiring talented individuals across multiple departments",
@@ -480,10 +679,22 @@
     "processTitle": "Our Hiring Process",
     "processSubtitle": "A transparent and efficient process designed to find the best fit for both parties",
     "process": {
-      "application": { "title": "Application", "description": "Submit your application and resume through our careers portal" },
-      "screening": { "title": "Screening", "description": "Our team reviews your application and reaches out for initial chat" },
-      "interviews": { "title": "Interviews", "description": "Technical and behavioral interviews with team members" },
-      "offer": { "title": "Offer", "description": "Receive your offer and join the Bitradex family!" }
+      "application": {
+        "title": "Application",
+        "description": "Submit your application and resume through our careers portal"
+      },
+      "screening": {
+        "title": "Screening",
+        "description": "Our team reviews your application and reaches out for initial chat"
+      },
+      "interviews": {
+        "title": "Interviews",
+        "description": "Technical and behavioral interviews with team members"
+      },
+      "offer": {
+        "title": "Offer",
+        "description": "Receive your offer and join the Bitradex family!"
+      }
     },
     "noRoleTitle": "Don't See Your Role?",
     "noRoleSubtitle": "We're always looking for exceptional talent. Send us your resume and tell us how you can contribute to Bitradex.",
@@ -497,14 +708,86 @@
       "data": "Data & AI"
     },
     "positions": {
-      "backend": { "title": "Senior Backend Engineer", "description": "Build scalable trading infrastructure and high-performance APIs for institutional clients.", "requirements": ["5+ years backend development", "Experience with microservices", "Proficient in Go/Rust", "Knowledge of distributed systems"] },
-      "blockchain": { "title": "Blockchain Developer", "description": "Develop and maintain blockchain integrations, smart contracts, and Web3 infrastructure.", "requirements": ["3+ years blockchain development", "Solidity/Rust expertise", "DeFi protocol experience", "Security-first mindset"] },
-      "pm": { "title": "Product Manager", "description": "Lead product strategy and roadmap for our AI trading bot and institutional products.", "requirements": ["4+ years product management", "Fintech/Crypto experience", "Data-driven approach", "Strong communication skills"] },
-      "security": { "title": "Security Engineer", "description": "Ensure platform security, conduct audits, and implement advanced security protocols.", "requirements": ["5+ years security engineering", "Penetration testing experience", "Crypto security knowledge", "Security certifications"] },
-      "ux": { "title": "UX/UI Designer", "description": "Create intuitive and beautiful interfaces for our trading platforms and mobile apps.", "requirements": ["3+ years UX/UI design", "Figma proficiency", "Mobile design experience", "Portfolio required"] },
-      "compliance": { "title": "Compliance Officer", "description": "Manage regulatory compliance, AML/KYC procedures, and liaise with regulators.", "requirements": ["5+ years compliance role", "Crypto regulations knowledge", "Legal background preferred", "Multi-jurisdictional experience"] },
-      "devops": { "title": "DevOps Engineer", "description": "Manage cloud infrastructure, CI/CD pipelines, and ensure system reliability.", "requirements": ["4+ years DevOps experience", "Kubernetes/Docker expertise", "AWS/GCP knowledge", "Monitoring tools proficiency"] },
-      "data": { "title": "Data Scientist", "description": "Build ML models for trading algorithms, market prediction, and risk analysis.", "requirements": ["3+ years data science", "ML/AI expertise", "Python proficiency", "Financial markets knowledge"] }
+      "backend": {
+        "title": "Senior Backend Engineer",
+        "description": "Build scalable trading infrastructure and high-performance APIs for institutional clients.",
+        "requirements": [
+          "5+ years backend development",
+          "Experience with microservices",
+          "Proficient in Go/Rust",
+          "Knowledge of distributed systems"
+        ]
+      },
+      "blockchain": {
+        "title": "Blockchain Developer",
+        "description": "Develop and maintain blockchain integrations, smart contracts, and Web3 infrastructure.",
+        "requirements": [
+          "3+ years blockchain development",
+          "Solidity/Rust expertise",
+          "DeFi protocol experience",
+          "Security-first mindset"
+        ]
+      },
+      "pm": {
+        "title": "Product Manager",
+        "description": "Lead product strategy and roadmap for our AI trading bot and institutional products.",
+        "requirements": [
+          "4+ years product management",
+          "Fintech/Crypto experience",
+          "Data-driven approach",
+          "Strong communication skills"
+        ]
+      },
+      "security": {
+        "title": "Security Engineer",
+        "description": "Ensure platform security, conduct audits, and implement advanced security protocols.",
+        "requirements": [
+          "5+ years security engineering",
+          "Penetration testing experience",
+          "Crypto security knowledge",
+          "Security certifications"
+        ]
+      },
+      "ux": {
+        "title": "UX/UI Designer",
+        "description": "Create intuitive and beautiful interfaces for our trading platforms and mobile apps.",
+        "requirements": [
+          "3+ years UX/UI design",
+          "Figma proficiency",
+          "Mobile design experience",
+          "Portfolio required"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance Officer",
+        "description": "Manage regulatory compliance, AML/KYC procedures, and liaise with regulators.",
+        "requirements": [
+          "5+ years compliance role",
+          "Crypto regulations knowledge",
+          "Legal background preferred",
+          "Multi-jurisdictional experience"
+        ]
+      },
+      "devops": {
+        "title": "DevOps Engineer",
+        "description": "Manage cloud infrastructure, CI/CD pipelines, and ensure system reliability.",
+        "requirements": [
+          "4+ years DevOps experience",
+          "Kubernetes/Docker expertise",
+          "AWS/GCP knowledge",
+          "Monitoring tools proficiency"
+        ]
+      },
+      "data": {
+        "title": "Data Scientist",
+        "description": "Build ML models for trading algorithms, market prediction, and risk analysis.",
+        "requirements": [
+          "3+ years data science",
+          "ML/AI expertise",
+          "Python proficiency",
+          "Financial markets knowledge"
+        ]
+      }
     }
   },
   "press": {
@@ -558,76 +841,154 @@
       {
         "title": "About Bitradex",
         "items": [
-          { "q": "What is Bitradex and how does the Bitradex exchange work?", "a": "Bitradex is an AI-powered cryptocurrency exchange operated by BITRADEX FINTECH LIMITED. The Bitradex platform combines spot trading, futures trading and an automated AI trading bot powered by the proprietary ARK model. Users can buy, sell and trade BTC, ETH, BNB, SOL and the BTX token with deep liquidity, advanced charts and institutional-grade security." },
-          { "q": "Is Bitradex legit, safe and trustworthy in 2025?", "a": "Yes, Bitradex is a legitimate exchange. It is registered as BITRADEX FINTECH LIMITED, audited by CertiK, publishes proof of reserves, enforces strict KYC/AML compliance and uses cold wallet custody, multi-factor authentication and 24/7 risk monitoring to keep user funds and data safe." },
-          { "q": "Who owns Bitradex and where is the company registered?", "a": "Bitradex is operated by BITRADEX FINTECH LIMITED, with UK MSB registration and global compliance partners. The company holds licenses and registrations across multiple jurisdictions to provide regulated crypto trading services." },
-          { "q": "Is Bitradex a scam or a real exchange?", "a": "Bitradex is a real, audited exchange with verifiable corporate registration, CertiK security audits, public proof of reserves and regulated compliance procedures. Always access Bitradex only through the official domain bitradex.com or bitradex.app to avoid phishing scams." }
+          {
+            "q": "What is Bitradex and how does the Bitradex exchange work?",
+            "a": "Bitradex is an AI-powered cryptocurrency exchange operated by BITRADEX FINTECH LIMITED. The Bitradex platform combines spot trading, futures trading and an automated AI trading bot powered by the proprietary ARK model. Users can buy, sell and trade BTC, ETH, BNB, SOL and the BTX token with deep liquidity, advanced charts and institutional-grade security."
+          },
+          {
+            "q": "Is Bitradex legit, safe and trustworthy in 2025?",
+            "a": "Yes, Bitradex is a legitimate exchange. It is registered as BITRADEX FINTECH LIMITED, audited by CertiK, publishes proof of reserves, enforces strict KYC/AML compliance and uses cold wallet custody, multi-factor authentication and 24/7 risk monitoring to keep user funds and data safe."
+          },
+          {
+            "q": "Who owns Bitradex and where is the company registered?",
+            "a": "Bitradex is operated by BITRADEX FINTECH LIMITED, with UK MSB registration and global compliance partners. The company holds licenses and registrations across multiple jurisdictions to provide regulated crypto trading services."
+          },
+          {
+            "q": "Is Bitradex a scam or a real exchange?",
+            "a": "Bitradex is a real, audited exchange with verifiable corporate registration, CertiK security audits, public proof of reserves and regulated compliance procedures. Always access Bitradex only through the official domain bitradex.com or bitradex.app to avoid phishing scams."
+          }
         ]
       },
       {
         "title": "Account, Sign Up & Login",
         "items": [
-          { "q": "How do I sign up and create a Bitradex account?", "a": "To sign up on Bitradex, visit the official website, click 'Sign Up', enter your email or phone number, create a strong password and verify your account. Optionally enter a Bitradex invite code or referral code to claim a welcome bonus, then complete KYC verification to unlock full trading and withdrawal limits." },
-          { "q": "How do I log in to Bitradex and recover my password?", "a": "Log in at bitradex.com using your registered email or phone and password, plus your 2FA code. If you forgot your password, click 'Forgot password' on the Bitradex login page to receive a secure reset link by email and reset access to your account." },
-          { "q": "What is a Bitradex invite code or referral code and how do I use it?", "a": "A Bitradex invite code (also called referral code) is a unique identifier that links new accounts to an existing user. Entering an invite code during sign up may unlock a welcome bonus, fee discounts and lifetime referral commissions for both the new user and the inviter." },
-          { "q": "How does Bitradex KYC verification work?", "a": "Bitradex KYC requires a government-issued ID, a selfie and proof of address for higher tiers. Verification is usually completed in minutes and is required to comply with global AML regulations, increase withdrawal limits and access advanced products like futures and the AI bot." }
+          {
+            "q": "How do I sign up and create a Bitradex account?",
+            "a": "To sign up on Bitradex, visit the official website, click 'Sign Up', enter your email or phone number, create a strong password and verify your account. Optionally enter a Bitradex invite code or referral code to claim a welcome bonus, then complete KYC verification to unlock full trading and withdrawal limits."
+          },
+          {
+            "q": "How do I log in to Bitradex and recover my password?",
+            "a": "Log in at bitradex.com using your registered email or phone and password, plus your 2FA code. If you forgot your password, click 'Forgot password' on the Bitradex login page to receive a secure reset link by email and reset access to your account."
+          },
+          {
+            "q": "What is a Bitradex invite code or referral code and how do I use it?",
+            "a": "A Bitradex invite code (also called referral code) is a unique identifier that links new accounts to an existing user. Entering an invite code during sign up may unlock a welcome bonus, fee discounts and lifetime referral commissions for both the new user and the inviter."
+          },
+          {
+            "q": "How does Bitradex KYC verification work?",
+            "a": "Bitradex KYC requires a government-issued ID, a selfie and proof of address for higher tiers. Verification is usually completed in minutes and is required to comply with global AML regulations, increase withdrawal limits and access advanced products like futures and the AI bot."
+          }
         ]
       },
       {
         "title": "Deposits, Withdrawals & Fees",
         "items": [
-          { "q": "How do I deposit money on Bitradex?", "a": "To deposit on Bitradex, log in, open the Wallet section, choose 'Deposit', select the asset (BTC, ETH, USDT, BNB, SOL or BTX) and the network, then send funds to the displayed deposit address. Crypto deposits are credited after on-chain confirmations; fiat deposits depend on the payment method and region." },
-          { "q": "How do I withdraw funds from Bitradex?", "a": "To withdraw on Bitradex, open the Wallet, click 'Withdraw', select the asset and network, paste a verified address, enter the amount and confirm with 2FA and email verification. Bitradex processes withdrawals 24/7 with security checks to protect user funds." },
-          { "q": "What are the Bitradex trading fees?", "a": "Bitradex offers competitive fees with maker–taker pricing for spot and futures markets, volume-based VIP tiers and extra discounts when using the BTX token. Withdrawal fees vary by asset and network, and the full fee schedule is published on the official Bitradex fees page." },
-          { "q": "What is the minimum deposit and withdrawal on Bitradex?", "a": "Minimum amounts on Bitradex depend on the asset and network. Most major coins like BTC, ETH and USDT have low minimums, and exact thresholds are displayed on the deposit and withdrawal screens before you confirm any transaction." }
+          {
+            "q": "How do I deposit money on Bitradex?",
+            "a": "To deposit on Bitradex, log in, open the Wallet section, choose 'Deposit', select the asset (BTC, ETH, USDT, BNB, SOL or BTX) and the network, then send funds to the displayed deposit address. Crypto deposits are credited after on-chain confirmations; fiat deposits depend on the payment method and region."
+          },
+          {
+            "q": "How do I withdraw funds from Bitradex?",
+            "a": "To withdraw on Bitradex, open the Wallet, click 'Withdraw', select the asset and network, paste a verified address, enter the amount and confirm with 2FA and email verification. Bitradex processes withdrawals 24/7 with security checks to protect user funds."
+          },
+          {
+            "q": "What are the Bitradex trading fees?",
+            "a": "Bitradex offers competitive fees with maker–taker pricing for spot and futures markets, volume-based VIP tiers and extra discounts when using the BTX token. Withdrawal fees vary by asset and network, and the full fee schedule is published on the official Bitradex fees page."
+          },
+          {
+            "q": "What is the minimum deposit and withdrawal on Bitradex?",
+            "a": "Minimum amounts on Bitradex depend on the asset and network. Most major coins like BTC, ETH and USDT have low minimums, and exact thresholds are displayed on the deposit and withdrawal screens before you confirm any transaction."
+          }
         ]
       },
       {
         "title": "Bitradex AI Trading Bot & ARK Model",
         "items": [
-          { "q": "What is the Bitradex AI trading bot?", "a": "The Bitradex AI trading bot is an automated trading system that uses the proprietary ARK model and machine learning to monitor markets, detect signals and execute spot and futures strategies 24/7. It is designed to deliver consistent risk-adjusted returns while keeping the user in full control of capital and risk parameters." },
-          { "q": "How does the Bitradex ARK model generate alpha?", "a": "The ARK model is a multi-agent self-evolving AI system developed by Bitradex. It analyzes order books, on-chain data, derivatives flow and macro signals across BTC, ETH, BNB and SOL to identify high-probability setups, then routes orders through the Bitradex matching engine in milliseconds." },
-          { "q": "Is automated trading on Bitradex profitable?", "a": "Bitradex AI strategies have historically delivered strong risk-adjusted returns, but cryptocurrency markets are volatile and past performance does not guarantee future results. Users should review each strategy's risk profile, start with smaller capital and follow the Bitradex Risk Disclosure before activating any bot." }
+          {
+            "q": "What is the Bitradex AI trading bot?",
+            "a": "The Bitradex AI trading bot is an automated trading system that uses the proprietary ARK model and machine learning to monitor markets, detect signals and execute spot and futures strategies 24/7. It is designed to deliver consistent risk-adjusted returns while keeping the user in full control of capital and risk parameters."
+          },
+          {
+            "q": "How does the Bitradex ARK model generate alpha?",
+            "a": "The ARK model is a multi-agent self-evolving AI system developed by Bitradex. It analyzes order books, on-chain data, derivatives flow and macro signals across BTC, ETH, BNB and SOL to identify high-probability setups, then routes orders through the Bitradex matching engine in milliseconds."
+          },
+          {
+            "q": "Is automated trading on Bitradex profitable?",
+            "a": "Bitradex AI strategies have historically delivered strong risk-adjusted returns, but cryptocurrency markets are volatile and past performance does not guarantee future results. Users should review each strategy's risk profile, start with smaller capital and follow the Bitradex Risk Disclosure before activating any bot."
+          }
         ]
       },
       {
         "title": "BTX Token & Rewards",
         "items": [
-          { "q": "What is the BTX token (Bitradex token)?", "a": "BTX is the native utility token of the Bitradex ecosystem. Holders of BTX get trading fee discounts, access to launchpad projects, staking rewards, voting rights on platform proposals and exclusive benefits like the Bitradex BTX card and VIP program." },
-          { "q": "Where can I check the BTX token on CoinMarketCap?", "a": "The Bitradex BTX token is listed on CoinMarketCap and CoinGecko. You can verify the live price, circulating supply, market cap and trading volume directly on those platforms or in the Markets section of bitradex.com." },
-          { "q": "How do I earn passive income on Bitradex?", "a": "Bitradex offers multiple ways to earn: BTX staking, savings products, dual investment, AI bot strategies and the referral program. Each product has clear APY ranges, lock-up terms and risk levels described in the Earn section of the platform." }
+          {
+            "q": "What is the BTX token (Bitradex token)?",
+            "a": "BTX is the native utility token of the Bitradex ecosystem. Holders of BTX get trading fee discounts, access to launchpad projects, staking rewards, voting rights on platform proposals and exclusive benefits like the Bitradex BTX card and VIP program."
+          },
+          {
+            "q": "Where can I check the BTX token on CoinMarketCap?",
+            "a": "The Bitradex BTX token is listed on CoinMarketCap and CoinGecko. You can verify the live price, circulating supply, market cap and trading volume directly on those platforms or in the Markets section of bitradex.com."
+          },
+          {
+            "q": "How do I earn passive income on Bitradex?",
+            "a": "Bitradex offers multiple ways to earn: BTX staking, savings products, dual investment, AI bot strategies and the referral program. Each product has clear APY ranges, lock-up terms and risk levels described in the Earn section of the platform."
+          }
         ]
       },
       {
         "title": "Security & Compliance",
         "items": [
-          { "q": "How does Bitradex protect user funds?", "a": "Bitradex stores the majority of user funds in offline cold wallets, uses multi-signature custody, real-time risk monitoring, withdrawal whitelists, anti-phishing codes, mandatory 2FA and a dedicated security fund to cover users in extreme events. The platform is audited by CertiK and publishes proof of reserves." },
-          { "q": "Does Bitradex follow AML and KYC regulations?", "a": "Yes. Bitradex enforces a strict AML policy aligned with FATF recommendations, performs KYC on all users, screens transactions against global sanctions lists and cooperates with regulators worldwide to prevent money laundering and terrorist financing." },
-          { "q": "Is Bitradex regulated and licensed?", "a": "BITRADEX FINTECH LIMITED holds UK MSB registration and operates through a network of regulated entities and partners. Specific products may be restricted in certain jurisdictions to comply with local laws, as detailed on the Bitradex Compliance page." }
+          {
+            "q": "How does Bitradex protect user funds?",
+            "a": "Bitradex stores the majority of user funds in offline cold wallets, uses multi-signature custody, real-time risk monitoring, withdrawal whitelists, anti-phishing codes, mandatory 2FA and a dedicated security fund to cover users in extreme events. The platform is audited by CertiK and publishes proof of reserves."
+          },
+          {
+            "q": "Does Bitradex follow AML and KYC regulations?",
+            "a": "Yes. Bitradex enforces a strict AML policy aligned with FATF recommendations, performs KYC on all users, screens transactions against global sanctions lists and cooperates with regulators worldwide to prevent money laundering and terrorist financing."
+          },
+          {
+            "q": "Is Bitradex regulated and licensed?",
+            "a": "BITRADEX FINTECH LIMITED holds UK MSB registration and operates through a network of regulated entities and partners. Specific products may be restricted in certain jurisdictions to comply with local laws, as detailed on the Bitradex Compliance page."
+          }
         ]
       },
       {
         "title": "Trading: Spot, Futures & Markets",
         "items": [
-          { "q": "What is Bitradex Spot trading?", "a": "Bitradex Spot lets you buy and sell crypto at live market prices with low fees, deep liquidity and TradingView charts. Popular spot pairs include BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT and BTX/USDT, with both market and limit orders available." },
-          { "q": "What is Bitradex Futures and how does leverage work?", "a": "Bitradex Futures lets you trade perpetual contracts on major cryptocurrencies with high leverage, advanced order types and isolated or cross margin modes. Higher leverage increases potential gains and losses, so users should always apply strict risk management as described in the Risk Disclosure." },
-          { "q": "How can I see live crypto prices on Bitradex?", "a": "Live crypto prices for BTC, ETH, BNB, SOL and BTX are available on the Bitradex Markets page and inside the trading interface, with real-time charts, order books, depth visualization and key statistics like 24h volume and price change." }
+          {
+            "q": "What is Bitradex Spot trading?",
+            "a": "Bitradex Spot lets you buy and sell crypto at live market prices with low fees, deep liquidity and TradingView charts. Popular spot pairs include BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT and BTX/USDT, with both market and limit orders available."
+          },
+          {
+            "q": "What is Bitradex Futures and how does leverage work?",
+            "a": "Bitradex Futures lets you trade perpetual contracts on major cryptocurrencies with high leverage, advanced order types and isolated or cross margin modes. Higher leverage increases potential gains and losses, so users should always apply strict risk management as described in the Risk Disclosure."
+          },
+          {
+            "q": "How can I see live crypto prices on Bitradex?",
+            "a": "Live crypto prices for BTC, ETH, BNB, SOL and BTX are available on the Bitradex Markets page and inside the trading interface, with real-time charts, order books, depth visualization and key statistics like 24h volume and price change."
+          }
         ]
       },
       {
         "title": "Mobile App & Support",
         "items": [
-          { "q": "How do I download the Bitradex mobile app?", "a": "The Bitradex app is available for iOS on the App Store and for Android on Google Play, plus a direct APK download from the official site. The mobile app supports full trading, wallet management, AI bot control and 24/7 push notifications." },
-          { "q": "How do I contact Bitradex customer support?", "a": "Bitradex customer support is available 24/7 through live chat in the app, the Help Center, the official Contact page and verified social channels. For account-sensitive issues, always use in-app channels and never share passwords, 2FA codes or seed phrases with anyone." },
-          { "q": "What should I do if I suspect a Bitradex phishing site?", "a": "If you suspect a phishing site impersonating Bitradex, do not enter your credentials, do not click suspicious links, and report the site to support@bitradex.com. Always verify the URL is bitradex.com or bitradex.app and that the connection is secured by HTTPS." }
+          {
+            "q": "How do I download the Bitradex mobile app?",
+            "a": "The Bitradex app is available for iOS on the App Store and for Android on Google Play, plus a direct APK download from the official site. The mobile app supports full trading, wallet management, AI bot control and 24/7 push notifications."
+          },
+          {
+            "q": "How do I contact Bitradex customer support?",
+            "a": "Bitradex customer support is available 24/7 through live chat in the app, the Help Center, the official Contact page and verified social channels. For account-sensitive issues, always use in-app channels and never share passwords, 2FA codes or seed phrases with anyone."
+          },
+          {
+            "q": "What should I do if I suspect a Bitradex phishing site?",
+            "a": "If you suspect a phishing site impersonating Bitradex, do not enter your credentials, do not click suspicious links, and report the site to support@bitradex.com. Always verify the URL is bitradex.com or bitradex.app and that the connection is secured by HTTPS."
+          }
         ]
       }
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "This legal document is published in English for legal accuracy and consistency across jurisdictions. If you need help understanding any section, please contact our support team."
   }
 }

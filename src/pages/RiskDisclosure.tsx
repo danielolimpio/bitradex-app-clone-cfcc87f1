@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import SEO from "@/seo/SEO";
+import LegalLanguageNotice from "@/components/LegalLanguageNotice";
 
 const RiskDisclosure = () => {
   useEffect(() => {

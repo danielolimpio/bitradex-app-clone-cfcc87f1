@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { Shield, Lock, FileCheck, Users, Globe, CheckCircle2 } from "lucide-react";
 import SEO from "@/seo/SEO";
+import LegalLanguageNotice from "@/components/LegalLanguageNotice";
 
 const Compliance = () => {
   useEffect(() => {

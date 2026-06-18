@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import SEO from "@/seo/SEO";
+import LegalLanguageNotice from "@/components/LegalLanguageNotice";
 
 const TermsOfService = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const TermsOfService = () => {
       <SEO />
       <Header />
       <main className="container mx-auto px-4 lg:px-8 py-16 max-w-4xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8">BitradeX Terms of Service</h1>
+        <LegalLanguageNotice /><h1 className="text-4xl md:text-5xl font-bold mb-8">BitradeX Terms of Service</h1>
         <p className="text-muted-foreground mb-12">Effective Date: January 2025</p>
 
         <section className="space-y-8">

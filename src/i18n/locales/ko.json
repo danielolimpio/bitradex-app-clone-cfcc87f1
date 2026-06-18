@@ -1011,9 +1011,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "이 법적 문서는 모든 관할권에서의 법적 정확성과 일관성을 위해 영어로 게시됩니다. 도움이 필요하시면 지원팀에 문의하세요."
   }
 }

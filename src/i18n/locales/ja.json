@@ -989,9 +989,6 @@
     ]
   },
   "legal": {
-    "lastUpdated": "Last Updated",
-    "backToHome": "Back to Home",
-    "downloadPdf": "Download PDF",
-    "contactLegal": "Contact our legal team for any questions"
+    "notice": "この法的文書は、各管轄区における法的正確性と一貫性を保つため英語で公開されています。ご不明な点はサポートチームまでお問い合わせください。"
   }
 }
