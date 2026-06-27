@@ -40,10 +40,10 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "Champions Empfehlen",
-    "headline2": "Intelligenz Führt",
-    "ambassador": "Weltmeister Olivier Giroud wird offiziell globaler Markenbotschafter von Bitradex",
-    "registerNow": "Jetzt Registrieren",
+    "headline1": "Champion-Zeuge,",
+    "headline2": "Intelligenter Gipfel",
+    "ambassador": "Weltmeister-Stürmer David Villa wird offiziell Global Brand Ambassador von Bitradex",
+    "registerNow": "Jetzt Investieren",
     "watchDemo": "Demo Ansehen",
     "stats": {
       "activeUsers": "Aktive Nutzer",
@@ -53,7 +53,12 @@
     "title": "Handeln Sie Krypto mit Vertrauen",
     "subtitle": "Schließen Sie sich Millionen von Händlern weltweit auf der vertrauenswürdigsten Kryptowährungs-Handelsplattform an",
     "getStarted": "Loslegen",
-    "learnMore": "Mehr Erfahren"
+    "learnMore": "Mehr Erfahren",
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "Globaler Markenbotschafter",
+    "badge2Line1": "Weltmeister",
+    "badge2Line2": "Stürmer",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Warum Bitradex Wählen",

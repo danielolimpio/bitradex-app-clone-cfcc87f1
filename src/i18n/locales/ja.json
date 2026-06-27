@@ -40,16 +40,21 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "チャンピオンが認める",
-    "headline2": "AIが先導する取引",
-    "ambassador": "ワールドカップ王者オリヴィエ・ジルーがBitradexのグローバル・ブランドアンバサダーに正式就任",
-    "registerNow": "今すぐ登録",
+    "headline1": "チャンピオンの証言、",
+    "headline2": "インテリジェントピーク",
+    "ambassador": "ワールドカップ王者ストライカーDavid VillaがBitradexのグローバルブランドアンバサダーに正式就任",
+    "registerNow": "今すぐ投資",
     "watchDemo": "デモを見る",
     "stats": {
       "activeUsers": "アクティブユーザー",
       "volumeTraded": "取引高",
       "uptime": "稼働率"
-    }
+    },
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "グローバルブランドアンバサダー",
+    "badge2Line1": "ワールドカップ王者",
+    "badge2Line2": "ストライカー",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Bitradexが選ばれる理由",

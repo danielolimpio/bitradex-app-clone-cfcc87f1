@@ -40,16 +40,21 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "冠军推荐",
-    "headline2": "智能引领",
-    "ambassador": "世界杯冠军吉鲁正式加入Bitradex出任全球品牌大使",
-    "registerNow": "立即注册",
+    "headline1": "冠军见证,",
+    "headline2": "智能巅峰",
+    "ambassador": "世界杯冠军前锋大卫·比利亚正式加入 Bitradex 担任全球品牌大使",
+    "registerNow": "立即投资",
     "watchDemo": "观看演示",
     "stats": {
       "activeUsers": "活跃用户",
       "volumeTraded": "交易量",
       "uptime": "在线率"
-    }
+    },
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "全球品牌大使",
+    "badge2Line1": "世界杯冠军",
+    "badge2Line2": "前锋",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "为什么选择 Bitradex",
