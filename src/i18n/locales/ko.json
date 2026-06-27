@@ -40,10 +40,10 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "챔피언이 인정하는",
-    "headline2": "AI가 선도하는 거래",
-    "ambassador": "월드컵 챔피언 올리비에 지루가 Bitradex 글로벌 브랜드 앰배서더로 공식 합류",
-    "registerNow": "지금 가입",
+    "headline1": "챔피언의 증언,",
+    "headline2": "지능의 정점",
+    "ambassador": "월드컵 챔피언 스트라이커 David Villa가 Bitradex의 글로벌 브랜드 앰배서더로 공식 합류합니다",
+    "registerNow": "지금 투자하기",
     "watchDemo": "데모 보기",
     "stats": {
       "activeUsers": "활성 사용자",
@@ -53,7 +53,12 @@
     "title": "자신감 있게 암호화폐 거래",
     "subtitle": "가장 신뢰할 수 있는 암호화폐 거래소 플랫폼에서 전 세계 수백만 명의 트레이더와 함께하세요",
     "getStarted": "시작하기",
-    "learnMore": "더 알아보기"
+    "learnMore": "더 알아보기",
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "글로벌 브랜드 앰배서더",
+    "badge2Line1": "월드컵 우승",
+    "badge2Line2": "스트라이커",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Bitradex를 선택하는 이유",

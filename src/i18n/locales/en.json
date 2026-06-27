@@ -40,16 +40,21 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "Champions Endorse",
-    "headline2": "Intelligence Leads",
-    "ambassador": "World Cup champion star Olivier Giroud officially joins Bitradex as Global Brand Ambassador",
-    "registerNow": "Register Now",
+    "headline1": "Champion Witness,",
+    "headline2": "Intelligent Peak",
+    "ambassador": "World Cup champion striker David Villa officially joins Bitradex as Global Brand Ambassador",
+    "registerNow": "Invest Now",
     "watchDemo": "Watch Demo",
     "stats": {
       "activeUsers": "Active Users",
       "volumeTraded": "Volume Traded",
       "uptime": "Uptime"
-    }
+    },
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "Global Brand Ambassador",
+    "badge2Line1": "World Cup Champion",
+    "badge2Line2": "Striker",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Why Choose Bitradex",

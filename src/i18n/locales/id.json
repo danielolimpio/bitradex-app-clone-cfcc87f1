@@ -40,10 +40,10 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "Juara Mendukung",
-    "headline2": "Kecerdasan Memimpin",
-    "ambassador": "Bintang juara Piala Dunia Olivier Giroud resmi bergabung dengan Bitradex sebagai Duta Merek Global",
-    "registerNow": "Daftar Sekarang",
+    "headline1": "Saksi Juara,",
+    "headline2": "Puncak Cerdas",
+    "ambassador": "Bintang juara Piala Dunia David Villa resmi bergabung dengan Bitradex sebagai Duta Merek Global",
+    "registerNow": "Investasi Sekarang",
     "watchDemo": "Tonton Demo",
     "stats": {
       "activeUsers": "Pengguna Aktif",
@@ -53,7 +53,12 @@
     "title": "Perdagangan Kripto dengan Percaya Diri",
     "subtitle": "Bergabunglah dengan jutaan trader di seluruh dunia di platform pertukaran cryptocurrency paling terpercaya",
     "getStarted": "Mulai",
-    "learnMore": "Pelajari Lebih Lanjut"
+    "learnMore": "Pelajari Lebih Lanjut",
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "Duta Merek Global",
+    "badge2Line1": "Penyerang Juara",
+    "badge2Line2": "Piala Dunia",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Mengapa Memilih Bitradex",

@@ -40,16 +40,21 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "Juara Mengesahkan",
-    "headline2": "Kecerdasan Memimpin",
-    "ambassador": "Bintang juara Piala Dunia Olivier Giroud secara rasmi menyertai Bitradex sebagai Duta Jenama Global",
-    "registerNow": "Daftar Sekarang",
+    "headline1": "Saksi Juara,",
+    "headline2": "Puncak Pintar",
+    "ambassador": "Penyerang juara Piala Dunia David Villa secara rasmi menyertai Bitradex sebagai Duta Jenama Global",
+    "registerNow": "Labur Sekarang",
     "watchDemo": "Tonton Demo",
     "stats": {
       "activeUsers": "Pengguna Aktif",
       "volumeTraded": "Volum Dagangan",
       "uptime": "Uptime"
-    }
+    },
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "Duta Jenama Global",
+    "badge2Line1": "Penyerang Juara",
+    "badge2Line2": "Piala Dunia",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Mengapa Pilih Bitradex",

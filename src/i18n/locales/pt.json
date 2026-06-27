@@ -40,10 +40,10 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline1": "Campeões Endossam",
-    "headline2": "A Inteligência Lidera",
-    "ambassador": "O craque campeão da Copa do Mundo Olivier Giroud se torna oficialmente Embaixador Global da Bitradex",
-    "registerNow": "Cadastrar Agora",
+    "headline1": "Testemunha Campeã,",
+    "headline2": "Pico Inteligente",
+    "ambassador": "O Astro Campeão da Copa do Mundo David Villa junta-se oficialmente à BitradeX como Embaixador Global da Marca",
+    "registerNow": "Investir Agora",
     "watchDemo": "Ver Demonstração",
     "stats": {
       "activeUsers": "Usuários Ativos",
@@ -53,7 +53,12 @@
     "title": "Negocie Cripto com Confiança",
     "subtitle": "Junte-se a milhões de traders em todo o mundo na plataforma de exchange de criptomoedas mais confiável",
     "getStarted": "Começar",
-    "learnMore": "Saiba Mais"
+    "learnMore": "Saiba Mais",
+    "badge1Line1": "Bitradex",
+    "badge1Line2": "Embaixador Global da Marca",
+    "badge2Line1": "Atacante Campeão",
+    "badge2Line2": "da Copa do Mundo",
+    "badge3": "David Villa"
   },
   "whyChoose": {
     "title": "Por que Escolher a Bitradex",
