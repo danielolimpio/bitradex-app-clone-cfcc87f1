@@ -55,35 +55,36 @@ const HeroSection = () => {
               <img
                 src={heroImage}
                 alt="David Villa - Bitradex Global Brand Ambassador"
-                className="w-full h-auto object-contain drop-shadow-[0_0_60px_rgba(0,200,255,0.25)]"
+                className="w-full h-auto object-contain"
               />
             </div>
 
             {/* Badges row — faithful to official site */}
-            <div className="flex items-center justify-center gap-3 -mt-4 lg:-mt-6 relative z-30 flex-wrap">
+            <div className="flex items-center justify-center gap-2 -mt-2 lg:-mt-4 relative z-30 flex-wrap">
               {/* Badge 1 */}
-              <div className="flex items-center gap-2 px-4 py-2 rounded-md border border-[#c9a14a]/60 bg-gradient-to-r from-[#1a1a2a]/90 to-[#0e0e18]/90 backdrop-blur-sm shadow-[0_0_15px_rgba(201,161,74,0.15)]">
-                <Trophy className="w-5 h-5 text-[#d4af37] shrink-0" />
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
+                <Trophy className="w-4 h-4 text-[#d4af37] shrink-0" strokeWidth={1.5} />
                 <div className="leading-tight text-left">
-                  <div className="text-[10px] uppercase tracking-wider text-[#d4af37] font-semibold">{t("hero.badge1Line1")}</div>
-                  <div className="text-[11px] text-foreground font-medium">{t("hero.badge1Line2")}</div>
+                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge1Line1")}</div>
+                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge1Line2")}</div>
                 </div>
               </div>
 
               {/* Badge 2 */}
-              <div className="flex items-center gap-2 px-4 py-2 rounded-md border border-[#c9a14a]/60 bg-gradient-to-r from-[#1a1a2a]/90 to-[#0e0e18]/90 backdrop-blur-sm shadow-[0_0_15px_rgba(201,161,74,0.15)]">
-                <Trophy className="w-5 h-5 text-[#d4af37] shrink-0" />
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
+                <Trophy className="w-4 h-4 text-[#d4af37] shrink-0" strokeWidth={1.5} />
                 <div className="leading-tight text-left">
-                  <div className="text-[11px] text-foreground font-semibold">{t("hero.badge2Line1")}</div>
-                  <div className="text-[11px] text-foreground font-medium">{t("hero.badge2Line2")}</div>
+                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge2Line1")}</div>
+                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge2Line2")}</div>
                 </div>
               </div>
 
               {/* Badge 3 — filled blue pill */}
-              <div className="px-5 py-2.5 rounded-md bg-primary text-primary-foreground font-bold text-sm shadow-[0_0_20px_rgba(0,200,255,0.35)]">
+              <div className="px-4 py-2 rounded-sm bg-primary text-primary-foreground font-bold text-xs tracking-wide">
                 {t("hero.badge3")}
               </div>
             </div>
+
           </div>
         </div>
       </div>
