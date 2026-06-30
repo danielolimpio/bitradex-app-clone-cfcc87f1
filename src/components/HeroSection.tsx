@@ -6,12 +6,8 @@ import heroImage from "@/assets/david-villa-hero.png";
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative bg-gradient-hero overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]">
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-20 left-20 w-64 h-64 border border-primary rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 border border-primary/50 rounded-full"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/30 rounded-full"></div>
-      </div>
+    <section className="relative overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]" style={{ backgroundColor: "#000000" }}>
+
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-8 lg:pt-12">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
