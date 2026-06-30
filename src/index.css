@@ -113,10 +113,10 @@ All colors MUST be HSL.
     font-weight: inherit;
   }
 
-  p, span, div {
-    font-size: 1rem;
+  p {
     font-weight: 300;
   }
+
 
   html {
     scroll-behavior: smooth;
