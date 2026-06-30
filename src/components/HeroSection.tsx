@@ -57,35 +57,32 @@ const HeroSection = () => {
                 alt="David Villa - Bitradex Global Brand Ambassador"
                 className="w-full h-auto object-contain"
               />
-            </div>
 
-            {/* Badges row — faithful to official site */}
-            <div className="flex items-center justify-center gap-2 -mt-2 lg:-mt-4 relative z-30 flex-wrap">
-              {/* Badge 1 */}
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
-                <Trophy className="w-4 h-4 text-[#d4af37] shrink-0" strokeWidth={1.5} />
-                <div className="leading-tight text-left">
-                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge1Line1")}</div>
-                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge1Line2")}</div>
+              {/* Badges row — overlapped on bottom of image */}
+              <div className="absolute bottom-3 lg:bottom-6 left-1/2 -translate-x-1/2 flex items-center justify-center gap-2 z-30 flex-nowrap">
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
+                  <Trophy className="w-3.5 h-3.5 text-[#d4af37] shrink-0" strokeWidth={1.5} />
+                  <div className="leading-[1.1] text-left">
+                    <div className="text-[9px] text-[#d4af37] font-medium whitespace-nowrap">{t("hero.badge1Line1")}</div>
+                    <div className="text-[9px] text-[#d4af37] font-medium whitespace-nowrap">{t("hero.badge1Line2")}</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
+                  <Trophy className="w-3.5 h-3.5 text-[#d4af37] shrink-0" strokeWidth={1.5} />
+                  <div className="leading-[1.1] text-left">
+                    <div className="text-[9px] text-[#d4af37] font-medium whitespace-nowrap">{t("hero.badge2Line1")}</div>
+                    <div className="text-[9px] text-[#d4af37] font-medium whitespace-nowrap">{t("hero.badge2Line2")}</div>
+                  </div>
+                </div>
+
+                <div className="px-3 py-1.5 rounded-sm bg-primary text-primary-foreground font-bold text-[11px] tracking-wide whitespace-nowrap">
+                  {t("hero.badge3")}
                 </div>
               </div>
-
-              {/* Badge 2 */}
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
-                <Trophy className="w-4 h-4 text-[#d4af37] shrink-0" strokeWidth={1.5} />
-                <div className="leading-tight text-left">
-                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge2Line1")}</div>
-                  <div className="text-[10px] text-[#d4af37] font-medium">{t("hero.badge2Line2")}</div>
-                </div>
-              </div>
-
-              {/* Badge 3 — filled blue pill */}
-              <div className="px-4 py-2 rounded-sm bg-primary text-primary-foreground font-bold text-xs tracking-wide">
-                {t("hero.badge3")}
-              </div>
             </div>
-
           </div>
+
         </div>
       </div>
     </section>
