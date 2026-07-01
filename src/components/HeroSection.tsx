@@ -6,7 +6,8 @@ import heroImage from "@/assets/david-villa-hero.png";
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]" style={{ backgroundColor: "#000000" }}>
+    <section className="relative overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh] bg-background">
+
 
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-8 lg:pt-12">
