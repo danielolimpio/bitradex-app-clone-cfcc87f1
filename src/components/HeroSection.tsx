@@ -6,7 +6,8 @@ import heroImage from "@/assets/david-villa-hero.png";
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh]" style={{ backgroundColor: "#000000" }}>
+    <section className="relative overflow-hidden min-h-[70vh] lg:min-h-[80vh] xl:min-h-[85vh] 2xl:min-h-[75vh] bg-background">
+
 
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-8 lg:pt-12">
@@ -60,7 +61,7 @@ const HeroSection = () => {
 
               {/* Badges row — overlapped on bottom of image */}
               <div className="absolute bottom-3 lg:bottom-6 left-1/2 -translate-x-1/2 flex items-center justify-center gap-2 z-30 flex-nowrap">
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-sm border border-[#c9a14a] bg-[#141516]/95">
                   <Trophy className="w-3.5 h-3.5 text-[#d4af37] shrink-0" strokeWidth={1.5} />
                   <div className="leading-[1.1] text-left">
                     <div className="text-[9px] text-[#d4af37] font-medium whitespace-nowrap">{t("hero.badge1Line1")}</div>
@@ -68,7 +69,7 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-sm border border-[#c9a14a] bg-[#0b0b14]/95">
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-sm border border-[#c9a14a] bg-[#141516]/95">
                   <Trophy className="w-3.5 h-3.5 text-[#d4af37] shrink-0" strokeWidth={1.5} />
                   <div className="leading-[1.1] text-left">
                     <div className="text-[9px] text-[#d4af37] font-medium whitespace-nowrap">{t("hero.badge2Line1")}</div>
