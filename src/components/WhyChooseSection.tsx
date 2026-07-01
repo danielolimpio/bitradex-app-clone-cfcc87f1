@@ -1,13 +1,16 @@
-import { Brain, Shield, Globe, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import aiIcon from "@/assets/why-choose/ai.png";
+import securityIcon from "@/assets/why-choose/security.png";
+import globalIcon from "@/assets/why-choose/global.png";
+import fastIcon from "@/assets/why-choose/fast.png";
 
 const WhyChooseSection = () => {
   const { t } = useTranslation();
   const features = [
-    { icon: Brain, key: "ai" },
-    { icon: Shield, key: "security" },
-    { icon: Globe, key: "global" },
-    { icon: Zap, key: "fast" },
+    { icon: aiIcon, key: "ai" },
+    { icon: securityIcon, key: "security" },
+    { icon: globalIcon, key: "global" },
+    { icon: fastIcon, key: "fast" },
   ];
 
   return (
@@ -23,15 +26,17 @@ const WhyChooseSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map(({ icon: Icon, key }) => (
+          {features.map(({ icon, key }) => (
             <div
               key={key}
               className="group relative bg-gradient-card border border-border rounded-2xl p-8 hover:shadow-card transition-all duration-300 hover:-translate-y-1"
             >
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
-                  <Icon className="w-8 h-8 text-primary-foreground" />
-                </div>
+                <img
+                  src={icon}
+                  alt={t(`whyChoose.items.${key}.title`)}
+                  className="w-16 h-16 object-contain group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
 
               <div className="space-y-4">
