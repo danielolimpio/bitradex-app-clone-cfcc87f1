@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* BitradX Dark Theme Colors — matched to David Villa hero reference (#141516) */
-    --background: 210 5% 8%;
+    --background: 200 5% 8.2%;
     --foreground: 0 0% 100%;
 
     --card: 210 5% 11%;
@@ -74,7 +74,7 @@ All colors MUST be HSL.
 
   .dark {
     /* Keep same values as root for consistent dark theme */
-    --background: 210 5% 8%;
+    --background: 200 5% 8.2%;
     --foreground: 0 0% 100%;
     --card: 210 5% 11%;
     --card-foreground: 0 0% 100%;
